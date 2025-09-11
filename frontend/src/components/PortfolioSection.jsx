@@ -1,9 +1,31 @@
-import React, { useState } from 'react';
-import { mockMagazines } from './mock';
+import React, { useState, useEffect } from 'react';
 import { Eye, Calendar, ArrowRight } from 'lucide-react';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const PortfolioSection = () => {
+  const [magazines, setMagazines] = useState([]);
   const [selectedMagazine, setSelectedMagazine] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    fetchMagazines();
+  }, []);
+
+  const fetchMagazines = async () => {
+    try {
+      const response = await axios.get(`${API}/magazines`);
+      setMagazines(response.data);
+    } catch (error) {
+      console.error('Error fetching magazines:', error);
+      setError('Failed to load magazines');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const openPreview = (magazine) => {
     setSelectedMagazine(magazine);
@@ -12,6 +34,34 @@ const PortfolioSection = () => {
   const closePreview = () => {
     setSelectedMagazine(null);
   };
+
+  if (loading) {
+    return (
+      <section id="portfolio" className="dark-container" style={{ padding: '160px 0' }}>
+        <div className="dark-full-container">
+          <div className="dark-content-container" style={{ textAlign: 'center' }}>
+            <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
+              Loading magazines from the future...
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="portfolio" className="dark-container" style={{ padding: '160px 0' }}>
+        <div className="dark-full-container">
+          <div className="dark-content-container" style={{ textAlign: 'center' }}>
+            <p className="body-large" style={{ color: '#ff4444' }}>
+              {error}
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="portfolio" className="dark-container" style={{ padding: '160px 0' }}>
