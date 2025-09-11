@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { consultationTypes } from './mock';
 import { Send, Calendar, Users, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +18,7 @@ const ContactSection = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [submitError, setSubmitError] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -26,20 +31,33 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage('');
+    setSubmitError('');
     
-    // Simulate API call - replace with actual implementation
-    setTimeout(() => {
-      setSubmitMessage('Thank you! We\'ll be in touch within 24 hours.');
+    try {
+      const response = await axios.post(`${API}/inquiries`, formData);
+      
+      if (response.status === 201) {
+        setSubmitMessage(response.data.message);
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          inquiry_type: 'consultation',
+          consultation_type: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting inquiry:', error);
+      if (error.response?.data?.detail) {
+        setSubmitError(error.response.data.detail);
+      } else {
+        setSubmitError('Something went wrong. Please try again or contact us directly.');
+      }
+    } finally {
       setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        inquiry_type: 'consultation',
-        consultation_type: '',
-        message: ''
-      });
-    }, 1500);
+    }
   };
 
   return (
