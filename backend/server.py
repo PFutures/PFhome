@@ -1,14 +1,16 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field
-from typing import List
+from pydantic import BaseModel, Field, EmailStr
+from typing import List, Optional
 import uuid
 from datetime import datetime
+from enum import Enum
 
 
 ROOT_DIR = Path(__file__).parent
@@ -26,7 +28,66 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 
+# Define Enums
+class InquiryType(str, Enum):
+    consultation = "consultation"
+    partnership = "partnership"
+
+class InquiryStatus(str, Enum):
+    received = "received"
+    contacted = "contacted"
+    closed = "closed"
+
+
 # Define Models
+class InquiryCreate(BaseModel):
+    name: str
+    email: EmailStr
+    company: Optional[str] = None
+    inquiry_type: InquiryType
+    consultation_type: Optional[str] = None
+    message: Optional[str] = ""
+
+class Inquiry(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    email: str
+    company: Optional[str] = None
+    inquiry_type: str
+    consultation_type: Optional[str] = None
+    message: Optional[str] = ""
+    status: str = Field(default="received")
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+class Magazine(BaseModel):
+    id: str
+    title: str
+    year: str
+    description: str
+    cover_image: str
+    industries: List[str]
+    preview: str
+
+class TeamMember(BaseModel):
+    id: str
+    name: str
+    role: str
+    background: str
+    expertise: List[str]
+    image: str
+    linkedin: Optional[str] = None
+    email: Optional[str] = None
+
+class Service(BaseModel):
+    id: str
+    title: str
+    description: str
+    features: List[str]
+    timeframe: str
+    ideal_for: str
+
+# Legacy models for backward compatibility
 class StatusCheck(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     client_name: str
@@ -38,8 +99,9 @@ class StatusCheckCreate(BaseModel):
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Polymathic Futures API - Ready to shape the future"}
 
+# Legacy status endpoints
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
     status_dict = input.dict()
