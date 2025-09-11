@@ -1,8 +1,31 @@
-import React from 'react';
-import { mockServices } from './mock';
+import React, { useState, useEffect } from 'react';
 import { BookOpen, Network, Zap, Clock, Target, ArrowRight } from 'lucide-react';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const ServicesSection = () => {
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    fetchServices();
+  }, []);
+
+  const fetchServices = async () => {
+    try {
+      const response = await axios.get(`${API}/services`);
+      setServices(response.data);
+    } catch (error) {
+      console.error('Error fetching services:', error);
+      setError('Failed to load services');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const serviceIcons = {
     0: <BookOpen size={32} />,
     1: <Network size={32} />,
@@ -16,6 +39,34 @@ const ServicesSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  if (loading) {
+    return (
+      <section id="services" className="dark-container" style={{ padding: '160px 0' }}>
+        <div className="dark-full-container">
+          <div className="dark-content-container" style={{ textAlign: 'center' }}>
+            <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
+              Loading our services...
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="services" className="dark-container" style={{ padding: '160px 0' }}>
+        <div className="dark-full-container">
+          <div className="dark-content-container" style={{ textAlign: 'center' }}>
+            <p className="body-large" style={{ color: '#ff4444' }}>
+              {error}
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="services" className="dark-container" style={{ padding: '160px 0' }}>
