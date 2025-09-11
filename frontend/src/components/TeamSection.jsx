@@ -80,7 +80,7 @@ const TeamSection = () => {
             gap: '40px',
             marginBottom: '80px'
           }}>
-            {mockTeamMembers.map((member) => (
+            {teamMembers.map((member) => (
               <div
                 key={member.id}
                 className="dark-hover"
