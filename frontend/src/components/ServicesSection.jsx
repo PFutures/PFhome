@@ -95,7 +95,7 @@ const ServicesSection = () => {
             gap: '40px',
             marginBottom: '80px'
           }}>
-            {mockServices.map((service, index) => (
+            {services.map((service, index) => (
               <div
                 key={service.id}
                 className="dark-hover"
