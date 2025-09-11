@@ -90,7 +90,7 @@ const PortfolioSection = () => {
             gap: '40px',
             marginBottom: '80px'
           }}>
-            {mockMagazines.map((magazine) => (
+            {magazines.map((magazine) => (
               <div
                 key={magazine.id}
                 className="dark-hover"
