@@ -336,6 +336,21 @@ const ContactSection = () => {
                     {submitMessage}
                   </div>
                 )}
+                
+                {/* Error Message */}
+                {submitError && (
+                  <div style={{
+                    marginTop: '16px',
+                    padding: '12px',
+                    background: '#ff4444',
+                    color: '#ffffff',
+                    borderRadius: '0px',
+                    textAlign: 'center',
+                    fontWeight: '500'
+                  }}>
+                    {submitError}
+                  </div>
+                )}
               </form>
             </div>
             
