@@ -1,0 +1,242 @@
+import React from 'react';
+import { mockServices } from './mock';
+import { BookOpen, Network, Zap, Clock, Target, ArrowRight } from 'lucide-react';
+
+const ServicesSection = () => {
+  const serviceIcons = {
+    0: <BookOpen size={32} />,
+    1: <Network size={32} />,
+    2: <Zap size={32} />
+  };
+
+  const handleGetStarted = (serviceName) => {
+    // This would typically open a contact form or booking system
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="services" className="dark-container" style={{ padding: '160px 0' }}>
+      <div className="dark-full-container">
+        <div className="dark-content-container">
+          {/* Section Header */}
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 className="display-large" style={{ marginBottom: '24px' }}>
+              Our Services
+            </h2>
+            
+            <p className="body-large" style={{ 
+              maxWidth: '700px',
+              margin: '0 auto',
+              color: 'var(--text-secondary)'
+            }}>
+              From tangible future artifacts to breakthrough innovation strategies, 
+              we help you own your story in tomorrow's world.
+            </p>
+          </div>
+          
+          {/* Services Grid */}
+          <div style={{ 
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+            gap: '40px',
+            marginBottom: '80px'
+          }}>
+            {mockServices.map((service, index) => (
+              <div
+                key={service.id}
+                className="dark-hover"
+                style={{
+                  background: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px',
+                  padding: '40px',
+                  transition: 'all 0.4s ease-in-out',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+              >
+                {/* Service Icon */}
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '24px'
+                }}>
+                  {serviceIcons[index]}
+                </div>
+                
+                {/* Service Header */}
+                <div style={{ marginBottom: '24px' }}>
+                  <h3 className="heading-2" style={{ marginBottom: '16px' }}>
+                    {service.title}
+                  </h3>
+                  
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    lineHeight: '1.5'
+                  }}>
+                    {service.description}
+                  </p>
+                </div>
+                
+                {/* Service Features */}
+                <div style={{ marginBottom: '32px', flexGrow: 1 }}>
+                  <h4 className="body-large" style={{ 
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontWeight: '600'
+                  }}>
+                    What's Included:
+                  </h4>
+                  
+                  <ul style={{ 
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: 0
+                  }}>
+                    {service.features.map((feature, featureIndex) => (
+                      <li
+                        key={featureIndex}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '12px',
+                          marginBottom: '12px',
+                          color: 'var(--text-secondary)',
+                          fontSize: '16px'
+                        }}
+                      >
+                        <div style={{
+                          width: '6px',
+                          height: '6px',
+                          background: 'var(--brand-primary)',
+                          borderRadius: '50%',
+                          flexShrink: 0
+                        }} />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                {/* Service Meta Info */}
+                <div style={{ 
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '24px',
+                  padding: '16px',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Clock size={16} color="var(--brand-primary)" />
+                    <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                      {service.timeframe}
+                    </span>
+                  </div>
+                  
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Target size={16} color="var(--brand-primary)" />
+                    <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                      {service.ideal_for.split(' ').slice(0, 3).join(' ')}...
+                    </span>
+                  </div>
+                </div>
+                
+                {/* CTA Button */}
+                <button
+                  className="btn-primary dark-button-animate"
+                  onClick={() => handleGetStarted(service.title)}
+                  style={{ width: '100%' }}
+                >
+                  Get Started
+                  <ArrowRight size={16} />
+                </button>
+              </div>
+            ))}
+          </div>
+          
+          {/* Process Overview */}
+          <div style={{
+            background: 'var(--bg-secondary)',
+            border: '1px solid var(--border-subtle)',
+            borderRadius: '0px',
+            padding: '60px',
+            textAlign: 'center'
+          }}>
+            <h3 className="heading-1" style={{ 
+              marginBottom: '32px',
+              color: 'var(--brand-primary)'
+            }}>
+              Our Process
+            </h3>
+            
+            <div style={{ 
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gap: '40px',
+              marginTop: '40px'
+            }}>
+              <div>
+                <div style={{ 
+                  fontSize: '32px', 
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '16px'
+                }}>
+                  01
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px' }}>
+                  Research
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                  Deep-dive into your industry, emerging technologies, and cross-sector opportunities
+                </p>
+              </div>
+              
+              <div>
+                <div style={{ 
+                  fontSize: '32px', 
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '16px'
+                }}>
+                  02
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px' }}>
+                  Design
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                  Craft compelling future narratives that feel inevitable, not imaginary
+                </p>
+              </div>
+              
+              <div>
+                <div style={{ 
+                  fontSize: '32px', 
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '16px'
+                }}>
+                  03
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px' }}>
+                  Deliver
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                  Provide tangible artifacts and strategic roadmaps for implementation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;
