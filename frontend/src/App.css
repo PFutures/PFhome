@@ -593,8 +593,16 @@ body {
 }
 
 .spectacular-sphere-container:hover .main-sphere {
-  animation: earthRotate 15s linear infinite, earthPulse 25s ease-in-out infinite !important;
-  transform: rotateX(10deg) rotateY(-5deg) scale(1.05) !important;
+  animation: trueGlobeRotate 20s linear infinite, earthPulse 25s ease-in-out infinite !important;
+  transform: rotateX(10deg) scale(1.05) !important;
+}
+
+.spectacular-sphere-container:hover .cloud-layer {
+  animation: cloudRotate 25s linear infinite !important;
+}
+
+.spectacular-sphere-container:hover .city-lights-layer {
+  animation: cityLightsRotate 30s linear infinite !important;
 }
 
 .spectacular-sphere-container:hover .particle {
