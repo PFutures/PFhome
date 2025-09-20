@@ -276,7 +276,126 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
 }
 
-/* SPECTACULAR ANIMATED SPHERE - WOW EFFECTS */
+/* HYPERREALISTIC EARTH ANIMATIONS */
+
+@keyframes earthRotate {
+  0% {
+    background-position: 0% center, 0% center, 0% center;
+  }
+  100% {
+    background-position: 200% center, 50% center, 100% center;
+  }
+}
+
+@keyframes earthPulse {
+  0%, 100% {
+    transform: rotateX(15deg) rotateY(-10deg) scale(1);
+    box-shadow: 
+      inset -120px -120px 200px rgba(0, 0, 0, 0.9),
+      inset 60px 60px 120px rgba(255, 255, 255, 0.15),
+      0 0 120px rgba(0, 255, 209, 0.8),
+      0 0 200px rgba(0, 255, 209, 0.4),
+      0 30px 60px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(-10deg) scale(1.02);
+    box-shadow: 
+      inset -120px -120px 200px rgba(0, 0, 0, 0.7),
+      inset 60px 60px 120px rgba(255, 255, 255, 0.25),
+      0 0 160px rgba(0, 255, 209, 1),
+      0 0 280px rgba(0, 255, 209, 0.6),
+      0 35px 70px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes atmosphereGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes realisticClouds {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes terminatorMove {
+  0% {
+    left: 60%;
+    opacity: 0.8;
+  }
+  50% {
+    left: 55%;
+    opacity: 0.9;
+  }
+  100% {
+    left: 60%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes cityLights {
+  0%, 100% {
+    opacity: 0.7;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sunReflection {
+  0%, 100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(15%, -8%) scale(1.1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-5%, 12%) scale(0.9);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(8%, -15%) scale(1.05);
+    opacity: 0.75;
+  }
+}
+
+@keyframes oceanShimmer {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  33% {
+    transform: rotate(120deg) scale(1.05);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(240deg) scale(0.95);
+    opacity: 0.5;
+  }
+}
+
+/* KEEP ALL EXISTING SPECTACULAR EFFECTS */
 
 @keyframes energyRingRotate {
   0% {
@@ -444,7 +563,8 @@ body {
 }
 
 .spectacular-sphere-container:hover .main-sphere {
-  animation-duration: 8s !important;
+  animation-duration: 60s !important;
+  transform: rotateX(10deg) rotateY(-5deg) scale(1.05) !important;
 }
 
 .spectacular-sphere-container:hover .particle {
@@ -466,43 +586,6 @@ body {
 
 .particle {
   transition: all 0.3s ease;
-}
-
-/* Remove old animations */
-@keyframes slowEarthRotate {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 100% center;
-  }
-}
-
-@keyframes gentleGlow {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0.6;
-  }
-}
-
-@keyframes simpleRipple {
-  0% {
-    width: 0px;
-    height: 0px;
-    opacity: 1;
-  }
-  50% {
-    width: 200px;
-    height: 200px;
-    opacity: 0.5;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
 }
 
 /* Mobile Responsive */
