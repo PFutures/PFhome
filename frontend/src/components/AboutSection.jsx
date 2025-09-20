@@ -4,16 +4,6 @@ import { Zap, Microscope, Lightbulb, Network } from 'lucide-react';
 const AboutSection = () => {
   const convergenceAreas = [
     {
-      icon: <Microscope size={32} />,
-      title: "Science & Strategy",
-      description: "Where peer-reviewed research meets business innovation"
-    },
-    {
-      icon: <Network size={32} />,
-      title: "Cross-Sector Fusion",
-      description: "Breaking silos to discover unexpected connections"
-    },
-    {
       icon: <Lightbulb size={32} />,
       title: "Future Design",
       description: "Making tomorrow's breakthroughs tangible today"
@@ -22,6 +12,16 @@ const AboutSection = () => {
       icon: <Zap size={32} />,
       title: "Narrative Power",
       description: "Fiction that behaves like fact, stories that drive strategy"
+    },
+    {
+      icon: <Microscope size={32} />,
+      title: "Science & Strategy",
+      description: "Where peer-reviewed research meets business innovation"
+    },
+    {
+      icon: <Network size={32} />,
+      title: "Cross-Sector Fusion",
+      description: "Breaking silos to discover unexpected connections"
     }
   ];
 
