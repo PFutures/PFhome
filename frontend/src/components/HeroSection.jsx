@@ -89,22 +89,134 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right side - 3D Spline */}
+          {/* Right side - Custom Earth Ball */}
           <div style={{ 
             flex: 1,
             height: '700px',
             width: '100%',
-            overflow: 'visible',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             position: 'relative'
           }}>
-            <Spline 
-              scene="https://prod.spline.design/NbVmy6DPLhY-5Lvg/scene.splinecode"
-              style={{ 
-                width: '100%', 
-                height: '100%',
-                background: 'transparent'
+            <div 
+              className="earth-ball"
+              style={{
+                width: '400px',
+                height: '400px',
+                borderRadius: '50%',
+                background: `
+                  radial-gradient(circle at 30% 30%, 
+                    #4a90e2 0%, 
+                    #2e5c8a 25%, 
+                    #1e3a5f 50%, 
+                    #0f1f3d 75%, 
+                    #000814 100%
+                  ),
+                  conic-gradient(from 0deg, 
+                    #4a90e2, #2e8b57, #8fbc8f, #4a90e2, 
+                    #2e8b57, #4a90e2, #2e5c8a
+                  )
+                `,
+                backgroundBlendMode: 'multiply',
+                boxShadow: `
+                  inset -40px -40px 80px rgba(0, 8, 20, 0.8),
+                  inset 20px 20px 60px rgba(74, 144, 226, 0.3),
+                  0 0 100px rgba(0, 255, 209, 0.4),
+                  0 0 200px rgba(0, 255, 209, 0.2)
+                `,
+                cursor: 'pointer',
+                transition: 'all 0.6s cubic-bezier(0.23, 1, 0.320, 1)',
+                position: 'relative',
+                transform: 'perspective(1000px) rotateX(10deg) rotateY(-15deg)',
+                animation: 'earthRotate 20s linear infinite',
+                overflow: 'hidden'
               }}
-            />
+              onMouseEnter={(e) => {
+                e.target.style.transform = 'perspective(1000px) rotateX(5deg) rotateY(-10deg) scale(1.05)';
+                e.target.style.boxShadow = `
+                  inset -40px -40px 80px rgba(0, 8, 20, 0.6),
+                  inset 20px 20px 60px rgba(74, 144, 226, 0.5),
+                  0 0 120px rgba(0, 255, 209, 0.6),
+                  0 0 240px rgba(0, 255, 209, 0.3)
+                `;
+                e.target.style.filter = 'brightness(1.2) contrast(1.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = 'perspective(1000px) rotateX(10deg) rotateY(-15deg) scale(1)';
+                e.target.style.boxShadow = `
+                  inset -40px -40px 80px rgba(0, 8, 20, 0.8),
+                  inset 20px 20px 60px rgba(74, 144, 226, 0.3),
+                  0 0 100px rgba(0, 255, 209, 0.4),
+                  0 0 200px rgba(0, 255, 209, 0.2)
+                `;
+                e.target.style.filter = 'brightness(1) contrast(1)';
+              }}
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const mouseX = e.clientX - centerX;
+                const mouseY = e.clientY - centerY;
+                
+                const rotateX = (mouseY / rect.height) * -20;
+                const rotateY = (mouseX / rect.width) * 20;
+                
+                e.target.style.transform = `
+                  perspective(1000px) 
+                  rotateX(${10 + rotateX}deg) 
+                  rotateY(${-15 + rotateY}deg) 
+                  scale(1.05)
+                `;
+              }}
+            >
+              {/* Continents overlay */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                borderRadius: '50%',
+                background: `
+                  radial-gradient(ellipse 60px 40px at 25% 35%, #2e8b57 0%, transparent 50%),
+                  radial-gradient(ellipse 80px 60px at 70% 25%, #228b22 0%, transparent 50%),
+                  radial-gradient(ellipse 50px 70px at 45% 65%, #2e8b57 0%, transparent 50%),
+                  radial-gradient(ellipse 40px 30px at 80% 70%, #228b22 0%, transparent 50%)
+                `,
+                opacity: 0.7,
+                animation: 'continentShift 25s linear infinite'
+              }} />
+              
+              {/* Atmospheric glow */}
+              <div style={{
+                position: 'absolute',
+                top: '-10px',
+                left: '-10px',
+                width: 'calc(100% + 20px)',
+                height: 'calc(100% + 20px)',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle, transparent 70%, rgba(0, 255, 209, 0.3) 100%)',
+                pointerEvents: 'none'
+              }} />
+              
+              {/* Water ripple effect */}
+              <div 
+                className="water-ripple"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  width: '0px',
+                  height: '0px',
+                  borderRadius: '50%',
+                  border: '2px solid rgba(0, 255, 209, 0.6)',
+                  transform: 'translate(-50%, -50%)',
+                  pointerEvents: 'none',
+                  animation: 'ripple 3s infinite'
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
