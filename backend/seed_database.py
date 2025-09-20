@@ -105,7 +105,7 @@ services_data = [
         "title": "Sci-Fi Prototyping Workshops",
         "description": "Interactive sessions where your team designs products that don't exist yet",
         "features": ["Design fiction methodologies", "Team innovation exercises", "Prototype development", "Future scenario building"],
-        "timeframe": "2-3 days",
+        "timeframe": "2–3 days",
         "ideal_for": "Teams needing breakthrough thinking sessions"
     }
 ]
