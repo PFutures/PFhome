@@ -88,7 +88,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right side - Proper 3D Earth Globe */}
+          {/* Right side - Spectacular Animated Sphere */}
           <div style={{ 
             flex: 1,
             height: '700px',
@@ -99,96 +99,214 @@ const HeroSection = () => {
             position: 'relative',
             perspective: '1000px'
           }}>
+            {/* Main Container */}
             <div 
-              className="earth-globe-3d"
+              className="spectacular-sphere-container"
               style={{
-                width: '350px',
-                height: '350px',
-                borderRadius: '50%',
+                width: '450px',
+                height: '450px',
                 position: 'relative',
-                background: `
-                  radial-gradient(circle at 30% 30%, 
-                    rgba(255,255,255,0.6) 0%, 
-                    rgba(255,255,255,0.2) 20%, 
-                    transparent 50%
-                  ),
-                  radial-gradient(circle at 70% 70%, 
-                    rgba(0,0,0,0.8) 0%, 
-                    rgba(0,0,0,0.4) 40%, 
-                    transparent 70%
-                  ),
-                  url('https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x5400x2700.jpg')
-                `,
-                backgroundSize: '400% 200%',
-                backgroundPosition: 'center center',
-                backgroundRepeat: 'no-repeat',
-                boxShadow: `
-                  inset -60px -60px 100px rgba(0, 0, 0, 0.8),
-                  inset 30px 30px 60px rgba(255, 255, 255, 0.2),
-                  0 0 80px rgba(0, 255, 209, 0.4),
-                  0 0 120px rgba(0, 255, 209, 0.2),
-                  0 20px 40px rgba(0, 0, 0, 0.5)
-                `,
-                cursor: 'pointer',
-                transition: 'all 0.5s ease',
-                transform: 'rotateX(15deg) rotateY(-10deg)',
-                animation: 'slowEarthRotate 120s linear infinite'
+                cursor: 'pointer'
               }}
               onMouseEnter={(e) => {
-                e.target.style.transform = 'rotateX(10deg) rotateY(-5deg) scale(1.1)';
-                e.target.style.boxShadow = `
-                  inset -60px -60px 100px rgba(0, 0, 0, 0.6),
-                  inset 30px 30px 60px rgba(255, 255, 255, 0.3),
-                  0 0 100px rgba(0, 255, 209, 0.6),
-                  0 0 150px rgba(0, 255, 209, 0.3),
-                  0 25px 50px rgba(0, 0, 0, 0.6)
-                `;
-                e.target.style.filter = 'brightness(1.2) contrast(1.1)';
+                const container = e.currentTarget;
+                container.style.transform = 'scale(1.1)';
+                const sphere = container.querySelector('.main-sphere');
+                if (sphere) {
+                  sphere.style.animationDuration = '8s';
+                  sphere.style.filter = 'brightness(1.4) contrast(1.2) saturate(1.3)';
+                }
               }}
               onMouseLeave={(e) => {
-                e.target.style.transform = 'rotateX(15deg) rotateY(-10deg) scale(1)';
-                e.target.style.boxShadow = `
-                  inset -60px -60px 100px rgba(0, 0, 0, 0.8),
-                  inset 30px 30px 60px rgba(255, 255, 255, 0.2),
-                  0 0 80px rgba(0, 255, 209, 0.4),
-                  0 0 120px rgba(0, 255, 209, 0.2),
-                  0 20px 40px rgba(0, 0, 0, 0.5)
-                `;
-                e.target.style.filter = 'brightness(1) contrast(1)';
-              }}
-              onMouseMove={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                const centerX = rect.left + rect.width / 2;
-                const centerY = rect.top + rect.height / 2;
-                const mouseX = e.clientX - centerX;
-                const mouseY = e.clientY - centerY;
-                
-                const rotateX = 15 + (mouseY / rect.height) * -20;
-                const rotateY = -10 + (mouseX / rect.width) * 20;
-                
-                e.target.style.transform = `
-                  rotateX(${rotateX}deg) 
-                  rotateY(${rotateY}deg) 
-                  scale(1.1)
-                `;
+                const container = e.currentTarget;
+                container.style.transform = 'scale(1)';
+                const sphere = container.querySelector('.main-sphere');
+                if (sphere) {
+                  sphere.style.animationDuration = '20s';
+                  sphere.style.filter = 'brightness(1) contrast(1) saturate(1)';
+                }
               }}
             >
-              {/* Simple atmospheric glow */}
-              <div style={{
-                position: 'absolute',
-                top: '-10px',
-                left: '-10px',
-                width: 'calc(100% + 20px)',
-                height: 'calc(100% + 20px)',
-                borderRadius: '50%',
-                background: 'radial-gradient(circle, transparent 70%, rgba(0, 255, 209, 0.3) 85%, transparent 100%)',
-                pointerEvents: 'none',
-                animation: 'gentleGlow 3s ease-in-out infinite alternate'
-              }} />
-              
-              {/* Water ripple on hover */}
+              {/* Outer Energy Ring */}
               <div 
-                className="simple-ripple"
+                className="energy-ring-outer"
+                style={{
+                  position: 'absolute',
+                  top: '-30px',
+                  left: '-30px',
+                  width: 'calc(100% + 60px)',
+                  height: 'calc(100% + 60px)',
+                  borderRadius: '50%',
+                  background: `
+                    conic-gradient(from 0deg, 
+                      transparent, 
+                      rgba(0, 255, 209, 0.4), 
+                      transparent, 
+                      rgba(0, 191, 255, 0.3), 
+                      transparent, 
+                      rgba(0, 255, 209, 0.4), 
+                      transparent
+                    )
+                  `,
+                  animation: 'energyRingRotate 12s linear infinite',
+                  filter: 'blur(2px)'
+                }}
+              />
+
+              {/* Inner Energy Ring */}
+              <div 
+                className="energy-ring-inner"
+                style={{
+                  position: 'absolute',
+                  top: '-15px',
+                  left: '-15px',
+                  width: 'calc(100% + 30px)',
+                  height: 'calc(100% + 30px)',
+                  borderRadius: '50%',
+                  background: `
+                    conic-gradient(from 180deg, 
+                      transparent, 
+                      rgba(0, 255, 209, 0.6), 
+                      transparent, 
+                      rgba(135, 206, 235, 0.4), 
+                      transparent
+                    )
+                  `,
+                  animation: 'energyRingRotate 8s linear infinite reverse',
+                  filter: 'blur(1px)'
+                }}
+              />
+
+              {/* Main Sphere */}
+              <div 
+                className="main-sphere"
+                style={{
+                  width: '350px',
+                  height: '350px',
+                  borderRadius: '50%',
+                  position: 'absolute',
+                  top: '50px',
+                  left: '50px',
+                  background: `
+                    radial-gradient(circle at 25% 25%, 
+                      rgba(0, 255, 209, 0.9) 0%, 
+                      rgba(0, 191, 255, 0.8) 20%, 
+                      rgba(30, 144, 255, 0.7) 40%, 
+                      rgba(0, 100, 200, 0.8) 60%, 
+                      rgba(0, 50, 150, 0.9) 80%, 
+                      rgba(0, 20, 100, 1) 100%
+                    ),
+                    radial-gradient(circle at 70% 30%, 
+                      rgba(255, 255, 255, 0.3) 0%, 
+                      transparent 30%
+                    ),
+                    radial-gradient(circle at 30% 70%, 
+                      rgba(0, 255, 209, 0.2) 0%, 
+                      transparent 40%
+                    )
+                  `,
+                  boxShadow: `
+                    inset -80px -80px 160px rgba(0, 0, 0, 0.6),
+                    inset 40px 40px 80px rgba(255, 255, 255, 0.1),
+                    0 0 120px rgba(0, 255, 209, 0.8),
+                    0 0 200px rgba(0, 255, 209, 0.4),
+                    0 30px 60px rgba(0, 0, 0, 0.7)
+                  `,
+                  animation: 'spherePulse 20s ease-in-out infinite, sphereRotate 25s linear infinite',
+                  transition: 'all 0.8s cubic-bezier(0.23, 1, 0.320, 1)',
+                  overflow: 'hidden'
+                }}
+              >
+                {/* Liquid Surface Effect */}
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '50%',
+                  background: `
+                    radial-gradient(ellipse 120px 60px at 30% 40%, rgba(0, 255, 209, 0.4) 0%, transparent 70%),
+                    radial-gradient(ellipse 80px 40px at 70% 60%, rgba(135, 206, 235, 0.3) 0%, transparent 70%),
+                    radial-gradient(ellipse 100px 50px at 50% 20%, rgba(0, 191, 255, 0.3) 0%, transparent 70%)
+                  `,
+                  animation: 'liquidFlow 15s ease-in-out infinite',
+                  opacity: 0.7
+                }} />
+
+                {/* Specular Highlights */}
+                <div style={{
+                  position: 'absolute',
+                  top: '15%',
+                  left: '20%',
+                  width: '40%',
+                  height: '40%',
+                  borderRadius: '50%',
+                  background: `
+                    radial-gradient(circle, 
+                      rgba(255, 255, 255, 0.8) 0%, 
+                      rgba(255, 255, 255, 0.4) 30%, 
+                      rgba(0, 255, 209, 0.2) 60%, 
+                      transparent 100%
+                    )
+                  `,
+                  filter: 'blur(8px)',
+                  animation: 'specularMove 18s ease-in-out infinite'
+                }} />
+              </div>
+
+              {/* Floating Particles */}
+              <div className="particle particle-1" style={{
+                position: 'absolute',
+                width: '4px',
+                height: '4px',
+                borderRadius: '50%',
+                background: 'rgba(0, 255, 209, 0.8)',
+                top: '20%',
+                left: '15%',
+                animation: 'particleFloat1 12s ease-in-out infinite',
+                boxShadow: '0 0 10px rgba(0, 255, 209, 0.8)'
+              }} />
+
+              <div className="particle particle-2" style={{
+                position: 'absolute',
+                width: '3px',
+                height: '3px',
+                borderRadius: '50%',
+                background: 'rgba(135, 206, 235, 0.9)',
+                top: '60%',
+                right: '20%',
+                animation: 'particleFloat2 15s ease-in-out infinite',
+                boxShadow: '0 0 8px rgba(135, 206, 235, 0.8)'
+              }} />
+
+              <div className="particle particle-3" style={{
+                position: 'absolute',
+                width: '5px',
+                height: '5px',
+                borderRadius: '50%',
+                background: 'rgba(0, 191, 255, 0.7)',
+                top: '80%',
+                left: '30%',
+                animation: 'particleFloat3 10s ease-in-out infinite',
+                boxShadow: '0 0 12px rgba(0, 191, 255, 0.7)'
+              }} />
+
+              <div className="particle particle-4" style={{
+                position: 'absolute',
+                width: '2px',
+                height: '2px',
+                borderRadius: '50%',
+                background: 'rgba(0, 255, 209, 1)',
+                top: '35%',
+                right: '10%',
+                animation: 'particleFloat4 14s ease-in-out infinite',
+                boxShadow: '0 0 6px rgba(0, 255, 209, 1)'
+              }} />
+
+              {/* Dynamic Ripples */}
+              <div 
+                className="dynamic-ripple-1"
                 style={{
                   position: 'absolute',
                   top: '50%',
@@ -196,10 +314,26 @@ const HeroSection = () => {
                   width: '0px',
                   height: '0px',
                   borderRadius: '50%',
-                  border: '2px solid rgba(0, 255, 209, 0.7)',
+                  border: '2px solid rgba(0, 255, 209, 0.6)',
                   transform: 'translate(-50%, -50%)',
-                  pointerEvents: 'none',
-                  opacity: 0
+                  animation: 'dynamicRipple 8s ease-out infinite',
+                  pointerEvents: 'none'
+                }}
+              />
+
+              <div 
+                className="dynamic-ripple-2"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  width: '0px',
+                  height: '0px',
+                  borderRadius: '50%',
+                  border: '1px solid rgba(135, 206, 235, 0.4)',
+                  transform: 'translate(-50%, -50%)',
+                  animation: 'dynamicRipple 8s ease-out infinite 2s',
+                  pointerEvents: 'none'
                 }}
               />
             </div>
