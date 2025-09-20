@@ -32,7 +32,7 @@ const Footer = () => {
                 marginBottom: '24px',
                 lineHeight: '1.6'
               }}>
-                Sci-fi prototyping for cross-industry breakthroughs. 
+                Scientific Foresight for Cross-Industry Breakthroughs. 
                 We create magazines from the future so you can own your story in tomorrow's world.
               </p>
               
