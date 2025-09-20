@@ -243,7 +243,7 @@ const Footer = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <MapPin size={16} color="var(--brand-primary)" />
                   <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    Global • Remote-First
+                    Global • Remote–First
                   </span>
                 </div>
               </div>
