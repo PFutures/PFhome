@@ -123,15 +123,18 @@ backend:
 frontend:
   - task: "Urban Tomorrow magazine cover display"
     implemented: true
-    working: "NA"
-    file: "mock.js"
+    working: true
+    file: "PortfolioSection.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Mock.js already contains the updated image URL. Frontend should display new cover."
+      - working: true
+        agent: "testing"
+        comment: "✅ VERIFIED: Urban Tomorrow magazine cover image successfully updated and displaying correctly. Fixed critical bug where frontend was using 'magazine.coverImage' (camelCase) but API returns 'cover_image' (snake_case). After fix, confirmed customer-assets image URL is being loaded: https://customer-assets.emergentagent.com/job_future-vision-6/artifacts/v4ds5j7a_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp. All 3 magazines displaying correctly with proper titles, descriptions, year badges, and industry tags. Modal functionality working. Portfolio section fully functional."
 
 metadata:
   created_by: "main_agent"
