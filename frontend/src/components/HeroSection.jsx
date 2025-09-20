@@ -38,8 +38,8 @@ const HeroSection = () => {
                 maxWidth: '600px',
                 color: 'var(--text-secondary)'
               }}>
-                Imagine holding a magazine from 2040. We create literal magazines from the future, 
-                written as if your company's breakthroughs already happened. The future isn't vague anymore—it's tangible.
+                Imagine holding a magazine from 2040. We write your breakthroughs as if they've already happened. 
+                Commission your own magazine of tomorrow – because leadership is sensing where new opportunities emerge.
               </p>
               
               <p className="body-medium" style={{ 
