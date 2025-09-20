@@ -449,6 +449,77 @@ body {
   }
 }
 
+@keyframes networkPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes centralPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@keyframes connectionFlow {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: 100 0;
+  }
+}
+
+/* Network Element Hover Effects */
+.network-element:hover {
+  transform: translateY(-8px) scale(1.05) !important;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 255, 209, 0.4);
+  border-color: var(--brand-primary);
+  background: linear-gradient(135deg, 
+    var(--bg-secondary) 0%, 
+    rgba(0, 255, 209, 0.1) 100%
+  ) !important;
+  z-index: 20 !important;
+}
+
+.network-element:hover .icon {
+  transform: scale(1.2);
+  color: var(--brand-primary);
+}
+
+/* Connection animations */
+.connection-path {
+  stroke-dasharray: 10 5;
+  animation: connectionFlow 3s linear infinite;
+}
+
+.cross-connection {
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.network-element:hover ~ svg .cross-connection,
+.network-element:hover + svg .cross-connection {
+  opacity: 0.6;
+}
+
+/* Flow particle animation */
+.flow-particle {
+  opacity: 0.8;
+}
+
 /* Enhanced hover effects */
 .spectacular-sphere-container {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
