@@ -97,7 +97,7 @@ services_data = [
         "title": "Cross-Industry Innovation Mapping",
         "description": "Identify unexpected partnerships and product opportunities across sector boundaries",
         "features": ["Discipline convergence analysis", "Opportunity identification", "Partnership strategy", "Market creation insights"],
-        "timeframe": "4-6 weeks", 
+        "timeframe": "4–6 weeks", 
         "ideal_for": "Organizations looking beyond traditional industry limits"
     },
     {
