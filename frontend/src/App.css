@@ -276,20 +276,51 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
 }
 
-/* HYPERREALISTIC EARTH ANIMATIONS */
+/* TRUE 3D GLOBE ROTATION ANIMATIONS */
 
-@keyframes earthRotate {
+@keyframes trueGlobeRotate {
   0% {
+    transform: rotateX(15deg) rotateY(0deg);
     background-position: 0% center, 0% center, 0% center;
   }
+  25% {
+    transform: rotateX(15deg) rotateY(90deg);
+    background-position: 25% center, 25% center, 25% center;
+  }
+  50% {
+    transform: rotateX(15deg) rotateY(180deg);
+    background-position: 50% center, 50% center, 50% center;
+  }
+  75% {
+    transform: rotateX(15deg) rotateY(270deg);
+    background-position: 75% center, 75% center, 75% center;
+  }
   100% {
-    background-position: 400% center, 100% center, 200% center;
+    transform: rotateX(15deg) rotateY(360deg);
+    background-position: 100% center, 100% center, 100% center;
+  }
+}
+
+@keyframes cloudRotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes cityLightsRotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
 @keyframes earthPulse {
   0%, 100% {
-    transform: rotateX(15deg) rotateY(-10deg) scale(1);
     box-shadow: 
       inset -120px -120px 200px rgba(0, 0, 0, 0.9),
       inset 60px 60px 120px rgba(255, 255, 255, 0.15),
@@ -298,7 +329,6 @@ body {
       0 30px 60px rgba(0, 0, 0, 0.7);
   }
   50% {
-    transform: rotateX(15deg) rotateY(-10deg) scale(1.02);
     box-shadow: 
       inset -120px -120px 200px rgba(0, 0, 0, 0.7),
       inset 60px 60px 120px rgba(255, 255, 255, 0.25),
