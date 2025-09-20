@@ -158,6 +158,7 @@ test_plan:
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
+  completion_status: "All pending tasks completed successfully"
 
 agent_communication:
   - agent: "main"
