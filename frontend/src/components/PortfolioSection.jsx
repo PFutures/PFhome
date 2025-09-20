@@ -107,11 +107,26 @@ const PortfolioSection = () => {
                 {/* Magazine Cover */}
                 <div style={{ 
                   height: '300px',
-                  backgroundImage: `url(${magazine.cover_image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  position: 'relative'
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}>
+                  <img 
+                    src={magazine.cover_image}
+                    alt={`${magazine.title} cover`}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center'
+                    }}
+                    onError={(e) => {
+                      // Fallback to a placeholder if image fails to load
+                      e.target.style.backgroundColor = 'var(--bg-secondary)';
+                      e.target.style.display = 'none';
+                      e.target.parentElement.style.backgroundColor = 'var(--bg-secondary)';
+                      e.target.parentElement.style.border = '2px dashed var(--border-subtle)';
+                    }}
+                  />
                   <div style={{
                     position: 'absolute',
                     top: '16px',
