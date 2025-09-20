@@ -85,13 +85,14 @@ const AboutSection = () => {
               }} />
             </h3>
             
-            {/* Modern Grid Layout */}
+            {/* Compact 2x2 Square Layout */}
             <div style={{ 
-              maxWidth: '1400px',
+              maxWidth: '900px',
               margin: '0 auto',
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-              gap: '40px',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gridTemplateRows: 'repeat(2, 1fr)',
+              gap: '30px',
               padding: '0 20px'
             }}>
               
