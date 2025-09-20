@@ -108,13 +108,16 @@ const AboutSection = () => {
                       )
                     `,
                     border: '1px solid rgba(0, 255, 209, 0.2)',
-                    borderRadius: '20px',
-                    padding: '40px 30px',
+                    borderRadius: '16px',
+                    padding: '30px 25px',
                     position: 'relative',
                     overflow: 'hidden',
                     transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
                     cursor: 'pointer',
-                    animation: `cardSlideIn 0.6s ease-out ${index * 0.15}s both`
+                    animation: `cardSlideIn 0.6s ease-out ${index * 0.15}s both`,
+                    minHeight: '280px',
+                    display: 'flex',
+                    flexDirection: 'column'
                   }}
                 >
                   {/* Background Pattern */}
