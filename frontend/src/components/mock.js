@@ -6,7 +6,7 @@ export const mockMagazines = [
     title: "TechFlow Quarterly - 2040 Edition",
     year: "2040",
     description: "How your company's AI-driven manufacturing revolution reshaped global supply chains",
-    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=600&fit=crop",
+    coverImage: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/5uwco9ex_7cf3ac18-66c5-4c1b-8d91-54759070eea1.webp",
     industries: ["Manufacturing", "AI", "Supply Chain"],
     preview: "In this timeline, your breakthrough in quantum-enhanced AI transformed manufacturing from reactive to predictive, creating $2.3B in new revenue streams..."
   },
