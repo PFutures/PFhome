@@ -438,6 +438,17 @@ body {
   }
 }
 
+@keyframes gentleGlow {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
 /* Enhanced hover effects */
 .spectacular-sphere-container {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
@@ -455,6 +466,18 @@ body {
 .spectacular-sphere-container:hover .energy-ring-inner {
   animation-duration: 4s !important;
   opacity: 1;
+}
+
+/* Method Element Hover Effects */
+.method-element:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+  box-shadow: 0 0 30px rgba(0, 255, 209, 0.3);
+  border-color: var(--brand-primary);
+  z-index: 10;
+}
+
+.method-element {
+  z-index: 5;
 }
 
 /* Glowing effects */
