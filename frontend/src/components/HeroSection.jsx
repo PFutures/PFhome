@@ -177,7 +177,7 @@ const HeroSection = () => {
                 }}
               />
 
-              {/* Main Earth Sphere - Hyperrealistic */}
+              {/* Main Earth Sphere - True 3D Rotating Globe */}
               <div 
                 className="main-sphere"
                 style={{
@@ -200,9 +200,9 @@ const HeroSection = () => {
                     ),
                     url('https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x5400x2700.jpg')
                   `,
-                  backgroundSize: '600% 300%',
+                  backgroundSize: '200% 100%',
                   backgroundPosition: 'center center',
-                  backgroundRepeat: 'no-repeat',
+                  backgroundRepeat: 'repeat-x',
                   boxShadow: `
                     inset -120px -120px 200px rgba(0, 0, 0, 0.9),
                     inset 60px 60px 120px rgba(255, 255, 255, 0.15),
@@ -210,10 +210,11 @@ const HeroSection = () => {
                     0 0 200px rgba(0, 255, 209, 0.4),
                     0 30px 60px rgba(0, 0, 0, 0.7)
                   `,
-                  animation: 'earthRotate 30s linear infinite, earthPulse 25s ease-in-out infinite',
+                  animation: 'trueGlobeRotate 60s linear infinite, earthPulse 25s ease-in-out infinite',
                   transition: 'all 0.8s cubic-bezier(0.23, 1, 0.320, 1)',
                   overflow: 'hidden',
-                  transform: 'rotateX(15deg) rotateY(-10deg)'
+                  transform: 'rotateX(15deg)',
+                  transformStyle: 'preserve-3d'
                 }}
               >
                 {/* Earth's Atmosphere Layer */}
@@ -236,66 +237,54 @@ const HeroSection = () => {
                   animation: 'atmosphereGlow 8s ease-in-out infinite alternate'
                 }} />
 
-                {/* Realistic Cloud Layer */}
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  background: `
-                    radial-gradient(ellipse 140px 70px at 15% 30%, rgba(255,255,255,0.6) 0%, transparent 70%),
-                    radial-gradient(ellipse 100px 50px at 65% 25%, rgba(255,255,255,0.5) 0%, transparent 70%),
-                    radial-gradient(ellipse 120px 60px at 35% 65%, rgba(255,255,255,0.55) 0%, transparent 70%),
-                    radial-gradient(ellipse 80px 40px at 85% 15%, rgba(255,255,255,0.4) 0%, transparent 70%),
-                    radial-gradient(ellipse 110px 55px at 10% 80%, rgba(255,255,255,0.5) 0%, transparent 70%),
-                    radial-gradient(ellipse 90px 45px at 75% 75%, rgba(255,255,255,0.45) 0%, transparent 70%)
-                  `,
-                  opacity: 0.8,
-                  animation: 'realisticClouds 180s linear infinite',
-                  pointerEvents: 'none'
-                }} />
+                {/* Realistic Cloud Layer - Rotating with Globe */}
+                <div 
+                  className="cloud-layer"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    background: `
+                      radial-gradient(ellipse 140px 70px at 15% 30%, rgba(255,255,255,0.6) 0%, transparent 70%),
+                      radial-gradient(ellipse 100px 50px at 65% 25%, rgba(255,255,255,0.5) 0%, transparent 70%),
+                      radial-gradient(ellipse 120px 60px at 35% 65%, rgba(255,255,255,0.55) 0%, transparent 70%),
+                      radial-gradient(ellipse 80px 40px at 85% 15%, rgba(255,255,255,0.4) 0%, transparent 70%),
+                      radial-gradient(ellipse 110px 55px at 10% 80%, rgba(255,255,255,0.5) 0%, transparent 70%),
+                      radial-gradient(ellipse 90px 45px at 75% 75%, rgba(255,255,255,0.45) 0%, transparent 70%)
+                    `,
+                    opacity: 0.8,
+                    animation: 'cloudRotate 80s linear infinite',
+                    pointerEvents: 'none',
+                    transform: 'rotateY(0deg)'
+                  }}
+                />
 
-                {/* Earth's Terminator Line (Day/Night) */}
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: '60%',
-                  width: '40%',
-                  height: '100%',
-                  borderRadius: '0 50% 50% 0',
-                  background: `
-                    linear-gradient(to right, 
-                      transparent 0%, 
-                      rgba(0, 0, 0, 0.3) 20%, 
-                      rgba(0, 0, 0, 0.6) 60%, 
-                      rgba(0, 0, 0, 0.8) 100%
-                    )
-                  `,
-                  pointerEvents: 'none',
-                  animation: 'terminatorMove 200s linear infinite'
-                }} />
-
-                {/* City Lights on Night Side */}
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  background: `
-                    radial-gradient(ellipse 4px 2px at 25% 45%, rgba(255, 255, 150, 0.8) 0%, transparent 70%),
-                    radial-gradient(ellipse 3px 2px at 30% 50%, rgba(255, 255, 100, 0.7) 0%, transparent 70%),
-                    radial-gradient(ellipse 2px 1px at 35% 40%, rgba(255, 255, 200, 0.6) 0%, transparent 70%),
-                    radial-gradient(ellipse 5px 3px at 28% 60%, rgba(255, 255, 150, 0.5) 0%, transparent 70%),
-                    radial-gradient(ellipse 3px 2px at 32% 35%, rgba(255, 255, 180, 0.6) 0%, transparent 70%)
-                  `,
-                  opacity: 0.7,
-                  animation: 'cityLights 150s linear infinite',
-                  pointerEvents: 'none'
-                }} />
+                {/* City Lights Layer - Rotating with Globe */}
+                <div 
+                  className="city-lights-layer"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    background: `
+                      radial-gradient(ellipse 4px 2px at 25% 45%, rgba(255, 255, 150, 0.8) 0%, transparent 70%),
+                      radial-gradient(ellipse 3px 2px at 30% 50%, rgba(255, 255, 100, 0.7) 0%, transparent 70%),
+                      radial-gradient(ellipse 2px 1px at 35% 40%, rgba(255, 255, 200, 0.6) 0%, transparent 70%),
+                      radial-gradient(ellipse 5px 3px at 28% 60%, rgba(255, 255, 150, 0.5) 0%, transparent 70%),
+                      radial-gradient(ellipse 3px 2px at 32% 35%, rgba(255, 255, 180, 0.6) 0%, transparent 70%)
+                    `,
+                    opacity: 0.7,
+                    animation: 'cityLightsRotate 90s linear infinite',
+                    pointerEvents: 'none',
+                    transform: 'rotateY(0deg)'
+                  }}
+                />
 
                 {/* Hyperrealistic Sun Reflection */}
                 <div style={{
