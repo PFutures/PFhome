@@ -88,7 +88,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right side - Custom Earth Ball */}
+          {/* Right side - Realistic Earth Globe */}
           <div style={{ 
             flex: 1,
             height: '700px',
@@ -99,57 +99,53 @@ const HeroSection = () => {
             position: 'relative'
           }}>
             <div 
-              className="earth-ball"
+              className="earth-globe"
               style={{
                 width: '400px',
                 height: '400px',
                 borderRadius: '50%',
                 background: `
-                  radial-gradient(circle at 30% 30%, 
-                    #4a90e2 0%, 
-                    #2e5c8a 25%, 
-                    #1e3a5f 50%, 
-                    #0f1f3d 75%, 
-                    #000814 100%
-                  ),
-                  conic-gradient(from 0deg, 
-                    #4a90e2, #2e8b57, #8fbc8f, #4a90e2, 
-                    #2e8b57, #4a90e2, #2e5c8a
-                  )
+                  radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                  url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1024px-The_Blue_Marble_%28remastered%29.jpg')
                 `,
-                backgroundBlendMode: 'multiply',
+                backgroundSize: '120% 120%',
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat',
                 boxShadow: `
-                  inset -40px -40px 80px rgba(0, 8, 20, 0.8),
-                  inset 20px 20px 60px rgba(74, 144, 226, 0.3),
+                  inset -80px -80px 120px rgba(0, 0, 0, 0.8),
+                  inset 40px 40px 80px rgba(255, 255, 255, 0.1),
                   0 0 100px rgba(0, 255, 209, 0.4),
-                  0 0 200px rgba(0, 255, 209, 0.2)
+                  0 0 200px rgba(0, 255, 209, 0.2),
+                  0 20px 40px rgba(0, 0, 0, 0.4)
                 `,
                 cursor: 'pointer',
                 transition: 'all 0.6s cubic-bezier(0.23, 1, 0.320, 1)',
                 position: 'relative',
                 transform: 'perspective(1000px) rotateX(10deg) rotateY(-15deg)',
-                animation: 'earthRotate 20s linear infinite',
+                animation: 'earthRotate 60s linear infinite',
                 overflow: 'hidden'
               }}
               onMouseEnter={(e) => {
-                e.target.style.transform = 'perspective(1000px) rotateX(5deg) rotateY(-10deg) scale(1.05)';
+                e.target.style.transform = 'perspective(1000px) rotateX(5deg) rotateY(-10deg) scale(1.1)';
                 e.target.style.boxShadow = `
-                  inset -40px -40px 80px rgba(0, 8, 20, 0.6),
-                  inset 20px 20px 60px rgba(74, 144, 226, 0.5),
+                  inset -80px -80px 120px rgba(0, 0, 0, 0.6),
+                  inset 40px 40px 80px rgba(255, 255, 255, 0.2),
                   0 0 120px rgba(0, 255, 209, 0.6),
-                  0 0 240px rgba(0, 255, 209, 0.3)
+                  0 0 240px rgba(0, 255, 209, 0.3),
+                  0 25px 50px rgba(0, 0, 0, 0.5)
                 `;
-                e.target.style.filter = 'brightness(1.2) contrast(1.1)';
+                e.target.style.filter = 'brightness(1.3) contrast(1.2) saturate(1.1)';
               }}
               onMouseLeave={(e) => {
                 e.target.style.transform = 'perspective(1000px) rotateX(10deg) rotateY(-15deg) scale(1)';
                 e.target.style.boxShadow = `
-                  inset -40px -40px 80px rgba(0, 8, 20, 0.8),
-                  inset 20px 20px 60px rgba(74, 144, 226, 0.3),
+                  inset -80px -80px 120px rgba(0, 0, 0, 0.8),
+                  inset 40px 40px 80px rgba(255, 255, 255, 0.1),
                   0 0 100px rgba(0, 255, 209, 0.4),
-                  0 0 200px rgba(0, 255, 209, 0.2)
+                  0 0 200px rgba(0, 255, 209, 0.2),
+                  0 20px 40px rgba(0, 0, 0, 0.4)
                 `;
-                e.target.style.filter = 'brightness(1) contrast(1)';
+                e.target.style.filter = 'brightness(1) contrast(1) saturate(1)';
               }}
               onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();
@@ -158,18 +154,39 @@ const HeroSection = () => {
                 const mouseX = e.clientX - centerX;
                 const mouseY = e.clientY - centerY;
                 
-                const rotateX = (mouseY / rect.height) * -20;
-                const rotateY = (mouseX / rect.width) * 20;
+                const rotateX = (mouseY / rect.height) * -30;
+                const rotateY = (mouseX / rect.width) * 30;
                 
                 e.target.style.transform = `
                   perspective(1000px) 
                   rotateX(${10 + rotateX}deg) 
                   rotateY(${-15 + rotateY}deg) 
-                  scale(1.05)
+                  scale(1.1)
                 `;
+                
+                // Create water ripple effect on mouse movement
+                const ripple = e.target.querySelector('.water-ripple');
+                if (ripple) {
+                  ripple.style.animation = 'none';
+                  ripple.offsetHeight; // Trigger reflow
+                  ripple.style.animation = 'ripple 2s ease-out';
+                }
               }}
             >
-              {/* Continents overlay */}
+              {/* Atmospheric glow layer */}
+              <div style={{
+                position: 'absolute',
+                top: '-15px',
+                left: '-15px',
+                width: 'calc(100% + 30px)',
+                height: 'calc(100% + 30px)',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle, transparent 65%, rgba(135, 206, 235, 0.4) 70%, rgba(0, 255, 209, 0.3) 80%, transparent 100%)',
+                pointerEvents: 'none',
+                animation: 'atmosphereGlow 4s ease-in-out infinite alternate'
+              }} />
+              
+              {/* Cloud layer */}
               <div style={{
                 position: 'absolute',
                 top: 0,
@@ -178,24 +195,13 @@ const HeroSection = () => {
                 height: '100%',
                 borderRadius: '50%',
                 background: `
-                  radial-gradient(ellipse 60px 40px at 25% 35%, #2e8b57 0%, transparent 50%),
-                  radial-gradient(ellipse 80px 60px at 70% 25%, #228b22 0%, transparent 50%),
-                  radial-gradient(ellipse 50px 70px at 45% 65%, #2e8b57 0%, transparent 50%),
-                  radial-gradient(ellipse 40px 30px at 80% 70%, #228b22 0%, transparent 50%)
+                  radial-gradient(ellipse 80px 40px at 20% 30%, rgba(255,255,255,0.3) 0%, transparent 60%),
+                  radial-gradient(ellipse 60px 30px at 70% 40%, rgba(255,255,255,0.2) 0%, transparent 60%),
+                  radial-gradient(ellipse 50px 25px at 45% 70%, rgba(255,255,255,0.25) 0%, transparent 60%),
+                  radial-gradient(ellipse 40px 20px at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 60%)
                 `,
-                opacity: 0.7,
-                animation: 'continentShift 25s linear infinite'
-              }} />
-              
-              {/* Atmospheric glow */}
-              <div style={{
-                position: 'absolute',
-                top: '-10px',
-                left: '-10px',
-                width: 'calc(100% + 20px)',
-                height: 'calc(100% + 20px)',
-                borderRadius: '50%',
-                background: 'radial-gradient(circle, transparent 70%, rgba(0, 255, 209, 0.3) 100%)',
+                opacity: 0.6,
+                animation: 'cloudDrift 40s linear infinite',
                 pointerEvents: 'none'
               }} />
               
@@ -209,12 +215,24 @@ const HeroSection = () => {
                   width: '0px',
                   height: '0px',
                   borderRadius: '50%',
-                  border: '2px solid rgba(0, 255, 209, 0.6)',
+                  border: '2px solid rgba(0, 255, 209, 0.8)',
                   transform: 'translate(-50%, -50%)',
-                  pointerEvents: 'none',
-                  animation: 'ripple 3s infinite'
+                  pointerEvents: 'none'
                 }}
               />
+              
+              {/* Subtle highlight for sphere shape */}
+              <div style={{
+                position: 'absolute',
+                top: '15%',
+                left: '25%',
+                width: '30%',
+                height: '30%',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%)',
+                pointerEvents: 'none',
+                filter: 'blur(20px)'
+              }} />
             </div>
           </div>
         </div>
