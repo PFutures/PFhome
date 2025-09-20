@@ -101,3 +101,49 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Update Urban Tomorrow magazine cover with user-uploaded image and complete HOW WE WORK section design"
+
+backend:
+  - task: "Update Urban Tomorrow magazine cover image URL"
+    implemented: true
+    working: "NA"
+    file: "seed_database.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Updated cover_image URL in seed_database.py from unsplash to customer-assets URL. Mock.js was already updated."
+
+frontend:
+  - task: "Urban Tomorrow magazine cover display"
+    implemented: true
+    working: "NA"
+    file: "mock.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Mock.js already contains the updated image URL. Frontend should display new cover."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Update Urban Tomorrow magazine cover image URL"
+    - "Urban Tomorrow magazine cover display"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Updated Urban Tomorrow magazine cover image URL in both mock.js (already done) and seed_database.py. Need to run seed script and test backend API and frontend display."
