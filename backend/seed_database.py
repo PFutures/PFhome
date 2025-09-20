@@ -44,7 +44,7 @@ magazines_data = [
         "title": "Urban Tomorrow - 2038 Edition",
         "year": "2038", 
         "description": "Self-healing infrastructure materials from your company now rebuilding cities worldwide",
-        "cover_image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=600&fit=crop",
+        "cover_image": "https://customer-assets.emergentagent.com/job_future-vision-6/artifacts/v4ds5j7a_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
         "industries": ["Materials Science", "Urban Planning", "Infrastructure"],
         "preview": "Your self-healing concrete technology became the foundation for resilient cities, preventing $500B in infrastructure maintenance costs..."
     }
