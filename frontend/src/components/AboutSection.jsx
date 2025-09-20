@@ -157,9 +157,9 @@ const AboutSection = () => {
                   
                   {/* Icon Container */}
                   <div style={{
-                    width: '80px',
-                    height: '80px',
-                    borderRadius: '16px',
+                    width: '60px',
+                    height: '60px',
+                    borderRadius: '12px',
                     background: `
                       linear-gradient(135deg, 
                         rgba(0, 255, 209, 0.15) 0%, 
@@ -171,7 +171,7 @@ const AboutSection = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     color: 'var(--brand-primary)',
-                    marginBottom: '30px',
+                    marginBottom: '20px',
                     position: 'relative',
                     transition: 'all 0.4s ease'
                   }} className="process-icon">
@@ -182,13 +182,15 @@ const AboutSection = () => {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      borderRadius: '16px',
+                      borderRadius: '12px',
                       background: 'rgba(0, 255, 209, 0.2)',
                       opacity: 0,
                       transition: 'opacity 0.3s ease',
                       animation: `iconPulse 3s ease-in-out infinite ${index * 0.5}s`
                     }} />
-                    {area.icon}
+                    <div style={{ transform: 'scale(0.8)' }}>
+                      {area.icon}
+                    </div>
                   </div>
                   
                   {/* Title */}
