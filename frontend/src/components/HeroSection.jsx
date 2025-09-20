@@ -88,7 +88,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right side - Spectacular Animated Sphere */}
+          {/* Right side - Original Spectacular Animated Sphere */}
           <div style={{ 
             flex: 1,
             height: '700px',
@@ -177,7 +177,7 @@ const HeroSection = () => {
                 }}
               />
 
-              {/* Main Earth Sphere - True 3D Rotating Globe */}
+              {/* Main Sphere - Original Beautiful Version */}
               <div 
                 className="main-sphere"
                 style={{
@@ -189,126 +189,35 @@ const HeroSection = () => {
                   left: '50px',
                   background: `
                     radial-gradient(circle at 25% 25%, 
-                      rgba(255, 255, 255, 0.4) 0%, 
-                      rgba(255, 255, 255, 0.1) 15%, 
-                      transparent 35%
+                      rgba(0, 255, 209, 0.9) 0%, 
+                      rgba(0, 191, 255, 0.8) 20%, 
+                      rgba(30, 144, 255, 0.7) 40%, 
+                      rgba(0, 100, 200, 0.8) 60%, 
+                      rgba(0, 50, 150, 0.9) 80%, 
+                      rgba(0, 20, 100, 1) 100%
                     ),
-                    radial-gradient(circle at 75% 75%, 
-                      rgba(0, 0, 0, 0.8) 0%, 
-                      rgba(0, 0, 0, 0.4) 25%, 
-                      transparent 50%
+                    radial-gradient(circle at 70% 30%, 
+                      rgba(255, 255, 255, 0.3) 0%, 
+                      transparent 30%
                     ),
-                    url('https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x5400x2700.jpg')
+                    radial-gradient(circle at 30% 70%, 
+                      rgba(0, 255, 209, 0.2) 0%, 
+                      transparent 40%
+                    )
                   `,
-                  backgroundSize: '200% 100%',
-                  backgroundPosition: 'center center',
-                  backgroundRepeat: 'repeat-x',
                   boxShadow: `
-                    inset -120px -120px 200px rgba(0, 0, 0, 0.9),
-                    inset 60px 60px 120px rgba(255, 255, 255, 0.15),
+                    inset -80px -80px 160px rgba(0, 0, 0, 0.6),
+                    inset 40px 40px 80px rgba(255, 255, 255, 0.1),
                     0 0 120px rgba(0, 255, 209, 0.8),
                     0 0 200px rgba(0, 255, 209, 0.4),
                     0 30px 60px rgba(0, 0, 0, 0.7)
                   `,
-                  animation: 'trueGlobeRotate 60s linear infinite, earthPulse 25s ease-in-out infinite',
+                  animation: 'spherePulse 20s ease-in-out infinite, sphereRotate 25s linear infinite',
                   transition: 'all 0.8s cubic-bezier(0.23, 1, 0.320, 1)',
-                  overflow: 'hidden',
-                  transform: 'rotateX(15deg)',
-                  transformStyle: 'preserve-3d'
+                  overflow: 'hidden'
                 }}
               >
-                {/* Earth's Atmosphere Layer */}
-                <div style={{
-                  position: 'absolute',
-                  top: '-8px',
-                  left: '-8px',
-                  width: 'calc(100% + 16px)',
-                  height: 'calc(100% + 16px)',
-                  borderRadius: '50%',
-                  background: `
-                    radial-gradient(circle, 
-                      transparent 70%, 
-                      rgba(135, 206, 235, 0.3) 75%, 
-                      rgba(0, 191, 255, 0.2) 85%, 
-                      transparent 100%
-                    )
-                  `,
-                  pointerEvents: 'none',
-                  animation: 'atmosphereGlow 8s ease-in-out infinite alternate'
-                }} />
-
-                {/* Realistic Cloud Layer - Rotating with Globe */}
-                <div 
-                  className="cloud-layer"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '50%',
-                    background: `
-                      radial-gradient(ellipse 140px 70px at 15% 30%, rgba(255,255,255,0.6) 0%, transparent 70%),
-                      radial-gradient(ellipse 100px 50px at 65% 25%, rgba(255,255,255,0.5) 0%, transparent 70%),
-                      radial-gradient(ellipse 120px 60px at 35% 65%, rgba(255,255,255,0.55) 0%, transparent 70%),
-                      radial-gradient(ellipse 80px 40px at 85% 15%, rgba(255,255,255,0.4) 0%, transparent 70%),
-                      radial-gradient(ellipse 110px 55px at 10% 80%, rgba(255,255,255,0.5) 0%, transparent 70%),
-                      radial-gradient(ellipse 90px 45px at 75% 75%, rgba(255,255,255,0.45) 0%, transparent 70%)
-                    `,
-                    opacity: 0.8,
-                    animation: 'cloudRotate 80s linear infinite',
-                    pointerEvents: 'none',
-                    transform: 'rotateY(0deg)'
-                  }}
-                />
-
-                {/* City Lights Layer - Rotating with Globe */}
-                <div 
-                  className="city-lights-layer"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '50%',
-                    background: `
-                      radial-gradient(ellipse 4px 2px at 25% 45%, rgba(255, 255, 150, 0.8) 0%, transparent 70%),
-                      radial-gradient(ellipse 3px 2px at 30% 50%, rgba(255, 255, 100, 0.7) 0%, transparent 70%),
-                      radial-gradient(ellipse 2px 1px at 35% 40%, rgba(255, 255, 200, 0.6) 0%, transparent 70%),
-                      radial-gradient(ellipse 5px 3px at 28% 60%, rgba(255, 255, 150, 0.5) 0%, transparent 70%),
-                      radial-gradient(ellipse 3px 2px at 32% 35%, rgba(255, 255, 180, 0.6) 0%, transparent 70%)
-                    `,
-                    opacity: 0.7,
-                    animation: 'cityLightsRotate 90s linear infinite',
-                    pointerEvents: 'none',
-                    transform: 'rotateY(0deg)'
-                  }}
-                />
-
-                {/* Hyperrealistic Sun Reflection */}
-                <div style={{
-                  position: 'absolute',
-                  top: '10%',
-                  left: '15%',
-                  width: '45%',
-                  height: '45%',
-                  borderRadius: '50%',
-                  background: `
-                    radial-gradient(ellipse at center, 
-                      rgba(255, 255, 255, 0.9) 0%, 
-                      rgba(255, 255, 255, 0.6) 20%, 
-                      rgba(255, 255, 255, 0.3) 40%, 
-                      rgba(255, 255, 255, 0.1) 60%, 
-                      transparent 80%
-                    )
-                  `,
-                  filter: 'blur(12px)',
-                  animation: 'sunReflection 30s ease-in-out infinite',
-                  pointerEvents: 'none'
-                }} />
-
-                {/* Ocean Shimmer Effect */}
+                {/* Liquid Surface Effect */}
                 <div style={{
                   position: 'absolute',
                   top: 0,
@@ -317,13 +226,32 @@ const HeroSection = () => {
                   height: '100%',
                   borderRadius: '50%',
                   background: `
-                    radial-gradient(ellipse 60px 30px at 40% 35%, rgba(0, 191, 255, 0.3) 0%, transparent 70%),
-                    radial-gradient(ellipse 80px 40px at 60% 55%, rgba(0, 206, 209, 0.2) 0%, transparent 70%),
-                    radial-gradient(ellipse 50px 25px at 25% 70%, rgba(135, 206, 235, 0.25) 0%, transparent 70%)
+                    radial-gradient(ellipse 120px 60px at 30% 40%, rgba(0, 255, 209, 0.4) 0%, transparent 70%),
+                    radial-gradient(ellipse 80px 40px at 70% 60%, rgba(135, 206, 235, 0.3) 0%, transparent 70%),
+                    radial-gradient(ellipse 100px 50px at 50% 20%, rgba(0, 191, 255, 0.3) 0%, transparent 70%)
                   `,
-                  opacity: 0.6,
-                  animation: 'oceanShimmer 25s ease-in-out infinite',
-                  pointerEvents: 'none'
+                  animation: 'liquidFlow 15s ease-in-out infinite',
+                  opacity: 0.7
+                }} />
+
+                {/* Specular Highlights */}
+                <div style={{
+                  position: 'absolute',
+                  top: '15%',
+                  left: '20%',
+                  width: '40%',
+                  height: '40%',
+                  borderRadius: '50%',
+                  background: `
+                    radial-gradient(circle, 
+                      rgba(255, 255, 255, 0.8) 0%, 
+                      rgba(255, 255, 255, 0.4) 30%, 
+                      rgba(0, 255, 209, 0.2) 60%, 
+                      transparent 100%
+                    )
+                  `,
+                  filter: 'blur(8px)',
+                  animation: 'specularMove 18s ease-in-out infinite'
                 }} />
               </div>
 
