@@ -75,43 +75,201 @@ const AboutSection = () => {
             </h3>
             
             <div style={{ 
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '40px',
-              maxWidth: '1200px',
-              margin: '0 auto'
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              maxWidth: '800px',
+              margin: '0 auto',
+              position: 'relative',
+              height: '600px'
             }}>
-              {convergenceAreas.map((area, index) => (
-                <div
-                  key={index}
-                  className="dark-hover"
-                  style={{
-                    background: 'var(--bg-secondary)',
-                    border: '1px solid var(--border-subtle)',
-                    padding: '40px',
-                    borderRadius: '0px',
-                    textAlign: 'center',
-                    transition: 'all 0.4s ease-in-out'
-                  }}
-                >
-                  <div style={{ 
-                    color: 'var(--brand-primary)', 
-                    marginBottom: '20px',
-                    display: 'flex',
-                    justifyContent: 'center'
-                  }}>
-                    {area.icon}
-                  </div>
-                  
-                  <h4 className="heading-3" style={{ marginBottom: '16px' }}>
-                    {area.title}
-                  </h4>
-                  
-                  <p className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    {area.description}
-                  </p>
+              {/* Central Hub */}
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '120px',
+                height: '120px',
+                borderRadius: '50%',
+                background: `
+                  radial-gradient(circle, 
+                    var(--brand-primary) 0%, 
+                    rgba(0, 255, 209, 0.3) 70%, 
+                    transparent 100%
+                  )
+                `,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 0 40px rgba(0, 255, 209, 0.4)',
+                animation: 'gentleGlow 3s ease-in-out infinite alternate'
+              }}>
+                <span style={{
+                  color: '#000000',
+                  fontWeight: '600',
+                  fontSize: '14px',
+                  textAlign: 'center'
+                }}>
+                  POLYMATHIC<br/>METHOD
+                </span>
+              </div>
+
+              {/* Element 1 - Top */}
+              <div
+                className="method-element"
+                style={{
+                  position: 'absolute',
+                  top: '0%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '200px',
+                  textAlign: 'center',
+                  background: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px',
+                  padding: '30px 20px',
+                  transition: 'all 0.4s ease-in-out'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Lightbulb size={28} />
                 </div>
-              ))}
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Future Design
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
+                  Making tomorrow's breakthroughs tangible today
+                </p>
+              </div>
+
+              {/* Element 2 - Right */}
+              <div
+                className="method-element"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  right: '0%',
+                  transform: 'translate(50%, -50%)',
+                  width: '200px',
+                  textAlign: 'center',
+                  background: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px',
+                  padding: '30px 20px',
+                  transition: 'all 0.4s ease-in-out'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Zap size={28} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Narrative Power
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
+                  Fiction that behaves like fact, stories that drive strategy
+                </p>
+              </div>
+
+              {/* Element 3 - Bottom */}
+              <div
+                className="method-element"
+                style={{
+                  position: 'absolute',
+                  bottom: '0%',
+                  left: '50%',
+                  transform: 'translate(-50%, 50%)',
+                  width: '200px',
+                  textAlign: 'center',
+                  background: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px',
+                  padding: '30px 20px',
+                  transition: 'all 0.4s ease-in-out'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Microscope size={28} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Science & Strategy
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
+                  Where peer-reviewed research meets business innovation
+                </p>
+              </div>
+
+              {/* Element 4 - Left */}
+              <div
+                className="method-element"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '0%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '200px',
+                  textAlign: 'center',
+                  background: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '0px',
+                  padding: '30px 20px',
+                  transition: 'all 0.4s ease-in-out'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Network size={28} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Cross-Sector Fusion
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
+                  Breaking silos to discover unexpected connections
+                </p>
+              </div>
+
+              {/* Connecting Lines */}
+              <svg style={{
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                pointerEvents: 'none',
+                zIndex: 0
+              }}>
+                <defs>
+                  <radialGradient id="lineGradient" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="rgba(0, 255, 209, 0.6)" />
+                    <stop offset="100%" stopColor="rgba(0, 255, 209, 0.1)" />
+                  </radialGradient>
+                </defs>
+                {/* Cross lines connecting all elements through center */}
+                <line x1="50%" y1="15%" x2="50%" y2="85%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" />
+                <line x1="15%" y1="50%" x2="85%" y2="50%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" />
+                {/* Diagonal connections */}
+                <line x1="35%" y1="35%" x2="65%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.3" />
+                <line x1="65%" y1="35%" x2="35%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.3" />
+              </svg>
             </div>
           </div>
           
