@@ -194,9 +194,9 @@ const AboutSection = () => {
                   </div>
                   
                   {/* Title */}
-                  <h4 className="heading-2" style={{ 
-                    marginBottom: '20px',
-                    fontSize: '24px',
+                  <h4 className="heading-3" style={{ 
+                    marginBottom: '15px',
+                    fontSize: '20px',
                     fontWeight: '600',
                     color: 'var(--text-primary)',
                     lineHeight: '1.3'
@@ -207,9 +207,10 @@ const AboutSection = () => {
                   {/* Description */}
                   <p className="body-medium" style={{ 
                     color: 'var(--text-secondary)',
-                    fontSize: '17px',
-                    lineHeight: '1.7',
-                    marginBottom: '25px'
+                    fontSize: '15px',
+                    lineHeight: '1.6',
+                    marginBottom: '0',
+                    flex: 1
                   }}>
                     {area.description}
                   </p>
