@@ -1,4 +1,5 @@
 import React from 'react';
+import Spline from '@splinetool/react-spline';
 import { ArrowRight, Calendar, Users } from 'lucide-react';
 
 const HeroSection = () => {
