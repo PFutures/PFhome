@@ -41,7 +41,7 @@ const AboutSection = () => {
               margin: '0 auto 40px auto',
               color: 'var(--text-secondary)'
             }}>
-              We design the next generation of products, partnerships, and markets — beyond industry borders.
+              We design the next generation of products, partnerships, and markets – beyond industry borders.
             </p>
             
             <div style={{ 
