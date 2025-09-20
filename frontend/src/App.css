@@ -276,7 +276,199 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
 }
 
-/* Simple but effective Earth Globe Animations */
+/* SPECTACULAR ANIMATED SPHERE - WOW EFFECTS */
+
+@keyframes energyRingRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spherePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 
+      inset -80px -80px 160px rgba(0, 0, 0, 0.6),
+      inset 40px 40px 80px rgba(255, 255, 255, 0.1),
+      0 0 120px rgba(0, 255, 209, 0.8),
+      0 0 200px rgba(0, 255, 209, 0.4),
+      0 30px 60px rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 
+      inset -80px -80px 160px rgba(0, 0, 0, 0.4),
+      inset 40px 40px 80px rgba(255, 255, 255, 0.2),
+      0 0 180px rgba(0, 255, 209, 1),
+      0 0 300px rgba(0, 255, 209, 0.6),
+      0 40px 80px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes sphereRotate {
+  0% {
+    background-position: 0% center, 0% center, 0% center;
+  }
+  100% {
+    background-position: 100% center, 50% center, 150% center;
+  }
+}
+
+@keyframes liquidFlow {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  33% {
+    transform: rotate(120deg) scale(1.1);
+    opacity: 0.9;
+  }
+  66% {
+    transform: rotate(240deg) scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+@keyframes specularMove {
+  0%, 100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(20%, -10%) scale(1.2);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-10%, 20%) scale(0.8);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(10%, -20%) scale(1.1);
+    opacity: 0.85;
+  }
+}
+
+@keyframes particleFloat1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(150px, -80px) scale(1.5);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(80px, 120px) scale(0.8);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(-100px, 60px) scale(1.2);
+    opacity: 0.9;
+  }
+}
+
+@keyframes particleFloat2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.7;
+  }
+  33% {
+    transform: translate(-120px, 90px) scale(1.3);
+    opacity: 1;
+  }
+  66% {
+    transform: translate(60px, -150px) scale(0.9);
+    opacity: 0.5;
+  }
+}
+
+@keyframes particleFloat3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(200px, -200px) scale(1.8);
+    opacity: 1;
+  }
+}
+
+@keyframes particleFloat4 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translate(-80px, -120px) scale(1.4);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(120px, 80px) scale(0.7);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translate(40px, -160px) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes dynamicRipple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  30% {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+  }
+  70% {
+    width: 400px;
+    height: 400px;
+    opacity: 0.3;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+/* Enhanced hover effects */
+.spectacular-sphere-container {
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.spectacular-sphere-container:hover .main-sphere {
+  animation-duration: 8s !important;
+}
+
+.spectacular-sphere-container:hover .particle {
+  animation-duration: 6s !important;
+}
+
+.spectacular-sphere-container:hover .energy-ring-outer,
+.spectacular-sphere-container:hover .energy-ring-inner {
+  animation-duration: 4s !important;
+  opacity: 1;
+}
+
+/* Glowing effects */
+.energy-ring-outer,
+.energy-ring-inner {
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
+
+.particle {
+  transition: all 0.3s ease;
+}
+
+/* Remove old animations */
 @keyframes slowEarthRotate {
   0% {
     background-position: 0% center;
@@ -311,16 +503,6 @@ body {
     height: 300px;
     opacity: 0;
   }
-}
-
-/* Water drop physics hover effects */
-.earth-globe-3d:hover .simple-ripple {
-  animation: simpleRipple 2s ease-out;
-  opacity: 1;
-}
-
-.earth-globe-3d:hover {
-  animation-play-state: paused;
 }
 
 /* Mobile Responsive */
