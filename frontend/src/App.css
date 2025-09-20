@@ -480,6 +480,84 @@ body {
   }
 }
 
+/* New Elegant HOW WE WORK Animations */
+@keyframes lineGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(-50%) scaleX(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1.2);
+  }
+}
+
+@keyframes ambientFlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  33% {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(120deg);
+  }
+  66% {
+    opacity: 0.9;
+    transform: scale(0.9) rotate(240deg);
+  }
+}
+
+@keyframes methodCardAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes iconShimmer {
+  0%, 100% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+@keyframes connectionPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(-50%) scaleX(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-50%) scaleX(1.2);
+  }
+}
+
+@keyframes hubPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 255, 209, 0.5);
+  }
+}
+
+@keyframes hubRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Network Element Hover Effects */
 .network-element:hover {
   transform: translateY(-8px) scale(1.05) !important;
