@@ -215,32 +215,7 @@ const AboutSection = () => {
                     {area.description}
                   </p>
 
-                  {/* Process Flow Arrow */}
-                  {index < convergenceAreas.length - 1 && (
-                    <div style={{
-                      position: 'absolute',
-                      bottom: '-20px',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      width: '2px',
-                      height: '40px',
-                      background: 'linear-gradient(180deg, var(--brand-primary) 0%, transparent 100%)',
-                      opacity: 0.6
-                    }}>
-                      <div style={{
-                        position: 'absolute',
-                        bottom: '-8px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        width: 0,
-                        height: 0,
-                        borderLeft: '4px solid transparent',
-                        borderRight: '4px solid transparent',
-                        borderTop: '8px solid var(--brand-primary)',
-                        opacity: 0.8
-                      }} />
-                    </div>
-                  )}
+                  {/* Removed flow arrows for compact square layout */}
 
                   {/* Interaction Indicator */}
                   <div style={{
