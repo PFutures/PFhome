@@ -89,7 +89,7 @@ services_data = [
         "title": "Future Magazine Creation",
         "description": "We create literal magazines from 2035–2040, written as if your company's breakthroughs already happened",
         "features": ["Custom timeline development", "Industry cross-pollination", "Tangible future artifacts", "Strategic roadmapping"],
-        "timeframe": "6-8 weeks",
+        "timeframe": "6–8 weeks",
         "ideal_for": "Companies seeking breakthrough innovation directions"
     },
     {
