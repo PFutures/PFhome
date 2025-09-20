@@ -349,6 +349,7 @@ const AboutSection = () => {
                   }} />
                 </div>
               ))}
+              </div>
             </div>
 
             {/* Process Flow Summary */}
