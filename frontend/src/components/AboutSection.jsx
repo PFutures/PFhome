@@ -71,7 +71,7 @@ const AboutSection = () => {
               marginBottom: '60px',
               color: 'var(--brand-primary)'
             }}>
-              Where We Work
+              HOW WE WORK
             </h3>
             
             <div style={{ 
