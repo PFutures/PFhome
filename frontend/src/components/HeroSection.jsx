@@ -30,7 +30,7 @@ const HeroSection = () => {
           <div style={{ flex: 1, paddingRight: '40px' }}>
             <div style={{ marginBottom: '40px' }}>
               <h1 className="display-huge" style={{ marginBottom: '24px' }}>
-                Sci-fi prototyping for cross-industry breakthroughs
+                Scientific Foresight for Cross-Industry Breakthroughs
               </h1>
               
               <p className="body-large" style={{ 
