@@ -99,7 +99,7 @@ class StatusCheckCreate(BaseModel):
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
-    return {"message": "Polymathic Futures API - Ready to shape the future"}
+    return {"message": "Polymathic Futures API - Scientific Foresight for Cross-Industry Breakthroughs"}
 
 # Legacy status endpoints
 @api_router.post("/status", response_model=StatusCheck)
