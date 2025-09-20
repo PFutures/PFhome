@@ -138,17 +138,17 @@ const AboutSection = () => {
                   {/* Process Number */}
                   <div style={{
                     position: 'absolute',
-                    top: '20px',
-                    right: '20px',
-                    width: '40px',
-                    height: '40px',
+                    top: '15px',
+                    right: '15px',
+                    width: '30px',
+                    height: '30px',
                     borderRadius: '50%',
                     background: 'rgba(0, 255, 209, 0.1)',
                     border: '1px solid rgba(0, 255, 209, 0.3)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontSize: '16px',
+                    fontSize: '14px',
                     fontWeight: '600',
                     color: 'var(--brand-primary)'
                   }}>
