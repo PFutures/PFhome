@@ -34,21 +34,12 @@ const HeroSection = () => {
               </h1>
               
               <p className="body-large" style={{ 
-                marginBottom: '32px',
+                marginBottom: '48px',
                 maxWidth: '600px',
                 color: 'var(--text-secondary)'
               }}>
                 Imagine holding a magazine from 2040. We write your breakthroughs as if they've already happened. 
                 Commission your own magazine of tomorrow – because leadership is sensing where new opportunities emerge.
-              </p>
-              
-              <p className="body-medium" style={{ 
-                marginBottom: '48px',
-                maxWidth: '580px',
-                color: 'var(--text-muted)'
-              }}>
-                Every company will face the future, but most won't own their story in it. 
-                This is how you get there first.
               </p>
             </div>
             
