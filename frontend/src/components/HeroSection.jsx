@@ -200,7 +200,7 @@ const HeroSection = () => {
                     ),
                     url('https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x5400x2700.jpg')
                   `,
-                  backgroundSize: '450% 225%',
+                  backgroundSize: '600% 300%',
                   backgroundPosition: 'center center',
                   backgroundRepeat: 'no-repeat',
                   boxShadow: `
@@ -210,7 +210,7 @@ const HeroSection = () => {
                     0 0 200px rgba(0, 255, 209, 0.4),
                     0 30px 60px rgba(0, 0, 0, 0.7)
                   `,
-                  animation: 'earthRotate 120s linear infinite, earthPulse 25s ease-in-out infinite',
+                  animation: 'earthRotate 30s linear infinite, earthPulse 25s ease-in-out infinite',
                   transition: 'all 0.8s cubic-bezier(0.23, 1, 0.320, 1)',
                   overflow: 'hidden',
                   transform: 'rotateX(15deg) rotateY(-10deg)'
