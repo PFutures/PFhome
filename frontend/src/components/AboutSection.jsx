@@ -78,198 +78,258 @@ const AboutSection = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              maxWidth: '800px',
+              maxWidth: '1000px',
               margin: '0 auto',
               position: 'relative',
-              height: '600px'
+              height: '500px',
+              overflow: 'hidden'
             }}>
-              {/* Central Hub */}
+              {/* Animated Background Grid */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundImage: `
+                  radial-gradient(circle at 25% 25%, rgba(0, 255, 209, 0.1) 1px, transparent 1px),
+                  radial-gradient(circle at 75% 75%, rgba(0, 255, 209, 0.05) 1px, transparent 1px)
+                `,
+                backgroundSize: '40px 40px',
+                animation: 'networkPulse 8s ease-in-out infinite',
+                opacity: 0.3
+              }} />
+
+              {/* Connection Network SVG */}
+              <svg style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                pointerEvents: 'none',
+                zIndex: 1
+              }}>
+                <defs>
+                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="rgba(0, 255, 209, 0.6)" />
+                    <stop offset="50%" stopColor="rgba(0, 255, 209, 0.3)" />
+                    <stop offset="100%" stopColor="rgba(0, 255, 209, 0.1)" />
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                
+                {/* Main connecting lines */}
+                <path d="M 200 150 Q 400 100 600 150 Q 700 300 600 350 Q 400 400 200 350 Q 100 300 200 150" 
+                      stroke="url(#connectionGradient)" 
+                      strokeWidth="2" 
+                      fill="none" 
+                      filter="url(#glow)"
+                      className="connection-path" />
+                
+                {/* Cross connections */}
+                <line x1="200" y1="150" x2="600" y2="350" stroke="rgba(0, 255, 209, 0.2)" strokeWidth="1" className="cross-connection" />
+                <line x1="600" y1="150" x2="200" y2="350" stroke="rgba(0, 255, 209, 0.2)" strokeWidth="1" className="cross-connection" />
+                
+                {/* Data flow particles */}
+                <circle r="3" fill="var(--brand-primary)" className="flow-particle">
+                  <animateMotion dur="8s" repeatCount="indefinite">
+                    <mpath href="#connectionPath"/>
+                  </animateMotion>
+                </circle>
+                
+                <path id="connectionPath" d="M 200 150 Q 400 100 600 150 Q 700 300 600 350 Q 400 400 200 350 Q 100 300 200 150" 
+                      stroke="none" fill="none" />
+              </svg>
+
+              {/* Element 1 - Top Left: Future Design */}
+              <div
+                className="network-element"
+                style={{
+                  position: 'absolute',
+                  top: '20%',
+                  left: '15%',
+                  width: '220px',
+                  textAlign: 'center',
+                  background: `
+                    linear-gradient(135deg, 
+                      var(--bg-secondary) 0%, 
+                      rgba(0, 255, 209, 0.05) 100%
+                    )
+                  `,
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '12px',
+                  padding: '25px 20px',
+                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  transform: 'scale(1)',
+                  transition: 'transform 0.3s ease'
+                }}>
+                  <Lightbulb size={32} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Future Design
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
+                  Making tomorrow's breakthroughs tangible today
+                </p>
+              </div>
+
+              {/* Element 2 - Top Right: Narrative Power */}
+              <div
+                className="network-element"
+                style={{
+                  position: 'absolute',
+                  top: '20%',
+                  right: '15%',
+                  width: '220px',
+                  textAlign: 'center',
+                  background: `
+                    linear-gradient(135deg, 
+                      var(--bg-secondary) 0%, 
+                      rgba(0, 255, 209, 0.05) 100%
+                    )
+                  `,
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '12px',
+                  padding: '25px 20px',
+                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Zap size={32} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Narrative Power
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
+                  Fiction that behaves like fact, stories that drive strategy
+                </p>
+              </div>
+
+              {/* Element 3 - Bottom Left: Cross-Sector Fusion */}
+              <div
+                className="network-element"
+                style={{
+                  position: 'absolute',
+                  bottom: '20%',
+                  left: '15%',
+                  width: '220px',
+                  textAlign: 'center',
+                  background: `
+                    linear-gradient(135deg, 
+                      var(--bg-secondary) 0%, 
+                      rgba(0, 255, 209, 0.05) 100%
+                    )
+                  `,
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '12px',
+                  padding: '25px 20px',
+                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Network size={32} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Cross-Sector Fusion
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
+                  Breaking silos to discover unexpected connections
+                </p>
+              </div>
+
+              {/* Element 4 - Bottom Right: Science & Strategy */}
+              <div
+                className="network-element"
+                style={{
+                  position: 'absolute',
+                  bottom: '20%',
+                  right: '15%',
+                  width: '220px',
+                  textAlign: 'center',
+                  background: `
+                    linear-gradient(135deg, 
+                      var(--bg-secondary) 0%, 
+                      rgba(0, 255, 209, 0.05) 100%
+                    )
+                  `,
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '12px',
+                  padding: '25px 20px',
+                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
+                <div style={{ 
+                  color: 'var(--brand-primary)', 
+                  marginBottom: '16px',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}>
+                  <Microscope size={32} />
+                </div>
+                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
+                  Science & Strategy
+                </h4>
+                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
+                  Where peer-reviewed research meets business innovation
+                </p>
+              </div>
+
+              {/* Central Intersection Point */}
               <div style={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: '120px',
-                height: '120px',
+                width: '80px',
+                height: '80px',
                 borderRadius: '50%',
                 background: `
                   radial-gradient(circle, 
                     var(--brand-primary) 0%, 
-                    rgba(0, 255, 209, 0.3) 70%, 
+                    rgba(0, 255, 209, 0.3) 60%, 
                     transparent 100%
                   )
                 `,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 0 40px rgba(0, 255, 209, 0.4)',
-                animation: 'gentleGlow 3s ease-in-out infinite alternate'
-              }}>
-                <span style={{
-                  color: '#000000',
-                  fontWeight: '600',
-                  fontSize: '14px',
-                  textAlign: 'center'
-                }}>
-                  POLYMATHIC<br/>METHOD
-                </span>
-              </div>
-
-              {/* Element 1 - Top */}
-              <div
-                className="method-element"
-                style={{
-                  position: 'absolute',
-                  top: '0%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  width: '200px',
-                  textAlign: 'center',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '0px',
-                  padding: '30px 20px',
-                  transition: 'all 0.4s ease-in-out'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Lightbulb size={28} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Future Design
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
-                  Making tomorrow's breakthroughs tangible today
-                </p>
-              </div>
-
-              {/* Element 2 - Right */}
-              <div
-                className="method-element"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  right: '0%',
-                  transform: 'translate(50%, -50%)',
-                  width: '200px',
-                  textAlign: 'center',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '0px',
-                  padding: '30px 20px',
-                  transition: 'all 0.4s ease-in-out'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Zap size={28} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Narrative Power
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
-                  Fiction that behaves like fact, stories that drive strategy
-                </p>
-              </div>
-
-              {/* Element 3 - Bottom */}
-              <div
-                className="method-element"
-                style={{
-                  position: 'absolute',
-                  bottom: '0%',
-                  left: '50%',
-                  transform: 'translate(-50%, 50%)',
-                  width: '200px',
-                  textAlign: 'center',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '0px',
-                  padding: '30px 20px',
-                  transition: 'all 0.4s ease-in-out'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Microscope size={28} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Science & Strategy
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
-                  Where peer-reviewed research meets business innovation
-                </p>
-              </div>
-
-              {/* Element 4 - Left */}
-              <div
-                className="method-element"
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '0%',
-                  transform: 'translate(-50%, -50%)',
-                  width: '200px',
-                  textAlign: 'center',
-                  background: 'var(--bg-secondary)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '0px',
-                  padding: '30px 20px',
-                  transition: 'all 0.4s ease-in-out'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Network size={28} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Cross-Sector Fusion
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '14px', lineHeight: '1.4' }}>
-                  Breaking silos to discover unexpected connections
-                </p>
-              </div>
-
-              {/* Connecting Lines */}
-              <svg style={{
-                position: 'absolute',
-                top: '0',
-                left: '0',
-                width: '100%',
-                height: '100%',
-                pointerEvents: 'none',
+                animation: 'centralPulse 4s ease-in-out infinite',
+                filter: 'blur(15px)',
                 zIndex: 0
-              }}>
-                <defs>
-                  <radialGradient id="lineGradient" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="rgba(0, 255, 209, 0.6)" />
-                    <stop offset="100%" stopColor="rgba(0, 255, 209, 0.1)" />
-                  </radialGradient>
-                </defs>
-                {/* Cross lines connecting all elements through center */}
-                <line x1="50%" y1="15%" x2="50%" y2="85%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" />
-                <line x1="15%" y1="50%" x2="85%" y2="50%" stroke="url(#lineGradient)" strokeWidth="2" opacity="0.6" />
-                {/* Diagonal connections */}
-                <line x1="35%" y1="35%" x2="65%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.3" />
-                <line x1="65%" y1="35%" x2="35%" y2="65%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.3" />
-              </svg>
+              }} />
             </div>
           </div>
           
