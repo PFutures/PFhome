@@ -563,7 +563,7 @@ body {
 }
 
 .spectacular-sphere-container:hover .main-sphere {
-  animation-duration: 60s !important;
+  animation: earthRotate 15s linear infinite, earthPulse 25s ease-in-out infinite !important;
   transform: rotateX(10deg) rotateY(-5deg) scale(1.05) !important;
 }
 
