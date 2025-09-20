@@ -15,7 +15,7 @@ export const mockMagazines = [
     title: "BioFutures Medical - 2035 Edition", 
     year: "2035",
     description: "Your chocolate-based personalized medicine platform revolutionizes healthcare delivery",
-    coverImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=600&fit=crop",
+    coverImage: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/mjch8sxn_ca4f8bf6-4ee0-44ee-940e-0d401645c0e2.png",
     industries: ["Healthcare", "Food Tech", "Personalized Medicine"],
     preview: "By 2035, your molecular gastronomy breakthrough enabled precise drug delivery through everyday foods, reaching 50M patients globally..."
   },
