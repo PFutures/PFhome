@@ -306,7 +306,7 @@ const AboutSection = () => {
               fontWeight: '500',
               fontSize: '20px'
             }}>
-              Every company will face the future. Few will own their story in it.
+              This magazine is your invitation to imagine – and then to act.
             </div>
           </div>
         </div>
