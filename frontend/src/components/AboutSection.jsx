@@ -285,7 +285,7 @@ const AboutSection = () => {
               color: 'var(--text-secondary)',
               marginBottom: '32px'
             }}>
-              We are polymaths — scholars, scientists, strategists, and storytellers. 
+              We are polymaths – scholars, scientists, strategists, and storytellers. 
               Our method braids peer-reviewed research, emergent technology scouting, 
               and narrative design into one act.
             </p>
