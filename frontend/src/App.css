@@ -590,6 +590,92 @@ body {
   }
 }
 
+/* Connection Line Animations */
+@keyframes connectionFlow {
+  0% {
+    stroke-dasharray: 0 20;
+    opacity: 0.4;
+  }
+  50% {
+    stroke-dasharray: 10 10;
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dasharray: 20 0;
+    opacity: 0.4;
+  }
+}
+
+@keyframes convergencePulse {
+  0%, 100% {
+    r: 6;
+    opacity: 0.6;
+  }
+  50% {
+    r: 10;
+    opacity: 1;
+  }
+}
+
+@keyframes crossConnectionGlow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* Connection Line Classes */
+.connection-line {
+  stroke-dasharray: 15 5;
+  animation: connectionFlow 3s ease-in-out infinite;
+}
+
+.horizontal-top {
+  animation-delay: 0s;
+}
+
+.horizontal-bottom {
+  animation-delay: 1s;
+}
+
+.vertical-left {
+  animation-delay: 0.5s;
+}
+
+.vertical-right {
+  animation-delay: 1.5s;
+}
+
+.cross-connection {
+  animation: crossConnectionGlow 4s ease-in-out infinite;
+}
+
+.diagonal-1 {
+  animation-delay: 0s;
+}
+
+.diagonal-2 {
+  animation-delay: 2s;
+}
+
+.convergence-point {
+  animation: convergencePulse 3s ease-in-out infinite;
+}
+
+.flow-particle {
+  opacity: 0.8;
+}
+
+.particle-1 {
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  animation-delay: 3s;
+}
+
 /* Network Element Hover Effects */
 .network-element:hover {
   transform: translateY(-8px) scale(1.05) !important;
