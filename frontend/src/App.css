@@ -276,17 +276,28 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
 }
 
-/* Earth Ball Animations */
+/* Earth Globe Animations */
 @keyframes earthRotate {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% center;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 200% center;
   }
 }
 
-@keyframes continentShift {
+@keyframes atmosphereGlow {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes cloudDrift {
   0% {
     transform: rotate(0deg);
   }
@@ -302,24 +313,24 @@ body {
     opacity: 1;
   }
   50% {
-    width: 300px;
-    height: 300px;
-    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
   }
   100% {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     opacity: 0;
   }
 }
 
 /* Water drop physics hover effects */
-.earth-ball:hover {
+.earth-globe:hover {
   animation-play-state: paused;
 }
 
-.earth-ball:hover .water-ripple {
-  animation: ripple 2s infinite;
+.earth-globe:hover .water-ripple {
+  animation: ripple 2s ease-out infinite;
 }
 
 /* Mobile Responsive */
