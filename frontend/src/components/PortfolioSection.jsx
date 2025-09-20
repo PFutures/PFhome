@@ -107,7 +107,7 @@ const PortfolioSection = () => {
                 {/* Magazine Cover */}
                 <div style={{ 
                   height: '300px',
-                  backgroundImage: `url(${magazine.coverImage})`,
+                  backgroundImage: `url(${magazine.cover_image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   position: 'relative'
