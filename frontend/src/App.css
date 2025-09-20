@@ -635,28 +635,27 @@ body {
   transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-/* New Elegant Method Card Hover Effects */
-.method-card:hover {
-  transform: translateY(-12px) scale(1.02) !important;
+/* Process Card Hover Effects */
+.process-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
   box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.4),
-    0 0 40px rgba(0, 255, 209, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    0 25px 50px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(0, 255, 209, 0.3) !important;
   border-color: rgba(0, 255, 209, 0.4) !important;
 }
 
-.method-card:hover .card-glow {
+.process-card:hover .card-bg-pattern {
   opacity: 1 !important;
 }
 
-.method-card:hover .method-icon {
-  transform: scale(1.1) rotate(5deg) !important;
+.process-card:hover .process-icon {
+  transform: scale(1.1) rotate(-5deg) !important;
   background: linear-gradient(135deg, 
     rgba(0, 255, 209, 0.25) 0%, 
     rgba(0, 255, 209, 0.1) 100%
   ) !important;
   border-color: rgba(0, 255, 209, 0.4) !important;
-  box-shadow: 0 0 20px rgba(0, 255, 209, 0.3) !important;
+  box-shadow: 0 0 25px rgba(0, 255, 209, 0.3) !important;
 }
 
 .spectacular-sphere-container:hover .main-sphere {
