@@ -26,7 +26,7 @@ magazines_data = [
         "title": "TechFlow Quarterly - 2040 Edition",
         "year": "2040",
         "description": "How your company's AI-driven manufacturing revolution reshaped global supply chains",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/5uwco9ex_7cf3ac18-66c5-4c1b-8d91-54759070eea1.webp",
+        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
         "industries": ["Manufacturing", "AI", "Supply Chain"],
         "preview": "In this timeline, your breakthrough in quantum-enhanced AI transformed manufacturing from reactive to predictive, creating $2.3B in new revenue streams..."
     },
