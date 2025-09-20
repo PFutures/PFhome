@@ -64,272 +64,245 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Convergence Areas Grid */}
+          {/* HOW WE WORK - Elegant Timeline Design */}
           <div>
             <h3 className="heading-1" style={{ 
               textAlign: 'center', 
-              marginBottom: '60px',
-              color: 'var(--brand-primary)'
+              marginBottom: '80px',
+              color: 'var(--brand-primary)',
+              position: 'relative'
             }}>
               HOW WE WORK
+              <div style={{
+                position: 'absolute',
+                bottom: '-20px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '120px',
+                height: '2px',
+                background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
+                animation: 'lineGlow 3s ease-in-out infinite'
+              }} />
             </h3>
             
+            {/* Sophisticated Flow Container */}
             <div style={{ 
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              maxWidth: '1000px',
+              maxWidth: '1200px',
               margin: '0 auto',
               position: 'relative',
-              height: '500px',
-              overflow: 'hidden'
+              padding: '60px 0'
             }}>
-              {/* Animated Background Grid */}
+              
+              {/* Background Ambient Effects */}
               <div style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundImage: `
-                  radial-gradient(circle at 25% 25%, rgba(0, 255, 209, 0.1) 1px, transparent 1px),
-                  radial-gradient(circle at 75% 75%, rgba(0, 255, 209, 0.05) 1px, transparent 1px)
+                background: `
+                  radial-gradient(circle at 20% 30%, rgba(0, 255, 209, 0.03) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(0, 255, 209, 0.05) 0%, transparent 60%),
+                  radial-gradient(circle at 50% 50%, rgba(0, 255, 209, 0.02) 0%, transparent 40%)
                 `,
-                backgroundSize: '40px 40px',
-                animation: 'networkPulse 8s ease-in-out infinite',
-                opacity: 0.3
+                animation: 'ambientFlow 12s ease-in-out infinite',
+                zIndex: 0
               }} />
 
-              {/* Connection Network SVG */}
-              <svg style={{
+              {/* Central Timeline Spine */}
+              <div style={{
                 position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                pointerEvents: 'none',
+                top: '20%',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '2px',
+                height: '60%',
+                background: 'linear-gradient(180deg, transparent 0%, var(--brand-primary) 20%, var(--brand-primary) 80%, transparent 100%)',
+                opacity: 0.6,
                 zIndex: 1
-              }}>
-                <defs>
-                  <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="rgba(0, 255, 209, 0.6)" />
-                    <stop offset="50%" stopColor="rgba(0, 255, 209, 0.3)" />
-                    <stop offset="100%" stopColor="rgba(0, 255, 209, 0.1)" />
-                  </linearGradient>
-                  <filter id="glow">
-                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                    <feMerge> 
-                      <feMergeNode in="coloredBlur"/>
-                      <feMergeNode in="SourceGraphic"/>
-                    </feMerge>
-                  </filter>
-                </defs>
+              }} />
+
+              {/* Elegant Method Cards */}
+              {convergenceAreas.map((area, index) => {
+                const positions = [
+                  { top: '0%', left: index % 2 === 0 ? '5%' : '55%', delay: 0 },
+                  { top: '25%', left: index % 2 === 0 ? '55%' : '5%', delay: 0.2 },
+                  { top: '50%', left: index % 2 === 0 ? '5%' : '55%', delay: 0.4 },
+                  { top: '75%', left: index % 2 === 0 ? '55%' : '5%', delay: 0.6 }
+                ];
                 
-                {/* Main connecting lines */}
-                <path d="M 200 150 Q 400 100 600 150 Q 700 300 600 350 Q 400 400 200 350 Q 100 300 200 150" 
-                      stroke="url(#connectionGradient)" 
-                      strokeWidth="2" 
-                      fill="none" 
-                      filter="url(#glow)"
-                      className="connection-path" />
-                
-                {/* Cross connections */}
-                <line x1="200" y1="150" x2="600" y2="350" stroke="rgba(0, 255, 209, 0.2)" strokeWidth="1" className="cross-connection" />
-                <line x1="600" y1="150" x2="200" y2="350" stroke="rgba(0, 255, 209, 0.2)" strokeWidth="1" className="cross-connection" />
-                
-                {/* Data flow particles */}
-                <circle r="3" fill="var(--brand-primary)" className="flow-particle">
-                  <animateMotion dur="8s" repeatCount="indefinite">
-                    <mpath href="#connectionPath"/>
-                  </animateMotion>
-                </circle>
-                
-                <path id="connectionPath" d="M 200 150 Q 400 100 600 150 Q 700 300 600 350 Q 400 400 200 350 Q 100 300 200 150" 
-                      stroke="none" fill="none" />
-              </svg>
+                return (
+                  <div
+                    key={index}
+                    className="method-card"
+                    style={{
+                      position: 'absolute',
+                      top: positions[index].top,
+                      left: positions[index].left,
+                      width: '420px',
+                      padding: '40px 35px',
+                      background: `
+                        linear-gradient(135deg, 
+                          rgba(18, 18, 18, 0.95) 0%, 
+                          rgba(18, 18, 18, 0.85) 100%
+                        )
+                      `,
+                      border: '1px solid rgba(0, 255, 209, 0.15)',
+                      borderRadius: '16px',
+                      backdropFilter: 'blur(20px)',
+                      boxShadow: `
+                        0 8px 32px rgba(0, 0, 0, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1)
+                      `,
+                      transition: 'all 0.6s cubic-bezier(0.23, 1, 0.320, 1)',
+                      cursor: 'pointer',
+                      zIndex: 10,
+                      animation: `methodCardAppear 0.8s ease-out ${positions[index].delay}s both`,
+                      transformOrigin: index % 2 === 0 ? 'left center' : 'right center'
+                    }}
+                  >
+                    {/* Card Glow Effect */}
+                    <div style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      borderRadius: '16px',
+                      background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.1) 0%, transparent 50%)',
+                      opacity: 0,
+                      transition: 'opacity 0.4s ease',
+                      pointerEvents: 'none'
+                    }} className="card-glow" />
+                    
+                    {/* Method Icon with Sophisticated Animation */}
+                    <div style={{ 
+                      display: 'flex',
+                      alignItems: 'center',
+                      marginBottom: '24px'
+                    }}>
+                      <div style={{
+                        width: '64px',
+                        height: '64px',
+                        borderRadius: '12px',
+                        background: `
+                          linear-gradient(135deg, 
+                            rgba(0, 255, 209, 0.15) 0%, 
+                            rgba(0, 255, 209, 0.05) 100%
+                          )
+                        `,
+                        border: '1px solid rgba(0, 255, 209, 0.2)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'var(--brand-primary)',
+                        marginRight: '20px',
+                        transition: 'all 0.4s ease',
+                        position: 'relative',
+                        overflow: 'hidden'
+                      }} className="method-icon">
+                        {/* Icon shimmer effect */}
+                        <div style={{
+                          position: 'absolute',
+                          top: '-50%',
+                          left: '-50%',
+                          width: '200%',
+                          height: '200%',
+                          background: 'linear-gradient(45deg, transparent 30%, rgba(0, 255, 209, 0.1) 50%, transparent 70%)',
+                          animation: 'iconShimmer 3s ease-in-out infinite',
+                          animationDelay: `${index * 0.5}s`
+                        }} />
+                        {area.icon}
+                      </div>
+                      
+                      {/* Method Title */}
+                      <div>
+                        <h4 className="heading-2" style={{ 
+                          marginBottom: '8px',
+                          fontSize: '22px',
+                          fontWeight: '600',
+                          background: 'linear-gradient(135deg, var(--text-primary) 0%, rgba(0, 255, 209, 0.8) 100%)',
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent',
+                          backgroundClip: 'text'
+                        }}>
+                          {area.title}
+                        </h4>
+                      </div>
+                    </div>
+                    
+                    {/* Method Description */}
+                    <p className="body-medium" style={{ 
+                      color: 'var(--text-secondary)',
+                      fontSize: '16px',
+                      lineHeight: '1.6',
+                      marginBottom: '0'
+                    }}>
+                      {area.description}
+                    </p>
 
-              {/* Element 1 - Top Left: Future Design */}
-              <div
-                className="network-element"
-                style={{
-                  position: 'absolute',
-                  top: '20%',
-                  left: '15%',
-                  width: '220px',
-                  textAlign: 'center',
-                  background: `
-                    linear-gradient(135deg, 
-                      var(--bg-secondary) 0%, 
-                      rgba(0, 255, 209, 0.05) 100%
-                    )
-                  `,
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '12px',
-                  padding: '25px 20px',
-                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
-                  cursor: 'pointer',
-                  zIndex: 10,
-                  backdropFilter: 'blur(10px)'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  transform: 'scale(1)',
-                  transition: 'transform 0.3s ease'
-                }}>
-                  <Lightbulb size={32} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Future Design
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
-                  Making tomorrow's breakthroughs tangible today
-                </p>
-              </div>
+                    {/* Connection Line to Center */}
+                    <div style={{
+                      position: 'absolute',
+                      top: '50%',
+                      [index % 2 === 0 ? 'right' : 'left']: '-60px',
+                      width: '60px',
+                      height: '1px',
+                      background: `linear-gradient(${index % 2 === 0 ? '90deg' : '-90deg'}, rgba(0, 255, 209, 0.4) 0%, transparent 100%)`,
+                      transform: 'translateY(-50%)',
+                      opacity: 0.6,
+                      animation: `connectionPulse 2s ease-in-out infinite ${index * 0.3}s`
+                    }} />
+                  </div>
+                );
+              })}
 
-              {/* Element 2 - Top Right: Narrative Power */}
-              <div
-                className="network-element"
-                style={{
-                  position: 'absolute',
-                  top: '20%',
-                  right: '15%',
-                  width: '220px',
-                  textAlign: 'center',
-                  background: `
-                    linear-gradient(135deg, 
-                      var(--bg-secondary) 0%, 
-                      rgba(0, 255, 209, 0.05) 100%
-                    )
-                  `,
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '12px',
-                  padding: '25px 20px',
-                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
-                  cursor: 'pointer',
-                  zIndex: 10,
-                  backdropFilter: 'blur(10px)'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Zap size={32} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Narrative Power
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
-                  Fiction that behaves like fact, stories that drive strategy
-                </p>
-              </div>
-
-              {/* Element 3 - Bottom Left: Cross-Sector Fusion */}
-              <div
-                className="network-element"
-                style={{
-                  position: 'absolute',
-                  bottom: '20%',
-                  left: '15%',
-                  width: '220px',
-                  textAlign: 'center',
-                  background: `
-                    linear-gradient(135deg, 
-                      var(--bg-secondary) 0%, 
-                      rgba(0, 255, 209, 0.05) 100%
-                    )
-                  `,
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '12px',
-                  padding: '25px 20px',
-                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
-                  cursor: 'pointer',
-                  zIndex: 10,
-                  backdropFilter: 'blur(10px)'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Network size={32} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Cross-Sector Fusion
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
-                  Breaking silos to discover unexpected connections
-                </p>
-              </div>
-
-              {/* Element 4 - Bottom Right: Science & Strategy */}
-              <div
-                className="network-element"
-                style={{
-                  position: 'absolute',
-                  bottom: '20%',
-                  right: '15%',
-                  width: '220px',
-                  textAlign: 'center',
-                  background: `
-                    linear-gradient(135deg, 
-                      var(--bg-secondary) 0%, 
-                      rgba(0, 255, 209, 0.05) 100%
-                    )
-                  `,
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '12px',
-                  padding: '25px 20px',
-                  transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
-                  cursor: 'pointer',
-                  zIndex: 10,
-                  backdropFilter: 'blur(10px)'
-                }}
-              >
-                <div style={{ 
-                  color: 'var(--brand-primary)', 
-                  marginBottom: '16px',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}>
-                  <Microscope size={32} />
-                </div>
-                <h4 className="heading-3" style={{ marginBottom: '12px', fontSize: '18px' }}>
-                  Science & Strategy
-                </h4>
-                <p className="body-small" style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
-                  Where peer-reviewed research meets business innovation
-                </p>
-              </div>
-
-              {/* Central Intersection Point */}
+              {/* Central Convergence Hub */}
               <div style={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: '80px',
-                height: '80px',
+                width: '120px',
+                height: '120px',
                 borderRadius: '50%',
                 background: `
                   radial-gradient(circle, 
-                    var(--brand-primary) 0%, 
-                    rgba(0, 255, 209, 0.3) 60%, 
-                    transparent 100%
+                    rgba(0, 255, 209, 0.2) 0%, 
+                    rgba(0, 255, 209, 0.1) 40%, 
+                    transparent 70%
                   )
                 `,
-                animation: 'centralPulse 4s ease-in-out infinite',
-                filter: 'blur(15px)',
-                zIndex: 0
-              }} />
+                border: '2px solid rgba(0, 255, 209, 0.3)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                animation: 'hubPulse 4s ease-in-out infinite',
+                zIndex: 5
+              }}>
+                <div style={{
+                  width: '80px',
+                  height: '80px',
+                  borderRadius: '50%',
+                  background: `
+                    linear-gradient(135deg, 
+                      rgba(0, 255, 209, 0.15) 0%, 
+                      rgba(0, 255, 209, 0.05) 100%
+                    )
+                  `,
+                  border: '1px solid rgba(0, 255, 209, 0.4)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  textAlign: 'center',
+                  animation: 'hubRotate 20s linear infinite'
+                }}>
+                  CONVERGENCE
+                </div>
+              </div>
             </div>
           </div>
           
