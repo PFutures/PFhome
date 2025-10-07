@@ -129,11 +129,38 @@ const TeamSection = () => {
                 <div style={{ padding: '32px' }}>
                   <p className="body-medium" style={{ 
                     color: 'var(--text-secondary)',
-                    marginBottom: '24px',
+                    marginBottom: '16px',
                     lineHeight: '1.5'
                   }}>
                     {member.background}
                   </p>
+                  
+                  {/* Additional Description for Katerina */}
+                  {member.description && (
+                    <div style={{
+                      background: 'rgba(0, 255, 209, 0.03)',
+                      border: '1px solid rgba(0, 255, 209, 0.1)',
+                      borderRadius: '8px',
+                      padding: '20px',
+                      marginBottom: '20px'
+                    }}>
+                      <h5 style={{
+                        color: 'var(--brand-primary)',
+                        fontSize: '16px',
+                        fontWeight: '600',
+                        marginBottom: '12px'
+                      }}>
+                        At Polymathic Futures
+                      </h5>
+                      <p className="body-medium" style={{ 
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.6',
+                        fontSize: '15px'
+                      }}>
+                        {member.description}
+                      </p>
+                    </div>
+                  )}
                   
                   {/* Expertise Tags */}
                   <div style={{ marginBottom: '24px' }}>
