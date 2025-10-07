@@ -54,6 +54,16 @@ export const mockTeamMembers = [
     background: "Biotechnology pioneer specializing in convergent innovation",
     expertise: ["Biotechnology", "Cross-Sector Research", "Innovation Strategy"],
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop"
+  },
+  {
+    id: 4,
+    name: "Katerina De Pauw",
+    role: "Business Development Director",
+    background: "Katerina De Pauw builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
+    expertise: ["Sales & Business Development", "Marketing Strategy", "Client Partnerships", "Education Management", "International Trade", "Science of Well-Being", "Coaching"],
+    image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/ujrbhai0_1597408870352.jfif",
+    linkedin: "https://www.linkedin.com/in/katerina-de-pauw-8178436/",
+    description: "As Business Development Director, Katerina brings the magazine's imagination into the world of business — shaping dialogues, opening partnerships, and translating futures thinking into commercial reality. Her cross-domain path embodies the polymathic spirit: moving between education, trade, and well-being, she connects vision with value and ensures innovation finds its audience."
   }
 ];
 
