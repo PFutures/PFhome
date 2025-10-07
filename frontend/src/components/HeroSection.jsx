@@ -38,8 +38,9 @@ const HeroSection = () => {
                 maxWidth: '600px',
                 color: 'var(--text-secondary)'
               }}>
-                Imagine holding a magazine from 2040. We write your breakthroughs as if they've already happened. 
-                Commission your own magazine of tomorrow – because leadership is sensing where new opportunities emerge.
+                Imagine this — a magazine entirely about your company, but written from the future.
+                A unique edition from 2035, 2040, or even 2060, where your innovations, products, and impact are already shaping the world.
+                Crafted with scientific intelligence and narrative design, it turns your long-term strategy into stories that inspire teams, partners, and investors.
               </p>
             </div>
             
