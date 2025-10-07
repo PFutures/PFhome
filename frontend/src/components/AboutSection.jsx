@@ -64,320 +64,183 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* HOW WE WORK - Clear Visual Hierarchy */}
+          {/* HOW IT WORKS - New Clear Process */}
           <div>
             <h3 className="heading-1" style={{ 
               textAlign: 'center', 
-              marginBottom: '80px',
-              color: 'var(--brand-primary)',
-              position: 'relative'
+              marginBottom: '30px',
+              color: 'var(--brand-primary)'
             }}>
-              HOW WE WORK
-              <div style={{
-                position: 'absolute',
-                bottom: '-20px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                width: '120px',
-                height: '2px',
-                background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                animation: 'lineGlow 3s ease-in-out infinite'
-              }} />
+              How It Works
             </h3>
             
-            {/* Compact 2x2 Square Layout with Connections */}
+            <h4 className="heading-2" style={{ 
+              textAlign: 'center', 
+              marginBottom: '40px',
+              color: 'var(--text-primary)',
+              fontWeight: '600'
+            }}>
+              From Vision to Artifact
+            </h4>
+            
+            <p className="body-large" style={{ 
+              textAlign: 'center',
+              marginBottom: '80px',
+              maxWidth: '700px',
+              margin: '0 auto 80px auto',
+              color: 'var(--text-secondary)'
+            }}>
+              Every future has to be imagined before it can be built.<br />
+              Here's how your magazine from tomorrow takes shape:
+            </p>
+            
+            {/* Process Steps */}
             <div style={{ 
-              maxWidth: '900px',
+              maxWidth: '1000px',
               margin: '0 auto',
-              position: 'relative',
-              padding: '0 20px'
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '60px'
             }}>
               
-              {/* Animated Connection Network */}
+              {/* Step 1 - Discover */}
               <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                pointerEvents: 'none',
-                zIndex: 1
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '40px',
+                padding: '0 20px'
               }}>
-                <svg style={{
-                  width: '100%',
-                  height: '100%',
-                  position: 'absolute'
+                <div style={{
+                  minWidth: '80px',
+                  height: '80px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
+                  border: '2px solid rgba(0, 255, 209, 0.3)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '24px',
+                  fontWeight: '700',
+                  color: 'var(--brand-primary)',
+                  flexShrink: 0
                 }}>
-                  <defs>
-                    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="rgba(0, 255, 209, 0.6)" />
-                      <stop offset="50%" stopColor="rgba(0, 255, 209, 0.3)" />
-                      <stop offset="100%" stopColor="rgba(0, 255, 209, 0.1)" />
-                    </linearGradient>
-                    <filter id="lineGlow">
-                      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                      <feMerge> 
-                        <feMergeNode in="coloredBlur"/>
-                        <feMergeNode in="SourceGraphic"/>
-                      </feMerge>
-                    </filter>
-                  </defs>
-                  
-                  {/* Horizontal connection lines */}
-                  <line 
-                    x1="45%" y1="35%" 
-                    x2="55%" y2="35%" 
-                    stroke="url(#flowGradient)" 
-                    strokeWidth="2" 
-                    filter="url(#lineGlow)"
-                    className="connection-line horizontal-top"
-                  />
-                  <line 
-                    x1="45%" y1="65%" 
-                    x2="55%" y2="65%" 
-                    stroke="url(#flowGradient)" 
-                    strokeWidth="2" 
-                    filter="url(#lineGlow)"
-                    className="connection-line horizontal-bottom"
-                  />
-                  
-                  {/* Vertical connection lines */}
-                  <line 
-                    x1="25%" y1="45%" 
-                    x2="25%" y2="55%" 
-                    stroke="url(#flowGradient)" 
-                    strokeWidth="2" 
-                    filter="url(#lineGlow)"
-                    className="connection-line vertical-left"
-                  />
-                  <line 
-                    x1="75%" y1="45%" 
-                    x2="75%" y2="55%" 
-                    stroke="url(#flowGradient)" 
-                    strokeWidth="2" 
-                    filter="url(#lineGlow)"
-                    className="connection-line vertical-right"
-                  />
-                  
-                  {/* Cross connections */}
-                  <line 
-                    x1="40%" y1="40%" 
-                    x2="60%" y2="60%" 
-                    stroke="rgba(0, 255, 209, 0.2)" 
-                    strokeWidth="1" 
-                    className="cross-connection diagonal-1"
-                  />
-                  <line 
-                    x1="60%" y1="40%" 
-                    x2="40%" y2="60%" 
-                    stroke="rgba(0, 255, 209, 0.2)" 
-                    strokeWidth="1" 
-                    className="cross-connection diagonal-2"
-                  />
-                  
-                  {/* Central convergence point */}
-                  <circle 
-                    cx="50%" 
-                    cy="50%" 
-                    r="8" 
-                    fill="rgba(0, 255, 209, 0.4)" 
-                    stroke="rgba(0, 255, 209, 0.6)" 
-                    strokeWidth="2"
-                    className="convergence-point"
-                  />
-                  
-                  {/* Flowing particles */}
-                  <circle r="3" fill="var(--brand-primary)" className="flow-particle particle-1">
-                    <animateMotion dur="6s" repeatCount="indefinite">
-                      <mpath href="#flowPath1"/>
-                    </animateMotion>
-                  </circle>
-                  <circle r="2" fill="rgba(0, 255, 209, 0.7)" className="flow-particle particle-2">
-                    <animateMotion dur="8s" repeatCount="indefinite">
-                      <mpath href="#flowPath2"/>
-                    </animateMotion>
-                  </circle>
-                  
-                  {/* Invisible paths for particle animation */}
-                  <path id="flowPath1" d="M 25 35 L 75 35 L 75 65 L 25 65 Z" stroke="none" fill="none" />
-                  <path id="flowPath2" d="M 75 35 L 25 65 L 75 65 L 25 35 Z" stroke="none" fill="none" />
-                </svg>
-              </div>
-
-              {/* Grid Container */}
-              <div style={{ 
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gridTemplateRows: 'repeat(2, 1fr)',
-                gap: '30px',
-                position: 'relative',
-                zIndex: 2
-              }}>
-              
-              {convergenceAreas.map((area, index) => (
-                <div
-                  key={index}
-                  className="process-card"
-                  style={{
-                    background: `
-                      linear-gradient(135deg, 
-                        rgba(18, 18, 18, 0.9) 0%, 
-                        rgba(25, 25, 25, 0.8) 100%
-                      )
-                    `,
-                    border: '1px solid rgba(0, 255, 209, 0.2)',
-                    borderRadius: '16px',
-                    padding: '30px 25px',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    transition: 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)',
-                    cursor: 'pointer',
-                    animation: `cardSlideIn 0.6s ease-out ${index * 0.15}s both`,
-                    minHeight: '280px',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}
-                >
-                  {/* Background Pattern */}
-                  <div style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: `
-                      radial-gradient(circle at top right, rgba(0, 255, 209, 0.05) 0%, transparent 60%),
-                      linear-gradient(135deg, transparent 0%, rgba(0, 255, 209, 0.02) 100%)
-                    `,
-                    opacity: 0.8,
-                    transition: 'opacity 0.3s ease'
-                  }} className="card-bg-pattern" />
-
-                  {/* Process Number */}
-                  <div style={{
-                    position: 'absolute',
-                    top: '15px',
-                    right: '15px',
-                    width: '30px',
-                    height: '30px',
-                    borderRadius: '50%',
-                    background: 'rgba(0, 255, 209, 0.1)',
-                    border: '1px solid rgba(0, 255, 209, 0.3)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '14px',
-                    fontWeight: '600',
-                    color: 'var(--brand-primary)'
-                  }}>
-                    {String(index + 1).padStart(2, '0')}
-                  </div>
-                  
-                  {/* Icon Container */}
-                  <div style={{
-                    width: '60px',
-                    height: '60px',
-                    borderRadius: '12px',
-                    background: `
-                      linear-gradient(135deg, 
-                        rgba(0, 255, 209, 0.15) 0%, 
-                        rgba(0, 255, 209, 0.05) 100%
-                      )
-                    `,
-                    border: '1px solid rgba(0, 255, 209, 0.25)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'var(--brand-primary)',
-                    marginBottom: '20px',
-                    position: 'relative',
-                    transition: 'all 0.4s ease'
-                  }} className="process-icon">
-                    {/* Icon Glow */}
-                    <div style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      borderRadius: '12px',
-                      background: 'rgba(0, 255, 209, 0.2)',
-                      opacity: 0,
-                      transition: 'opacity 0.3s ease',
-                      animation: `iconPulse 3s ease-in-out infinite ${index * 0.5}s`
-                    }} />
-                    <div style={{ transform: 'scale(0.8)' }}>
-                      {area.icon}
-                    </div>
-                  </div>
-                  
-                  {/* Title */}
-                  <h4 className="heading-3" style={{ 
-                    marginBottom: '15px',
-                    fontSize: '20px',
-                    fontWeight: '600',
+                  1
+                </div>
+                <div style={{ flex: 1 }}>
+                  <h5 className="heading-2" style={{ 
+                    marginBottom: '16px',
                     color: 'var(--text-primary)',
-                    lineHeight: '1.3'
+                    fontSize: '28px'
                   }}>
-                    {area.title}
-                  </h4>
-                  
-                  {/* Description */}
+                    Step 1 — Discover
+                  </h5>
                   <p className="body-medium" style={{ 
                     color: 'var(--text-secondary)',
-                    fontSize: '15px',
-                    lineHeight: '1.6',
-                    marginBottom: '0',
-                    flex: 1
+                    fontSize: '18px',
+                    lineHeight: '1.7'
                   }}>
-                    {area.description}
+                    We begin with your essence — strategy, research, values, and ambitions.
+                    Together, we identify key signals, emerging technologies, and long-horizon opportunities that define your future landscape.
                   </p>
-
-                  {/* Removed flow arrows for compact square layout */}
-
-                  {/* Interaction Indicator */}
-                  <div style={{
-                    position: 'absolute',
-                    bottom: '20px',
-                    right: '20px',
-                    width: '12px',
-                    height: '12px',
-                    borderRadius: '50%',
-                    background: 'var(--brand-primary)',
-                    opacity: 0.6,
-                    animation: `indicatorPulse 2s ease-in-out infinite ${index * 0.2}s`
-                  }} />
                 </div>
-              ))}
+              </div>
+
+              {/* Step 2 - Design */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '40px',
+                padding: '0 20px'
+              }}>
+                <div style={{
+                  minWidth: '80px',
+                  height: '80px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
+                  border: '2px solid rgba(0, 255, 209, 0.3)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '24px',
+                  fontWeight: '700',
+                  color: 'var(--brand-primary)',
+                  flexShrink: 0
+                }}>
+                  2
+                </div>
+                <div style={{ flex: 1 }}>
+                  <h5 className="heading-2" style={{ 
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontSize: '28px'
+                  }}>
+                    Step 2 — Design
+                  </h5>
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    fontSize: '18px',
+                    lineHeight: '1.7'
+                  }}>
+                    Our team of polymaths, foresight researchers, and creative writers translate these insights into science-based sci-fi articles, concept visuals, and future narratives.
+                    Each story is designed to resonate — internally with teams, externally with partners and investors.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 - Deliver */}
+              <div style={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: '40px',
+                padding: '0 20px'
+              }}>
+                <div style={{
+                  minWidth: '80px',
+                  height: '80px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
+                  border: '2px solid rgba(0, 255, 209, 0.3)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '24px',
+                  fontWeight: '700',
+                  color: 'var(--brand-primary)',
+                  flexShrink: 0
+                }}>
+                  3
+                </div>
+                <div style={{ flex: 1 }}>
+                  <h5 className="heading-2" style={{ 
+                    marginBottom: '16px',
+                    color: 'var(--text-primary)',
+                    fontSize: '28px'
+                  }}>
+                    Step 3 — Deliver
+                  </h5>
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    fontSize: '18px',
+                    lineHeight: '1.7'
+                  }}>
+                    The result: a single, beautifully crafted magazine — printed and digital — that tells your future as if it were already real.
+                    A tangible artifact for presentations, exhibitions, leadership retreats, or visionary launches.
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Process Flow Summary */}
+            {/* CTA Section */}
             <div style={{
               textAlign: 'center',
-              marginTop: '80px',
-              padding: '40px',
-              background: 'rgba(0, 255, 209, 0.03)',
-              border: '1px solid rgba(0, 255, 209, 0.1)',
-              borderRadius: '16px',
-              maxWidth: '800px',
-              margin: '80px auto 0 auto'
+              marginTop: '80px'
             }}>
-              <h4 className="heading-2" style={{ 
-                marginBottom: '20px',
-                color: 'var(--brand-primary)'
+              <button className="btn-primary" style={{
+                fontSize: '18px',
+                padding: '16px 32px'
               }}>
-                The Polymathic Process
-              </h4>
-              <p className="body-medium" style={{ 
-                color: 'var(--text-secondary)',
-                fontSize: '16px',
-                lineHeight: '1.6'
-              }}>
-                Our methodology seamlessly weaves together these four disciplines, creating a unified approach 
-                where science fiction becomes strategic reality. Each process feeds into the next, generating 
-                breakthrough innovations that transcend traditional industry boundaries.
-              </p>
+                → Begin Your Future Project
+              </button>
             </div>
           </div>
           
