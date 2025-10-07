@@ -135,7 +135,53 @@ const TeamSection = () => {
                     {member.background}
                   </p>
                   
-                  {/* Additional Description for Katerina */}
+                  {/* Academic Background */}
+                  {member.academicBackground && (
+                    <div style={{ marginBottom: '16px' }}>
+                      <h5 style={{
+                        color: 'var(--brand-primary)',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        marginBottom: '8px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px'
+                      }}>
+                        Academic Background
+                      </h5>
+                      <p className="body-medium" style={{ 
+                        color: 'var(--text-secondary)',
+                        fontSize: '15px',
+                        fontStyle: 'italic'
+                      }}>
+                        {member.academicBackground}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Publications */}
+                  {member.publications && (
+                    <div style={{ marginBottom: '16px' }}>
+                      <h5 style={{
+                        color: 'var(--brand-primary)',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        marginBottom: '8px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px'
+                      }}>
+                        Publications
+                      </h5>
+                      <p className="body-medium" style={{ 
+                        color: 'var(--text-secondary)',
+                        fontSize: '15px',
+                        fontStyle: 'italic'
+                      }}>
+                        {member.publications}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Role at Polymathic Futures */}
                   {member.description && (
                     <div style={{
                       background: 'rgba(0, 255, 209, 0.03)',
@@ -150,7 +196,9 @@ const TeamSection = () => {
                         fontWeight: '600',
                         marginBottom: '12px'
                       }}>
-                        At Polymathic Futures
+                        {member.name === 'Aksinya Staar' ? 'Role in Polymathic Futures' : 
+                         member.name === 'Dr. Philipp Kozin' ? 'Approach & Method' : 
+                         'At Polymathic Futures'}
                       </h5>
                       <p className="body-medium" style={{ 
                         color: 'var(--text-secondary)',
