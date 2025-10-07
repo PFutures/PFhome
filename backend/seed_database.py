@@ -57,7 +57,7 @@ team_members_data = [
         "role": "Polymathic Intelligence Strategist",
         "background": "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, alternative models of education, governance, and economics, she designs futures that anticipate ripple effects across industries and societies.",
         "expertise": ["Philosophy", "Anthropology", "World and Art History", "Asian Studies", "Alternative Education", "Participative Governance", "Online Marketing", "AI Ethics", "Web3 Data Space"],
-        "image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/69va259g_profile%20AS.jpg",
+        "image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/ig3za7i7_profile%20AS%2024.jpg",
         "email": "aksinya@polymathicfutures.com",
         "description": "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
         "academic_background": "Linguistics • Pedagogy • Psychology • Talent Strategy",
