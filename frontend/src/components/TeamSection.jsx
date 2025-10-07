@@ -95,11 +95,23 @@ const TeamSection = () => {
                 {/* Member Photo */}
                 <div style={{ 
                   height: '300px',
-                  backgroundImage: `url(${member.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  position: 'relative'
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}>
+                  <img 
+                    src={member.image}
+                    alt={`${member.name} - ${member.role}`}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center 20%'
+                    }}
+                    onError={(e) => {
+                      e.target.style.backgroundColor = 'var(--bg-secondary)';
+                      e.target.style.display = 'none';
+                    }}
+                  />
                   <div style={{
                     position: 'absolute',
                     bottom: '0',
