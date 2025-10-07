@@ -105,7 +105,9 @@ const TeamSection = () => {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
-                      objectPosition: 'center 20%'
+                      objectPosition: member.name === 'Aksinya Staar' ? 'center 10%' : 
+                                    member.name === 'Dr. Philipp Kozin' ? 'center 25%' :
+                                    'center 20%'
                     }}
                     onError={(e) => {
                       e.target.style.backgroundColor = 'var(--bg-secondary)';
