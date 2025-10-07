@@ -33,30 +33,27 @@ export const mockMagazines = [
 export const mockTeamMembers = [
   {
     id: 1,
-    name: "Dr. Elena Vasquez",
-    role: "Chief Polymath",
-    background: "Quantum physicist turned strategic foresight designer",
-    expertise: ["Quantum Computing", "Strategic Foresight", "Cross-Industry Innovation"],
-    image: "https://images.unsplash.com/photo-1494790108755-2616c07e9ad4?w=300&h=300&fit=crop"
+    name: "Aksinya Staar",
+    role: "Conceptual Architect & Narrative Lead",
+    background: "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, alternative models of education, governance, and economics, she designs futures that anticipate ripple effects across industries and societies.",
+    expertise: ["Philosophy", "Anthropology", "World and Art History", "Asian Studies", "Alternative Education", "Participative Governance", "Online Marketing", "AI Ethics", "Web3 Data Space"],
+    image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/msmexslv_two%20bookss%20-%20Kopie.jpeg",
+    description: "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
+    academicBackground: "Linguistics • Pedagogy • Psychology • Talent Strategy",
+    publications: "Author of Why Polymaths?, Future of Work: From Industrial to Polymath Mindset, and the forthcoming Forgotten History and Untold Future of Education"
   },
   {
     id: 2,
-    name: "Marcus Chen",
-    role: "Narrative Architect", 
-    background: "Former NASA systems engineer, now crafting futures that feel inevitable",
-    expertise: ["Systems Thinking", "Scenario Design", "Technology Integration"],
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop"
+    name: "Dr. Philipp Kozin",
+    role: "Scientific Foresight Director", 
+    background: "Philipp Kozin traces the fault-lines where breakthrough science collides with real-world business – and turns that collision into compasses for industry reinvention. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Trained in the rigor of chemistry, yet unbound by narrow specialization, he carries a multidimensional mind that ventures beyond convention.",
+    expertise: ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation", "Global Business Development"],
+    image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/8rxlnieb_PK.jpg",
+    description: "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
+    academicBackground: "PhD Chemistry • MBA Strategic Management"
   },
   {
     id: 3,
-    name: "Dr. Asha Patel",
-    role: "Research Director",
-    background: "Biotechnology pioneer specializing in convergent innovation",
-    expertise: ["Biotechnology", "Cross-Sector Research", "Innovation Strategy"],
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop"
-  },
-  {
-    id: 4,
     name: "Katerina De Pauw",
     role: "Business Development Director",
     background: "Katerina De Pauw builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
