@@ -105,7 +105,7 @@ const TeamSection = () => {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
-                      objectPosition: member.name === 'Aksinya Staar' ? 'center 10%' : 
+                      objectPosition: member.name === 'Aksinya Staar' ? 'center 25%' : 
                                     member.name === 'Dr. Philipp Kozin' ? 'center 25%' :
                                     'center 20%'
                     }}
