@@ -203,7 +203,10 @@ const TeamSection = () => {
                     paddingTop: '16px',
                     borderTop: '1px solid var(--border-subtle)'
                   }}>
-                    <button
+                    <a
+                      href={member.linkedin || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         background: 'transparent',
                         border: 'none',
@@ -214,6 +217,7 @@ const TeamSection = () => {
                         gap: '8px',
                         fontSize: '14px',
                         padding: '8px',
+                        textDecoration: 'none',
                         transition: 'color 0.3s ease'
                       }}
                       onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'}
@@ -221,7 +225,7 @@ const TeamSection = () => {
                     >
                       <Linkedin size={16} />
                       Connect
-                    </button>
+                    </a>
                     
                     <button
                       style={{
