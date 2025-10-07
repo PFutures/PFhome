@@ -97,7 +97,7 @@ const TeamSection = () => {
                   height: '300px',
                   backgroundImage: `url(${member.image})`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundPosition: 'center top',
                   position: 'relative'
                 }}>
                   <div style={{
