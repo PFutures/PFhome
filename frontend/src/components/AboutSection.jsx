@@ -243,6 +243,321 @@ const AboutSection = () => {
               </button>
             </div>
           </div>
+
+          {/* WHY IT MATTERS - Ultra Creative Design */}
+          <div style={{ marginTop: '160px', position: 'relative', overflow: 'hidden' }}>
+            
+            {/* Floating Abstract Elements */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              pointerEvents: 'none',
+              zIndex: 0
+            }}>
+              {/* Floating Numbers/Spreadsheet Elements */}
+              <div className="floating-element spreadsheet-1" style={{
+                position: 'absolute',
+                top: '15%',
+                left: '10%',
+                opacity: 0.1,
+                fontSize: '48px',
+                color: '#666',
+                fontFamily: 'monospace',
+                animation: 'floatAway 8s ease-in-out infinite'
+              }}>
+                Q4: 23%
+              </div>
+              <div className="floating-element spreadsheet-2" style={{
+                position: 'absolute',
+                top: '25%',
+                right: '15%',
+                opacity: 0.1,
+                fontSize: '36px',
+                color: '#666',
+                fontFamily: 'monospace',
+                animation: 'floatAway 10s ease-in-out infinite 2s'
+              }}>
+                ROI: 3.2x
+              </div>
+              <div className="floating-element spreadsheet-3" style={{
+                position: 'absolute',
+                bottom: '30%',
+                left: '20%',
+                opacity: 0.1,
+                fontSize: '42px',
+                color: '#666',
+                fontFamily: 'monospace',
+                animation: 'floatAway 9s ease-in-out infinite 4s'
+              }}>
+                KPI: +15%
+              </div>
+
+              {/* Floating Story Elements */}
+              <div className="floating-element story-1" style={{
+                position: 'absolute',
+                top: '20%',
+                right: '20%',
+                opacity: 0.15,
+                fontSize: '24px',
+                color: 'var(--brand-primary)',
+                fontStyle: 'italic',
+                animation: 'storyFloat 12s ease-in-out infinite'
+              }}>
+                "In 2040..."
+              </div>
+              <div className="floating-element story-2" style={{
+                position: 'absolute',
+                bottom: '40%',
+                right: '10%',
+                opacity: 0.15,
+                fontSize: '20px',
+                color: 'var(--brand-primary)',
+                fontStyle: 'italic',
+                animation: 'storyFloat 14s ease-in-out infinite 3s'
+              }}>
+                "Revolutionary breakthrough..."
+              </div>
+            </div>
+
+            <h3 className="heading-1" style={{ 
+              textAlign: 'center', 
+              marginBottom: '40px',
+              color: 'var(--brand-primary)',
+              position: 'relative',
+              zIndex: 2
+            }}>
+              Why It Matters
+            </h3>
+            
+            <h4 className="display-medium" style={{ 
+              textAlign: 'center', 
+              marginBottom: '80px',
+              color: 'var(--text-primary)',
+              fontWeight: '600',
+              position: 'relative',
+              zIndex: 2
+            }}>
+              Why Create a Magazine from the Future?
+            </h4>
+
+            {/* Central Interactive Magazine Visual */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: '80px',
+              position: 'relative',
+              zIndex: 2
+            }}>
+              <div className="future-magazine" style={{
+                width: '300px',
+                height: '400px',
+                background: `
+                  linear-gradient(135deg, 
+                    rgba(0, 255, 209, 0.1) 0%, 
+                    rgba(0, 255, 209, 0.03) 50%,
+                    rgba(18, 18, 18, 0.9) 100%
+                  )
+                `,
+                border: '2px solid rgba(0, 255, 209, 0.3)',
+                borderRadius: '8px',
+                position: 'relative',
+                transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
+                animation: 'magazineFloat 6s ease-in-out infinite',
+                boxShadow: `
+                  0 20px 40px rgba(0, 0, 0, 0.4),
+                  0 0 20px rgba(0, 255, 209, 0.2),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.1)
+                `,
+                overflow: 'hidden'
+              }}>
+                {/* Magazine Cover Content */}
+                <div style={{
+                  padding: '30px 20px',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between'
+                }}>
+                  <div>
+                    <div style={{
+                      fontSize: '12px',
+                      color: 'var(--brand-primary)',
+                      marginBottom: '10px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px'
+                    }}>
+                      YOUR COMPANY • 2040 EDITION
+                    </div>
+                    <h5 style={{
+                      fontSize: '20px',
+                      color: 'var(--text-primary)',
+                      marginBottom: '15px',
+                      lineHeight: '1.2'
+                    }}>
+                      The Innovation That Changed Everything
+                    </h5>
+                    <p style={{
+                      fontSize: '12px',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.4'
+                    }}>
+                      How your breakthrough transformed three industries and created $2.3B in new value...
+                    </p>
+                  </div>
+                  
+                  {/* Animated Pages Effect */}
+                  <div style={{
+                    position: 'absolute',
+                    right: '20px',
+                    bottom: '20px',
+                    width: '60px',
+                    height: '80px'
+                  }}>
+                    <div className="page-flip page-1" style={{
+                      position: 'absolute',
+                      width: '60px',
+                      height: '80px',
+                      background: 'rgba(0, 255, 209, 0.1)',
+                      border: '1px solid rgba(0, 255, 209, 0.2)',
+                      borderRadius: '2px',
+                      transformOrigin: 'left center',
+                      animation: 'pageFlip1 4s ease-in-out infinite'
+                    }} />
+                    <div className="page-flip page-2" style={{
+                      position: 'absolute',
+                      width: '60px',
+                      height: '80px',
+                      background: 'rgba(0, 255, 209, 0.05)',
+                      border: '1px solid rgba(0, 255, 209, 0.15)',
+                      borderRadius: '2px',
+                      transformOrigin: 'left center',
+                      animation: 'pageFlip2 4s ease-in-out infinite 1s'
+                    }} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Content with Typewriter Effect */}
+            <div style={{
+              maxWidth: '900px',
+              margin: '0 auto',
+              textAlign: 'center',
+              position: 'relative',
+              zIndex: 2
+            }}>
+              
+              {/* Main Body Text */}
+              <div style={{ marginBottom: '60px' }}>
+                <p className="body-large typewriter-text" style={{ 
+                  marginBottom: '30px',
+                  color: 'var(--text-primary)',
+                  fontSize: '22px',
+                  lineHeight: '1.6',
+                  fontWeight: '500'
+                }}>
+                  Because strategy alone rarely inspires.<br />
+                  Because the future is not a spreadsheet — it's a story waiting to be told.
+                </p>
+                
+                <p className="body-large" style={{ 
+                  marginBottom: '30px',
+                  color: 'var(--text-secondary)',
+                  fontSize: '20px',
+                  lineHeight: '1.7',
+                  maxWidth: '800px',
+                  margin: '0 auto 30px auto'
+                }}>
+                  When your company's long-term vision becomes a narrative people can see, feel, and believe, 
+                  it shifts how they think and act today. A magazine from tomorrow makes the abstract concrete — 
+                  turning foresight into alignment, imagination into innovation, and leadership into shared excitement.
+                </p>
+              </div>
+
+              {/* Dramatic Closing Line */}
+              <div style={{
+                padding: '60px 40px',
+                background: `
+                  linear-gradient(135deg, 
+                    rgba(0, 255, 209, 0.05) 0%, 
+                    rgba(0, 0, 0, 0.8) 50%,
+                    rgba(0, 255, 209, 0.05) 100%
+                  )
+                `,
+                border: '1px solid rgba(0, 255, 209, 0.2)',
+                borderRadius: '16px',
+                position: 'relative',
+                overflow: 'hidden',
+                marginBottom: '60px'
+              }}>
+                {/* Background Pattern */}
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  backgroundImage: `
+                    radial-gradient(circle at 30% 30%, rgba(0, 255, 209, 0.03) 0%, transparent 50%),
+                    radial-gradient(circle at 70% 70%, rgba(0, 255, 209, 0.02) 0%, transparent 50%)
+                  `,
+                  animation: 'patternShift 8s ease-in-out infinite'
+                }} />
+                
+                <p className="display-medium dramatic-text" style={{
+                  fontSize: '36px',
+                  fontWeight: '700',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '0',
+                  position: 'relative',
+                  zIndex: 1,
+                  textShadow: '0 0 20px rgba(0, 255, 209, 0.3)'
+                }}>
+                  You don't predict the future.<br />
+                  <span style={{ color: 'var(--text-primary)' }}>You publish it.</span>
+                </p>
+              </div>
+
+              {/* Creative CTAs */}
+              <div style={{
+                display: 'flex',
+                gap: '30px',
+                justifyContent: 'center',
+                flexWrap: 'wrap'
+              }}>
+                <button className="btn-primary cta-magazine" style={{
+                  fontSize: '18px',
+                  padding: '18px 36px',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                  <span style={{ position: 'relative', zIndex: 2 }}>
+                    → Commission Your 2040 Magazine
+                  </span>
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: '-100%',
+                    width: '100%',
+                    height: '100%',
+                    background: 'linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%)',
+                    animation: 'buttonShine 3s ease-in-out infinite'
+                  }} />
+                </button>
+                
+                <button className="btn-secondary" style={{
+                  fontSize: '18px',
+                  padding: '18px 36px'
+                }}>
+                  → Explore Sample Narratives
+                </button>
+              </div>
+            </div>
+          </div>
           
           {/* Why Us Section */}
           <div style={{ marginTop: '120px', textAlign: 'center' }}>
