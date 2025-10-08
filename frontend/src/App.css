@@ -39,6 +39,30 @@ body {
   line-height: 1.6;
 }
 
+/* Artistic Font Classes */
+.font-artistic {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.artistic-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.artistic-display {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.artistic-italic {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
 /* Typography Scale - High Contrast Dark Theme */
 .display-huge { 
   font-size: 66px; 
