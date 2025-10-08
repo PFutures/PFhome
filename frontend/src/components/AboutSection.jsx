@@ -126,7 +126,7 @@ const AboutSection = () => {
                   1
                 </div>
                 <div style={{ flex: 1 }}>
-                  <h5 className="heading-2" style={{ 
+                  <h5 className="heading-2 artistic-heading" style={{ 
                     marginBottom: '16px',
                     color: 'var(--text-primary)',
                     fontSize: '28px'
