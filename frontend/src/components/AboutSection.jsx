@@ -90,7 +90,6 @@ const AboutSection = () => {
               margin: '0 auto 80px auto',
               color: 'var(--text-secondary)'
             }}>
-              Every future has to be imagined before it can be built.<br />
               Here's how your magazine from tomorrow takes shape:
             </p>
             
