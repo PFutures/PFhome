@@ -314,42 +314,7 @@ const TeamSection = () => {
             ))}
           </div>
           
-          {/* Join Team CTA */}
-          <div style={{
-            background: 'var(--bg-secondary)',
-            border: '1px solid var(--border-subtle)',
-            borderRadius: '0px',
-            padding: '60px',
-            textAlign: 'center'
-          }}>
-            <User size={48} color="var(--brand-primary)" style={{ marginBottom: '24px' }} />
-            
-            <h3 className="heading-1" style={{ marginBottom: '20px' }}>
-              Join Our Network
-            </h3>
-            
-            <p className="body-large" style={{ 
-              marginBottom: '32px',
-              maxWidth: '600px',
-              margin: '0 auto 32px auto',
-              color: 'var(--text-secondary)'
-            }}>
-              We're always looking for brilliant minds from diverse disciplines. 
-              If you're passionate about cross-sector innovation, we'd love to hear from you.
-            </p>
-            
-            <button 
-              className="btn-primary dark-button-animate"
-              onClick={() => {
-                const element = document.getElementById('contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Get In Touch
-            </button>
-          </div>
+          {/* Join Our Network section removed as requested */}
         </div>
       </div>
     </section>
