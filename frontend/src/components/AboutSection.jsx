@@ -335,15 +335,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <h3 className="heading-1 artistic-heading" style={{ 
-              textAlign: 'center', 
-              marginBottom: '40px',
-              color: 'var(--brand-primary)',
-              position: 'relative',
-              zIndex: 2
-            }}>
-              Why It Matters
-            </h3>
+            {/* "Why It Matters" heading removed as requested */}
             
             <h4 className="display-medium artistic-heading" style={{ 
               textAlign: 'center', 
