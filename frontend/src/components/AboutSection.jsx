@@ -504,40 +504,7 @@ const AboutSection = () => {
 
               {/* Dramatic closing line removed as requested */}
 
-              {/* Creative CTAs */}
-              <div style={{
-                display: 'flex',
-                gap: '30px',
-                justifyContent: 'center',
-                flexWrap: 'wrap'
-              }}>
-                <button className="btn-primary cta-magazine" style={{
-                  fontSize: '18px',
-                  padding: '18px 36px',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}>
-                  <span style={{ position: 'relative', zIndex: 2 }}>
-                    → Commission Your 2040 Magazine
-                  </span>
-                  <div style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: '-100%',
-                    width: '100%',
-                    height: '100%',
-                    background: 'linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%)',
-                    animation: 'buttonShine 3s ease-in-out infinite'
-                  }} />
-                </button>
-                
-                <button className="btn-secondary" style={{
-                  fontSize: '18px',
-                  padding: '18px 36px'
-                }}>
-                  → Explore Sample Narratives
-                </button>
-              </div>
+              {/* Buttons removed as requested */}
             </div>
           </div>
           
