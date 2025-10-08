@@ -30,7 +30,7 @@ const AboutSection = () => {
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Main About Content */}
-          <div style={{ textAlign: 'center', marginBottom: '100px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 className="display-large artistic-heading" style={{ 
               marginBottom: '32px',
               textTransform: 'uppercase',
