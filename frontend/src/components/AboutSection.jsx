@@ -74,7 +74,7 @@ const AboutSection = () => {
               How It Works
             </h3>
             
-            <h4 className="heading-2" style={{ 
+            <h4 className="heading-2 artistic-heading" style={{ 
               textAlign: 'center', 
               marginBottom: '40px',
               color: 'var(--text-primary)',
