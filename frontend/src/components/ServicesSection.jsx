@@ -74,7 +74,7 @@ const ServicesSection = () => {
         <div className="dark-content-container">
           {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <h2 className="display-large" style={{ marginBottom: '24px' }}>
+            <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               Our Services
             </h2>
             
