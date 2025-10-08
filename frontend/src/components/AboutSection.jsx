@@ -223,14 +223,33 @@ const AboutSection = () => {
                   }}>
                     Step 3 — Deliver
                   </h5>
-                  <p className="body-medium" style={{ 
-                    color: 'var(--text-secondary)',
-                    fontSize: '18px',
-                    lineHeight: '1.7'
-                  }}>
-                    The result: a single, beautifully crafted magazine — printed and digital — that tells your future as if it were already real.
-                    A tangible artifact for presentations, exhibitions, leadership retreats, or visionary launches.
-                  </p>
+                  <div>
+                    <p className="body-medium" style={{ 
+                      color: 'var(--text-secondary)',
+                      fontSize: '18px',
+                      lineHeight: '1.7',
+                      marginBottom: '16px'
+                    }}>
+                      The results we deliver are <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>sci-fi prototypes of the future</span> — tangible artifacts that bring vision to life.
+                    </p>
+                    
+                    <p className="body-medium" style={{ 
+                      color: 'var(--text-secondary)',
+                      fontSize: '18px',
+                      lineHeight: '1.7',
+                      marginBottom: '16px'
+                    }}>
+                      Sometimes it's a beautifully crafted <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>magazine</span>, created as a single, collectible piece for presentations, exhibitions, leadership retreats, or visionary launches.
+                    </p>
+                    
+                    <p className="body-medium" style={{ 
+                      color: 'var(--text-secondary)',
+                      fontSize: '18px',
+                      lineHeight: '1.7'
+                    }}>
+                      Other times, it takes the form of a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>short film</span>, an <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>immersive workshop</span>, or a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>one-to-one brainstorming journey</span> — each designed to make the future feel real, here and now.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
