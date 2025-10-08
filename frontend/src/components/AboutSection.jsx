@@ -511,32 +511,7 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Why Us Section */}
-          <div style={{ marginTop: '120px', textAlign: 'center' }}>
-            <h3 className="heading-1" style={{ marginBottom: '40px' }}>
-              Why Us?
-            </h3>
-            
-            <p className="body-large" style={{ 
-              maxWidth: '700px',
-              margin: '0 auto',
-              color: 'var(--text-secondary)',
-              marginBottom: '32px'
-            }}>
-              We are polymaths – scholars, scientists, strategists, and storytellers. 
-              Our method braids peer-reviewed research, emergent technology scouting, 
-              and narrative design into one act.
-            </p>
-            
-            <p className="body-medium" style={{ 
-              color: 'var(--text-muted)',
-              marginBottom: '40px'
-            }}>
-              Where consultancies offer scenarios, we deliver fiction that behaves like fact.
-            </p>
-            
-            {/* First phrase removed as requested */}
-          </div>
+          {/* Why Us section removed as requested */}
         </div>
       </div>
     </section>
