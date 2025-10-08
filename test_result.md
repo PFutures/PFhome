@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Update Urban Tomorrow magazine cover with user-uploaded image and complete HOW WE WORK section design"
+user_problem_statement: "Improve hero title styling - reduce size and fix centering issues for better visual balance"
 
 backend:
   - task: "Update Urban Tomorrow magazine cover image URL"
