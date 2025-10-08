@@ -71,7 +71,7 @@ const AboutSection = () => {
           </div>
           
           {/* HOW IT WORKS - New Clear Process */}
-          <div>
+          <div style={{ marginTop: '80px' }}>
             <h3 className="heading-1 artistic-heading" style={{ 
               textAlign: 'center', 
               marginBottom: '30px',
