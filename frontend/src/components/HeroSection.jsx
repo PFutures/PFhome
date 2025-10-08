@@ -54,15 +54,48 @@ const HeroSection = () => {
             <div style={{ flex: 1, paddingRight: '40px' }}>
               <div style={{ marginBottom: '40px' }}>
               
+              {/* Opening Hook */}
               <p className="body-large" style={{ 
-                marginBottom: '48px',
-                maxWidth: '600px',
-                color: 'var(--text-secondary)'
+                marginBottom: '24px',
+                maxWidth: '650px',
+                color: 'var(--text-primary)',
+                fontSize: '1.25rem',
+                fontWeight: '500',
+                lineHeight: '1.4'
               }}>
-                Imagine this — a magazine entirely about your company, but written from the future.
-                A unique edition from 2035, 2040, or even 2060, where your innovations, products, and impact are already shaping the world.
-                Crafted with scientific intelligence and narrative design, it turns your long-term strategy into stories that inspire teams, partners, and investors.
+                Imagine your company in 2035, 2040, or even 2060 — where your innovations are already transforming the world.
               </p>
+              
+              {/* Main Content */}
+              <div style={{ 
+                marginBottom: '32px',
+                maxWidth: '650px'
+              }}>
+                <p className="body-large" style={{ 
+                  marginBottom: '20px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  We help you explore that future and tell its story — through a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>printed magazine</span>, a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>short movie</span>, a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>workshop</span>, or even a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>one-to-one brainstorming session</span>.
+                </p>
+                
+                <p className="body-large" style={{ 
+                  marginBottom: '20px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  Using scientific foresight and creative storytelling, we turn strategy into narratives that inspire teams, engage partners, and convince investors.
+                </p>
+                
+                <p className="body-medium" style={{ 
+                  color: 'var(--brand-primary)',
+                  fontWeight: '500',
+                  fontStyle: 'italic',
+                  lineHeight: '1.5'
+                }}>
+                  Powerful tools for strategy, marketing, and communication, giving your company a unique voice in shaping what's ahead.
+                </p>
+              </div>
             </div>
             
             {/* CTA Buttons */}
