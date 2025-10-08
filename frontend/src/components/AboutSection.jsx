@@ -235,18 +235,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* CTA Section */}
-            <div style={{
-              textAlign: 'center',
-              marginTop: '80px'
-            }}>
-              <button className="btn-primary" style={{
-                fontSize: '18px',
-                padding: '16px 32px'
-              }}>
-                → Begin Your Future Project
-              </button>
-            </div>
+            {/* CTA Section removed as requested */}
           </div>
 
           {/* WHY IT MATTERS - Ultra Creative Design */}
