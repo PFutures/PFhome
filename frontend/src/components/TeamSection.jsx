@@ -28,7 +28,7 @@ const TeamSection = () => {
 
   if (loading) {
     return (
-      <section id="team" className="dark-container" style={{ padding: '160px 0' }}>
+      <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
@@ -42,7 +42,7 @@ const TeamSection = () => {
 
   if (error) {
     return (
-      <section id="team" className="dark-container" style={{ padding: '160px 0' }}>
+      <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: '#ff4444' }}>
@@ -54,7 +54,7 @@ const TeamSection = () => {
     );
   }
   return (
-    <section id="team" className="dark-container" style={{ padding: '160px 0' }}>
+    <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Section Header */}
