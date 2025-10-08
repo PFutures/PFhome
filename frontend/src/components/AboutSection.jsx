@@ -477,49 +477,7 @@ const AboutSection = () => {
                 </p>
               </div>
 
-              {/* Dramatic Closing Line */}
-              <div style={{
-                padding: '60px 40px',
-                background: `
-                  linear-gradient(135deg, 
-                    rgba(0, 255, 209, 0.05) 0%, 
-                    rgba(0, 0, 0, 0.8) 50%,
-                    rgba(0, 255, 209, 0.05) 100%
-                  )
-                `,
-                border: '1px solid rgba(0, 255, 209, 0.2)',
-                borderRadius: '16px',
-                position: 'relative',
-                overflow: 'hidden',
-                marginBottom: '60px'
-              }}>
-                {/* Background Pattern */}
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backgroundImage: `
-                    radial-gradient(circle at 30% 30%, rgba(0, 255, 209, 0.03) 0%, transparent 50%),
-                    radial-gradient(circle at 70% 70%, rgba(0, 255, 209, 0.02) 0%, transparent 50%)
-                  `,
-                  animation: 'patternShift 8s ease-in-out infinite'
-                }} />
-                
-                <p className="display-medium dramatic-text artistic-italic" style={{
-                  fontSize: '36px',
-                  fontWeight: '700',
-                  color: 'var(--brand-primary)',
-                  marginBottom: '0',
-                  position: 'relative',
-                  zIndex: 1,
-                  textShadow: '0 0 20px rgba(0, 255, 209, 0.3)'
-                }}>
-                  You don't predict the future.<br />
-                  <span style={{ color: 'var(--text-primary)' }}>You publish it.</span>
-                </p>
-              </div>
+              {/* Dramatic closing line removed as requested */}
 
               {/* Creative CTAs */}
               <div style={{
