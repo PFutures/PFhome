@@ -47,7 +47,7 @@ export const mockTeamMembers = [
     id: 2,
     name: "Dr. Philipp Kozin",
     role: "Scientific Foresight Director", 
-    background: "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Trained in the rigor of chemistry, yet unbound by narrow specialization, he carries a multidimensional mind that ventures beyond convention.",
+    background: "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
     expertise: ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation", "Global Business Development"],
     image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/8rxlnieb_PK.jpg",
     linkedin: "https://www.linkedin.com/in/philipp-kozin/",
