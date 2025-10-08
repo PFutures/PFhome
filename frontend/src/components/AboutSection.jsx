@@ -425,7 +425,7 @@ const AboutSection = () => {
                     lineHeight: '1.6',
                     marginBottom: '20px'
                   }}>
-                    This isn't just a magazine—it's a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>tangible artifact from your future</span>. 
+                    A magazine carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>weight and wonder of a tangible artifact from your future</span>. 
                     A conversation starter, a strategy tool, and a vision made real.
                   </p>
                   
