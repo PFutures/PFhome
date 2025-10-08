@@ -582,17 +582,7 @@ const AboutSection = () => {
               Where consultancies offer scenarios, we deliver fiction that behaves like fact.
             </p>
             
-            <div style={{ 
-              background: 'var(--brand-primary)',
-              color: '#000000',
-              padding: '32px 48px',
-              borderRadius: '0px',
-              display: 'inline-block',
-              fontWeight: '500',
-              fontSize: '20px'
-            }}>
-              This magazine is your invitation to imagine – and then to act.
-            </div>
+            {/* First phrase removed as requested */}
           </div>
         </div>
       </div>
