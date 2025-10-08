@@ -470,14 +470,24 @@ const AboutSection = () => {
               {/* Main Body Text */}
               <div style={{ marginBottom: '60px' }}>
                 <p className="body-large typewriter-text" style={{ 
-                  marginBottom: '30px',
+                  marginBottom: '24px',
                   color: 'var(--text-primary)',
                   fontSize: '22px',
                   lineHeight: '1.6',
                   fontWeight: '500'
                 }}>
-                  Because strategy alone rarely inspires.<br />
-                  Because the future is not a spreadsheet — it's a story waiting to be told.
+                  Because strategy alone rarely inspires.
+                </p>
+                
+                <p className="body-large" style={{ 
+                  marginBottom: '24px',
+                  color: 'var(--text-secondary)',
+                  fontSize: '20px',
+                  lineHeight: '1.7',
+                  maxWidth: '800px',
+                  margin: '0 auto 24px auto'
+                }}>
+                  When your company's long-term vision becomes a narrative people can see, feel, and believe, it shifts how they think and act today.
                 </p>
                 
                 <p className="body-large" style={{ 
@@ -488,9 +498,7 @@ const AboutSection = () => {
                   maxWidth: '800px',
                   margin: '0 auto 30px auto'
                 }}>
-                  When your company's long-term vision becomes a narrative people can see, feel, and believe, 
-                  it shifts how they think and act today. A magazine from tomorrow makes the abstract concrete — 
-                  turning foresight into alignment, imagination into innovation, and leadership into shared excitement.
+                  A magazine from tomorrow makes the abstract concrete — turning <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>foresight into alignment</span>, <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>imagination into innovation</span>, and <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>leadership into shared excitement</span>.
                 </p>
               </div>
 
