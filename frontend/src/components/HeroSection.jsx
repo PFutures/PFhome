@@ -21,10 +21,10 @@ const HeroSection = () => {
     <section className="dark-container" style={{ paddingTop: '80px', minHeight: '100vh' }}>
       <div className="dark-full-container">
         <div style={{ 
-          display: 'flex', 
-          alignItems: 'center', 
           minHeight: 'calc(100vh - 80px)',
-          gap: '60px'
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
         }}>
           {/* Full-width Hero Title */}
           <div style={{ 
@@ -42,9 +42,15 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          {/* Left side - Content */}
-          <div style={{ flex: 1, paddingRight: '40px' }}>
-            <div style={{ marginBottom: '40px' }}>
+          {/* Two-column content below title */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '60px'
+          }}>
+            {/* Left side - Content */}
+            <div style={{ flex: 1, paddingRight: '40px' }}>
+              <div style={{ marginBottom: '40px' }}>
               
               <p className="body-large" style={{ 
                 marginBottom: '48px',
