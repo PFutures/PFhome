@@ -29,14 +29,16 @@ const HeroSection = () => {
           {/* Full-width Hero Title */}
           <div style={{ 
             width: '100%',
-            textAlign: 'center',
-            marginBottom: '60px'
+            textAlign: 'left',
+            marginBottom: '40px',
+            paddingLeft: '0px'
           }}>
             <h1 className="display-huge artistic-display" style={{ 
               marginBottom: '24px',
-              fontSize: 'clamp(3rem, 8vw, 6rem)',
-              lineHeight: '1.1',
-              letterSpacing: '-0.02em'
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              lineHeight: '1.2',
+              letterSpacing: '-0.01em',
+              maxWidth: '100%'
             }}>
               Scientific Foresight for Cross-Industry Breakthroughs
             </h1>
