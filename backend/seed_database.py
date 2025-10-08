@@ -54,7 +54,7 @@ team_members_data = [
     {
         "id": "1",
         "name": "Aksinya Staar",
-        "role": "Polymathic Intelligence Strategist",
+        "role": "Polymathic Intelligence Director",
         "background": "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, alternative models of education, governance, and economics, she designs futures that anticipate ripple effects across industries and societies.",
         "expertise": ["Futures & Foresight", "Linguistics", "Talent & Culture", "Education", "Philosophy", "World and Art History", "Asian Studies", "Psychology", "Web 3 Data Space"],
         "image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/ig3za7i7_profile%20AS%2024.jpg",
