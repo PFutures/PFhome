@@ -33,6 +33,17 @@ export const mockMagazines = [
 export const mockTeamMembers = [
   {
     id: 1,
+    name: "Dr. Philipp Kozin",
+    role: "Scientific Foresight Director", 
+    background: "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
+    expertise: ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation", "Global Business Development"],
+    image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/8rxlnieb_PK.jpg",
+    linkedin: "https://www.linkedin.com/in/philipp-kozin/",
+    description: "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
+    academicBackground: "PhD Chemistry • MBA Strategic Management"
+  },
+  {
+    id: 2,
     name: "Aksinya Staar",
     role: "Polymathic Intelligence Director",
     background: "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, alternative models of education, governance, and economics, she designs futures that anticipate ripple effects across industries and societies.",
@@ -42,17 +53,6 @@ export const mockTeamMembers = [
     description: "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
     academicBackground: "Linguistics • Pedagogy • Psychology • Talent Strategy",
     publications: "Author of Why Polymaths?, Future of Work: From Industrial to Polymath Mindset, and the forthcoming Forgotten History and Untold Future of Education"
-  },
-  {
-    id: 2,
-    name: "Dr. Philipp Kozin",
-    role: "Scientific Foresight Director", 
-    background: "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
-    expertise: ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation", "Global Business Development"],
-    image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/8rxlnieb_PK.jpg",
-    linkedin: "https://www.linkedin.com/in/philipp-kozin/",
-    description: "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
-    academicBackground: "PhD Chemistry • MBA Strategic Management"
   },
   {
     id: 3,
