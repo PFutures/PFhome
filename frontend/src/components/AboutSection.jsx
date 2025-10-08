@@ -91,9 +91,9 @@ const AboutSection = () => {
             
             <p className="body-large" style={{ 
               textAlign: 'center',
-              marginBottom: '80px',
+              marginBottom: '60px',
               maxWidth: '700px',
-              margin: '0 auto 80px auto',
+              margin: '0 auto 60px auto',
               color: 'var(--text-secondary)'
             }}>
               Here's how your magazine from tomorrow takes shape:
