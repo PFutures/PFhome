@@ -331,7 +331,7 @@ const AboutSection = () => {
               Why It Matters
             </h3>
             
-            <h4 className="display-medium" style={{ 
+            <h4 className="display-medium artistic-heading" style={{ 
               textAlign: 'center', 
               marginBottom: '80px',
               color: 'var(--text-primary)',
