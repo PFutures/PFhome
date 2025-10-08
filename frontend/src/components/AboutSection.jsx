@@ -353,7 +353,7 @@ const AboutSection = () => {
               position: 'relative',
               zIndex: 2
             }}>
-              Why Create a Magazine from the Future?
+              Why sci-fi prototyping is important
             </h4>
 
             {/* Central Interactive Magazine Visual */}
