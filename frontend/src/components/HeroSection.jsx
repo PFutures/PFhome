@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Left side - Content */}
           <div style={{ flex: 1, paddingRight: '40px' }}>
             <div style={{ marginBottom: '40px' }}>
-              <h1 className="display-huge" style={{ marginBottom: '24px' }}>
+              <h1 className="display-huge artistic-display" style={{ marginBottom: '24px' }}>
                 Scientific Foresight for Cross-Industry Breakthroughs
               </h1>
               
