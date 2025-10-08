@@ -138,93 +138,25 @@ const TeamSection = () => {
                   </div>
                 </div>
                 
-                {/* Member Info - Restructured for Better Readability */}
+                {/* Member Info */}
                 <div style={{ padding: '32px' }}>
-                  
-                  {/* Key Background Points */}
-                  <div style={{ marginBottom: '20px' }}>
-                    {member.name === 'Aksinya Staar' && (
-                      <div>
-                        <p className="body-medium" style={{ 
-                          color: 'var(--text-secondary)',
-                          marginBottom: '16px',
-                          lineHeight: '1.6',
-                          fontSize: '16px'
-                        }}>
-                          <strong>The mind behind the polymathic principle</strong> that defines Polymathic Futures.
-                        </p>
-                        <ul style={{
-                          color: 'var(--text-secondary)',
-                          marginLeft: '20px',
-                          marginBottom: '16px',
-                          lineHeight: '1.6'
-                        }}>
-                          <li>Maps how ideas move through people — and how people shift entire systems</li>
-                          <li>Transforms complexity into visions that are both imaginative and actionable</li>
-                          <li>Designs futures that anticipate ripple effects across industries and societies</li>
-                          <li>Career spanning Talent & Culture, alternative education models, governance, and economics</li>
-                        </ul>
-                      </div>
-                    )}
-
-                    {member.name === 'Dr. Philipp Kozin' && (
-                      <div>
-                        <p className="body-medium" style={{ 
-                          color: 'var(--text-secondary)',
-                          marginBottom: '16px',
-                          lineHeight: '1.6',
-                          fontSize: '16px'
-                        }}>
-                          <strong>Scientific foresight visionary</strong> who transforms breakthrough science into business directions.
-                        </p>
-                        <ul style={{
-                          color: 'var(--text-secondary)',
-                          marginLeft: '20px',
-                          marginBottom: '16px',
-                          lineHeight: '1.6'
-                        }}>
-                          <li>Horizon-scanning to framing 10-15 year technology bets</li>
-                          <li>Curates global partnerships pulling deep-tech disruptions into product road-maps</li>
-                          <li>Gift of imagination combined with rigorous scientific training</li>
-                          <li>Rooted in chemistry, moves fluidly across domains with multidimensional thinking</li>
-                        </ul>
-                      </div>
-                    )}
-
-                    {member.name === 'Katerina De Pauw' && (
-                      <div>
-                        <p className="body-medium" style={{ 
-                          color: 'var(--text-secondary)',
-                          marginBottom: '16px',
-                          lineHeight: '1.6',
-                          fontSize: '16px'
-                        }}>
-                          <strong>Sales talent</strong> who builds pathways where markets meet people.
-                        </p>
-                        <ul style={{
-                          color: 'var(--text-secondary)',
-                          marginLeft: '20px',
-                          marginBottom: '16px',
-                          lineHeight: '1.6'
-                        }}>
-                          <li>Experience in education, trade, and coaching</li>
-                          <li>Reads both human and commercial dimensions of opportunity</li>
-                          <li>Turns insights into lasting relationships and tangible results</li>
-                          <li>Communication style: charismatic yet gentle, magnetic yet warm</li>
-                          <li>Creates trust by listening deeply and making others feel seen</li>
-                        </ul>
-                      </div>
-                    )}
-                  </div>
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    marginBottom: '12px',
+                    lineHeight: '1.4',
+                    fontSize: '14px'
+                  }}>
+                    {member.background}
+                  </p>
                   
                   {/* Academic Background */}
                   {member.academicBackground && (
-                    <div style={{ marginBottom: '18px' }}>
+                    <div style={{ marginBottom: '12px' }}>
                       <h5 style={{
                         color: 'var(--brand-primary)',
-                        fontSize: '13px',
+                        fontSize: '12px',
                         fontWeight: '600',
-                        marginBottom: '8px',
+                        marginBottom: '6px',
                         textTransform: 'uppercase',
                         letterSpacing: '1px'
                       }}>
@@ -232,7 +164,7 @@ const TeamSection = () => {
                       </h5>
                       <p className="body-medium" style={{ 
                         color: 'var(--text-secondary)',
-                        fontSize: '15px',
+                        fontSize: '13px',
                         fontStyle: 'italic'
                       }}>
                         {member.academicBackground}
@@ -242,12 +174,12 @@ const TeamSection = () => {
 
                   {/* Publications */}
                   {member.publications && (
-                    <div style={{ marginBottom: '18px' }}>
+                    <div style={{ marginBottom: '12px' }}>
                       <h5 style={{
                         color: 'var(--brand-primary)',
-                        fontSize: '13px',
+                        fontSize: '12px',
                         fontWeight: '600',
-                        marginBottom: '8px',
+                        marginBottom: '6px',
                         textTransform: 'uppercase',
                         letterSpacing: '1px'
                       }}>
@@ -255,7 +187,7 @@ const TeamSection = () => {
                       </h5>
                       <p className="body-medium" style={{ 
                         color: 'var(--text-secondary)',
-                        fontSize: '15px',
+                        fontSize: '13px',
                         fontStyle: 'italic'
                       }}>
                         {member.publications}
@@ -263,22 +195,20 @@ const TeamSection = () => {
                     </div>
                   )}
 
-                  {/* Role Highlight */}
+                  {/* Role at Polymathic Futures */}
                   {member.description && (
                     <div style={{
                       background: 'rgba(0, 255, 209, 0.03)',
                       border: '1px solid rgba(0, 255, 209, 0.1)',
                       borderRadius: '8px',
-                      padding: '18px',
-                      marginBottom: '18px'
+                      padding: '16px',
+                      marginBottom: '16px'
                     }}>
                       <h5 style={{
                         color: 'var(--brand-primary)',
-                        fontSize: '14px',
+                        fontSize: '12px',
                         fontWeight: '600',
-                        marginBottom: '10px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px'
+                        marginBottom: '8px'
                       }}>
                         {member.name === 'Aksinya Staar' ? 'Role in Polymathic Futures' : 
                          member.name === 'Dr. Philipp Kozin' ? 'Approach & Method' : 
@@ -286,8 +216,8 @@ const TeamSection = () => {
                       </h5>
                       <p className="body-medium" style={{ 
                         color: 'var(--text-secondary)',
-                        lineHeight: '1.6',
-                        fontSize: '15px'
+                        lineHeight: '1.4',
+                        fontSize: '14px'
                       }}>
                         {member.description}
                       </p>
