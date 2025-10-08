@@ -80,11 +80,27 @@ const HeroSection = () => {
                 </p>
                 
                 <p className="body-large" style={{ 
+                  marginBottom: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  The results we deliver are <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>sci-fi prototypes of the future</span> — tangible artifacts that bring vision to life.
+                </p>
+                
+                <p className="body-large" style={{ 
+                  marginBottom: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  Sometimes it's a beautifully crafted <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>magazine</span>, created as a single, collectible piece for presentations, exhibitions, leadership retreats, or visionary launches.
+                </p>
+                
+                <p className="body-large" style={{ 
                   marginBottom: '20px',
                   color: 'var(--text-secondary)',
                   lineHeight: '1.6'
                 }}>
-                  Using scientific foresight and creative storytelling, we turn strategy into narratives that inspire teams, engage partners, and convince investors.
+                  Other times, it takes the form of a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>short film</span>, an <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>immersive workshop</span>, or a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>one-to-one brainstorming journey</span> — each designed to make the future feel real, here and now.
                 </p>
                 
                 <p className="body-medium" style={{ 
