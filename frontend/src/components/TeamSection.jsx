@@ -68,8 +68,7 @@ const TeamSection = () => {
               margin: '0 auto',
               color: 'var(--text-secondary)'
             }}>
-              Scholars, scientists, strategists, and storytellers. Our diverse expertise 
-              enables breakthrough insights across disciplinary boundaries.
+              Scholars, scientists, strategists, and storytellers — our team thrives at the intersections where ideas collide and new possibilities emerge. Together with a global network of more than 200 scientists, startups, visionaries, and experts, we generate breakthrough insights that cross disciplines, connect worlds, and turn complexity into opportunity.
             </p>
           </div>
           
