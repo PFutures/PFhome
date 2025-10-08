@@ -507,7 +507,7 @@ const AboutSection = () => {
                   animation: 'patternShift 8s ease-in-out infinite'
                 }} />
                 
-                <p className="display-medium dramatic-text" style={{
+                <p className="display-medium dramatic-text artistic-italic" style={{
                   fontSize: '36px',
                   fontWeight: '700',
                   color: 'var(--brand-primary)',
