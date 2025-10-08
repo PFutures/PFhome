@@ -26,7 +26,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="dark-container" style={{ padding: '160px 0' }}>
+    <section id="about" className="dark-container" style={{ padding: '100px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Main About Content */}
