@@ -26,12 +26,25 @@ const HeroSection = () => {
           minHeight: 'calc(100vh - 80px)',
           gap: '60px'
         }}>
+          {/* Full-width Hero Title */}
+          <div style={{ 
+            width: '100%',
+            textAlign: 'center',
+            marginBottom: '60px'
+          }}>
+            <h1 className="display-huge artistic-display" style={{ 
+              marginBottom: '24px',
+              fontSize: 'clamp(3rem, 8vw, 6rem)',
+              lineHeight: '1.1',
+              letterSpacing: '-0.02em'
+            }}>
+              Scientific Foresight for Cross-Industry Breakthroughs
+            </h1>
+          </div>
+
           {/* Left side - Content */}
           <div style={{ flex: 1, paddingRight: '40px' }}>
             <div style={{ marginBottom: '40px' }}>
-              <h1 className="display-huge artistic-display" style={{ marginBottom: '24px' }}>
-                Scientific Foresight for Cross-Industry Breakthroughs
-              </h1>
               
               <p className="body-large" style={{ 
                 marginBottom: '48px',
