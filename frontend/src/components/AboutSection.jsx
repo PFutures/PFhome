@@ -66,7 +66,7 @@ const AboutSection = () => {
           
           {/* HOW IT WORKS - New Clear Process */}
           <div>
-            <h3 className="heading-1" style={{ 
+            <h3 className="heading-1 artistic-heading" style={{ 
               textAlign: 'center', 
               marginBottom: '30px',
               color: 'var(--brand-primary)'
