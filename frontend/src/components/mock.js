@@ -58,7 +58,7 @@ export const mockTeamMembers = [
     id: 3,
     name: "Katerina De Pauw",
     role: "Business Development Director",
-    background: "Katerina De Pauw builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
+    background: "Katerina De Pauw is a sales talent who builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
     expertise: ["Sales & Business Development", "Marketing Strategy", "Client Partnerships", "Education Management", "International Trade", "Science of Well-Being", "Coaching"],
     image: "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/ujrbhai0_1597408870352.jfif",
     linkedin: "https://www.linkedin.com/in/katerina-de-pauw-8178436/",
