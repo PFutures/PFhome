@@ -82,24 +82,25 @@ const AboutSection = () => {
             
             {/* Text removed as requested */}
             
-            {/* Process Steps */}
+            {/* Process Steps - 3 Vertical Columns */}
             <div style={{ 
-              maxWidth: '1000px',
+              maxWidth: '1200px',
               margin: '0 auto',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '60px'
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '40px',
+              padding: '0 20px'
             }}>
               
-              {/* Step 1 - Discover */}
+              {/* Column 1 - Discover */}
               <div style={{
                 display: 'flex',
-                alignItems: 'flex-start',
-                gap: '40px',
-                padding: '0 20px'
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center'
               }}>
                 <div style={{
-                  minWidth: '80px',
+                  width: '80px',
                   height: '80px',
                   borderRadius: '50%',
                   background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
@@ -110,38 +111,36 @@ const AboutSection = () => {
                   fontSize: '24px',
                   fontWeight: '700',
                   color: 'var(--brand-primary)',
-                  flexShrink: 0
+                  marginBottom: '24px'
                 }}>
                   1
                 </div>
-                <div style={{ flex: 1 }}>
-                  <h5 className="heading-2 artistic-heading" style={{ 
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
-                    fontSize: '28px'
-                  }}>
-                    Step 1 — Discover
-                  </h5>
-                  <p className="body-medium" style={{ 
-                    color: 'var(--text-secondary)',
-                    fontSize: '18px',
-                    lineHeight: '1.7'
-                  }}>
-                    We begin with your essence — strategy, research, values, and ambitions.
-                    Together, we identify key signals, emerging technologies, and long-horizon opportunities that define your future landscape.
-                  </p>
-                </div>
+                <h5 className="heading-2 artistic-heading" style={{ 
+                  marginBottom: '16px',
+                  color: 'var(--text-primary)',
+                  fontSize: '24px'
+                }}>
+                  Step 1 — Discover
+                </h5>
+                <p className="body-medium" style={{ 
+                  color: 'var(--text-secondary)',
+                  fontSize: '16px',
+                  lineHeight: '1.6'
+                }}>
+                  We begin with your essence — strategy, research, values, and ambitions.
+                  Together, we identify key signals, emerging technologies, and long-horizon opportunities that define your future landscape.
+                </p>
               </div>
 
-              {/* Step 2 - Design */}
+              {/* Column 2 - Design */}
               <div style={{
                 display: 'flex',
-                alignItems: 'flex-start',
-                gap: '40px',
-                padding: '0 20px'
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center'
               }}>
                 <div style={{
-                  minWidth: '80px',
+                  width: '80px',
                   height: '80px',
                   borderRadius: '50%',
                   background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
@@ -152,38 +151,36 @@ const AboutSection = () => {
                   fontSize: '24px',
                   fontWeight: '700',
                   color: 'var(--brand-primary)',
-                  flexShrink: 0
+                  marginBottom: '24px'
                 }}>
                   2
                 </div>
-                <div style={{ flex: 1 }}>
-                  <h5 className="heading-2 artistic-heading" style={{ 
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
-                    fontSize: '28px'
-                  }}>
-                    Step 2 — Design
-                  </h5>
-                  <p className="body-medium" style={{ 
-                    color: 'var(--text-secondary)',
-                    fontSize: '18px',
-                    lineHeight: '1.7'
-                  }}>
-                    Our team of polymaths, foresight researchers, and creative writers translate these insights into science-based sci-fi articles, concept visuals, and future narratives.
-                    Each story is designed to resonate — internally with teams, externally with partners and investors.
-                  </p>
-                </div>
+                <h5 className="heading-2 artistic-heading" style={{ 
+                  marginBottom: '16px',
+                  color: 'var(--text-primary)',
+                  fontSize: '24px'
+                }}>
+                  Step 2 — Design
+                </h5>
+                <p className="body-medium" style={{ 
+                  color: 'var(--text-secondary)',
+                  fontSize: '16px',
+                  lineHeight: '1.6'
+                }}>
+                  Our team of polymaths, foresight researchers, and creative writers translate these insights into science-based sci-fi articles, concept visuals, and future narratives.
+                  Each story is designed to resonate — internally with teams, externally with partners and investors.
+                </p>
               </div>
 
-              {/* Step 3 - Deliver */}
+              {/* Column 3 - Deliver */}
               <div style={{
                 display: 'flex',
-                alignItems: 'flex-start',
-                gap: '40px',
-                padding: '0 20px'
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center'
               }}>
                 <div style={{
-                  minWidth: '80px',
+                  width: '80px',
                   height: '80px',
                   borderRadius: '50%',
                   background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.2) 0%, rgba(0, 255, 209, 0.05) 100%)',
@@ -194,45 +191,43 @@ const AboutSection = () => {
                   fontSize: '24px',
                   fontWeight: '700',
                   color: 'var(--brand-primary)',
-                  flexShrink: 0
+                  marginBottom: '24px'
                 }}>
                   3
                 </div>
-                <div style={{ flex: 1 }}>
-                  <h5 className="heading-2 artistic-heading" style={{ 
-                    marginBottom: '16px',
-                    color: 'var(--text-primary)',
-                    fontSize: '28px'
+                <h5 className="heading-2 artistic-heading" style={{ 
+                  marginBottom: '16px',
+                  color: 'var(--text-primary)',
+                  fontSize: '24px'
+                }}>
+                  Step 3 — Deliver
+                </h5>
+                <div>
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    fontSize: '16px',
+                    lineHeight: '1.6',
+                    marginBottom: '12px'
                   }}>
-                    Step 3 — Deliver
-                  </h5>
-                  <div>
-                    <p className="body-medium" style={{ 
-                      color: 'var(--text-secondary)',
-                      fontSize: '18px',
-                      lineHeight: '1.7',
-                      marginBottom: '16px'
-                    }}>
-                      The results we deliver are <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>sci-fi prototypes of the future</span> — tangible artifacts that bring vision to life.
-                    </p>
-                    
-                    <p className="body-medium" style={{ 
-                      color: 'var(--text-secondary)',
-                      fontSize: '18px',
-                      lineHeight: '1.7',
-                      marginBottom: '16px'
-                    }}>
-                      Sometimes it's a beautifully crafted <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>magazine</span>, created as a single, collectible piece for presentations, exhibitions, leadership retreats, or visionary launches.
-                    </p>
-                    
-                    <p className="body-medium" style={{ 
-                      color: 'var(--text-secondary)',
-                      fontSize: '18px',
-                      lineHeight: '1.7'
-                    }}>
-                      Other times, it takes the form of a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>short film</span>, an <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>immersive workshop</span>, or a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>one-to-one brainstorming journey</span> — each designed to make the future feel real, here and now.
-                    </p>
-                  </div>
+                    The results we deliver are <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>sci-fi prototypes of the future</span> — tangible artifacts that bring vision to life.
+                  </p>
+                  
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    fontSize: '16px',
+                    lineHeight: '1.6',
+                    marginBottom: '12px'
+                  }}>
+                    Sometimes it's a beautifully crafted <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>magazine</span>, created as a single, collectible piece for presentations, exhibitions, leadership retreats, or visionary launches.
+                  </p>
+                  
+                  <p className="body-medium" style={{ 
+                    color: 'var(--text-secondary)',
+                    fontSize: '16px',
+                    lineHeight: '1.6'
+                  }}>
+                    Other times, it takes the form of a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>short film</span>, an <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>immersive workshop</span>, or a <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>one-to-one brainstorming journey</span> — each designed to make the future feel real, here and now.
+                  </p>
                 </div>
               </div>
             </div>
