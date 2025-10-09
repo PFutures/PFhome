@@ -10,8 +10,27 @@ const Header = () => {
 
   return (
     <header className="dark-header">
-      <div className="dark-logo">
-        Polymathic Futures
+      <div className="dark-logo" style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        gap: '12px' 
+      }}>
+        <img 
+          src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/aen2dtcr_logo%20PF.jpeg"
+          alt="Polymathic Futures Logo"
+          style={{
+            height: '40px',
+            width: 'auto',
+            objectFit: 'contain'
+          }}
+        />
+        <span style={{ 
+          fontSize: '24px',
+          fontWeight: '600',
+          color: 'var(--brand-primary)'
+        }}>
+          Polymathic Futures
+        </span>
       </div>
       
       <nav className="dark-nav">
