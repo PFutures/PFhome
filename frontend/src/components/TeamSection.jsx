@@ -78,21 +78,17 @@ const TeamSection = () => {
                 marginBottom: '40px',
                 textAlign: 'center'
               }}>
-                {[
-                  { title: 'Scholars', icon: '📚' },
-                  { title: 'Scientists', icon: '🔬' },
-                  { title: 'Strategists', icon: '🎯' },
-                  { title: 'Storytellers', icon: '✍️' }
-                ].map((role, index) => (
+                {['Scholars', 'Scientists', 'Strategists', 'Storytellers'].map((role, index) => (
                   <div 
-                    key={role.title}
+                    key={role}
                     style={{
                       background: 'rgba(0, 255, 209, 0.05)',
                       border: '1px solid rgba(0, 255, 209, 0.15)',
                       borderRadius: '8px',
                       padding: '20px 16px',
                       transition: 'all 0.3s ease',
-                      cursor: 'pointer'
+                      cursor: 'pointer',
+                      position: 'relative'
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.background = 'rgba(0, 255, 209, 0.1)';
@@ -106,12 +102,19 @@ const TeamSection = () => {
                     }}
                   >
                     <div style={{
-                      fontSize: '24px',
-                      marginBottom: '8px',
-                      filter: 'grayscale(100%)',
-                      transition: 'filter 0.3s ease'
+                      width: '40px',
+                      height: '40px',
+                      background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      margin: '0 auto 12px',
+                      fontSize: '18px',
+                      fontWeight: '600',
+                      color: 'white'
                     }}>
-                      {role.icon}
+                      {role.charAt(0)}
                     </div>
                     <p style={{
                       margin: 0,
@@ -119,7 +122,7 @@ const TeamSection = () => {
                       fontWeight: '500',
                       color: 'var(--brand-primary)'
                     }}>
-                      {role.title}
+                      {role}
                     </p>
                   </div>
                 ))}
