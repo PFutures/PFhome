@@ -56,7 +56,7 @@ const ServicesSection = () => {
 
   if (error) {
     return (
-      <section id="services" className="dark-container" style={{ padding: '100px 0' }}>
+      <section id="services" className="dark-container" style={{ padding: '60px 0 100px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: '#ff4444' }}>
