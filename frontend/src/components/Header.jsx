@@ -19,7 +19,7 @@ const Header = () => {
           src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/aen2dtcr_logo%20PF.jpeg"
           alt="Polymathic Futures Logo"
           style={{
-            height: '40px',
+            height: '60px',
             width: 'auto',
             objectFit: 'contain',
             transition: 'transform 0.3s ease'
