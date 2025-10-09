@@ -345,7 +345,7 @@ const AboutSection = () => {
               position: 'relative',
               zIndex: 2
             }}>
-              Why sci-fi prototyping is important
+              OUR FLAGSHIP PRODUCT
             </h4>
 
             {/* Magazine Mockup on Left Side */}
