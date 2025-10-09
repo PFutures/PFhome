@@ -108,7 +108,7 @@ const HeroSection = () => {
                     margin: '0',
                     fontWeight: '400'
                   }}>
-                    We empower leaders in{' '}
+                    We enable leaders in{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>strategy</span>,{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>marketing</span>, and{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>communications</span>{' '}
