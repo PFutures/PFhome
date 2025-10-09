@@ -50,23 +50,256 @@ const AboutSection = () => {
               We design the next generation of products, partnerships, and markets – beyond industry borders.
             </p>
             
+            {/* Creative Entanglement Showcase */}
             <div style={{ 
-              background: 'var(--bg-secondary)',
-              border: '1px solid var(--border-subtle)',
-              padding: '40px',
-              borderRadius: '0px',
-              maxWidth: '900px',
-              margin: '0 auto'
+              maxWidth: '1200px',
+              margin: '0 auto',
+              position: 'relative'
             }}>
-              <p className="body-medium" style={{ 
-                fontStyle: 'italic',
-                color: 'var(--text-primary)',
-                lineHeight: '1.6'
+              
+              {/* Opening Statement */}
+              <div style={{
+                textAlign: 'center',
+                marginBottom: '60px'
               }}>
-                "Polymathic Futures works where disciplines entangle: when city streets are built from 
-                self-healing materials, when chocolate molecules are re-engineered to deliver personalized 
-                medicine, when culture and code fuse into markets no one has yet imagined."
-              </p>
+                <p className="body-large" style={{ 
+                  fontStyle: 'italic',
+                  color: 'var(--brand-primary)',
+                  fontSize: '24px',
+                  lineHeight: '1.4',
+                  fontWeight: '500'
+                }}>
+                  "Polymathic Futures works where disciplines entangle:"
+                </p>
+              </div>
+
+              {/* Interactive Concept Grid */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 1fr)',
+                gap: '40px',
+                marginBottom: '40px'
+              }}>
+
+                {/* Concept 1: Air as Architecture */}
+                <div style={{
+                  position: 'relative',
+                  background: 'rgba(0, 255, 209, 0.05)',
+                  border: '1px solid rgba(0, 255, 209, 0.2)',
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 255, 209, 0.2)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  
+                  <div style={{
+                    height: '200px',
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/316iyye9_35c91ea9-e496-4b09-bfb5-8e5cf59872a1.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                      padding: '30px 20px 20px',
+                      color: 'white'
+                    }}>
+                      <h5 style={{
+                        margin: 0,
+                        fontSize: '18px',
+                        fontWeight: '600',
+                        color: 'var(--brand-primary)'
+                      }}>
+                        Air as architecture.
+                      </h5>
+                    </div>
+                  </div>
+                  
+                  <div style={{
+                    padding: '20px',
+                    textAlign: 'center'
+                  }}>
+                    <div style={{
+                      width: '40px',
+                      height: '2px',
+                      background: 'var(--brand-primary)',
+                      margin: '0 auto 15px',
+                      borderRadius: '2px'
+                    }} />
+                    <p style={{
+                      margin: 0,
+                      fontSize: '14px',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.4'
+                    }}>
+                      Where atmosphere becomes structure
+                    </p>
+                  </div>
+                </div>
+
+                {/* Concept 2: Porous Micro-Concrete */}
+                <div style={{
+                  position: 'relative',
+                  background: 'rgba(0, 255, 209, 0.05)',
+                  border: '1px solid rgba(0, 255, 209, 0.2)',
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 255, 209, 0.2)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  
+                  <div style={{
+                    height: '200px',
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/gkdm80sv_fc014d76-2212-4771-a18e-242054c61e00%20%283%29.jfif')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                      padding: '30px 20px 20px',
+                      color: 'white'
+                    }}>
+                      <h5 style={{
+                        margin: 0,
+                        fontSize: '18px',
+                        fontWeight: '600',
+                        color: 'var(--brand-primary)'
+                      }}>
+                        Porous micro-concrete designed to tune human health.
+                      </h5>
+                    </div>
+                  </div>
+                  
+                  <div style={{
+                    padding: '20px',
+                    textAlign: 'center'
+                  }}>
+                    <div style={{
+                      width: '40px',
+                      height: '2px',
+                      background: 'var(--brand-primary)',
+                      margin: '0 auto 15px',
+                      borderRadius: '2px'
+                    }} />
+                    <p style={{
+                      margin: 0,
+                      fontSize: '14px',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.4'
+                    }}>
+                      Where materials become medicine
+                    </p>
+                  </div>
+                </div>
+
+                {/* Concept 3: Sensing Tires */}
+                <div style={{
+                  position: 'relative',
+                  background: 'rgba(0, 255, 209, 0.05)',
+                  border: '1px solid rgba(0, 255, 209, 0.2)',
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  transition: 'all 0.3s ease',
+                  cursor: 'pointer'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-8px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 255, 209, 0.2)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}>
+                  
+                  <div style={{
+                    height: '200px',
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/zqxq0uyn_7b7d766c-9adc-49ad-b02c-6302f3797be3-Picsart-AiImageEnhancer.png')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
+                      padding: '30px 20px 20px',
+                      color: 'white'
+                    }}>
+                      <h5 style={{
+                        margin: 0,
+                        fontSize: '18px',
+                        fontWeight: '600',
+                        color: 'var(--brand-primary)'
+                      }}>
+                        Car tires that sense and respond like fingertips.
+                      </h5>
+                    </div>
+                  </div>
+                  
+                  <div style={{
+                    padding: '20px',
+                    textAlign: 'center'
+                  }}>
+                    <div style={{
+                      width: '40px',
+                      height: '2px',
+                      background: 'var(--brand-primary)',
+                      margin: '0 auto 15px',
+                      borderRadius: '2px'
+                    }} />
+                    <p style={{
+                      margin: 0,
+                      fontSize: '14px',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.4'
+                    }}>
+                      Where rubber becomes intuition
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Connecting Lines Animation */}
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '0',
+                right: '0',
+                height: '1px',
+                background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
+                opacity: '0.3',
+                zIndex: '-1',
+                animation: 'pulseConnection 3s ease-in-out infinite'
+              }} />
+              
             </div>
           </div>
           
