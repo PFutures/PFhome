@@ -41,7 +41,7 @@ const PortfolioSection = () => {
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
-              Loading magazines from the future...
+              Loading sci-fi prototyping samples...
             </p>
           </div>
         </div>
