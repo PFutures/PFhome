@@ -191,6 +191,19 @@ test_plan:
   test_priority: "high_first"
   completion_status: "All pending tasks completed successfully"
 
+frontend:
+  - task: "Future Magazine Creation service content update"
+    implemented: false
+    working: false
+    file: "seed_database.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "testing"
+        comment: "❌ VERIFICATION FAILED: Future Magazine Creation service has NOT been updated with the requested content. Current issues found: 1) Description still shows old text 'We create literal magazines from 2035–2040, written as if your company's breakthroughs already happened' instead of new 'We craft literal magazines from the future — from 2035, 2040, even 2060 — written as if your company's breakthroughs have already happened.' 2) Features section only has 4 bullet points (Custom timeline development, Industry cross-pollination, Tangible future artifacts, Strategic roadmapping) instead of the requested 5 covering sci-fi foresight articles, cross-pollination ideas, possible & probable futures, Already Emerging section, and More to Explore sources list. 3) Timeframe shows old '6–8 weeks' instead of requested '8-12 weeks'. The service is the first card in Services section and layout/styling are proper, but content needs to be updated in backend seed_database.py file."
+
 agent_communication:
   - agent: "main"
     message: "✅ HERO TITLE STYLING IMPROVED: Successfully addressed user feedback about hero title being too large and poorly centered. Reduced font size, changed from center to left alignment, adjusted margins and spacing. Title now has better visual hierarchy and integration with the rest of the hero section content. Screenshot confirms the improvement looks much more balanced and professional."
@@ -204,3 +217,5 @@ agent_communication:
     message: "✅ HEADING STYLING CONSISTENCY VERIFICATION COMPLETE: Successfully verified that both headings 'At the intersection of science and strategy' and 'OUR FLAGSHIP PRODUCT' now have perfectly matching styling. Confirmed all requirements: 1) Font size: Both are exactly 28px ✅, 2) Font weight: Both are 500 ✅, 3) Text transform: Both are uppercase ✅, 4) Letter spacing: Both have consistent 2.8px (0.1em) ✅. Screenshots captured of both headings showing visual consistency. The styling implementation in AboutSection.jsx (lines 34-42 and 298-310) is correct and renders identically on the live site. Both headings are properly positioned in their respective sections and maintain excellent visual hierarchy."
   - agent: "testing"
     message: "✅ PORTFOLIO SECTION HEADING VERIFICATION COMPLETE: Successfully verified that the Portfolio section heading has been changed from 'Magazines from the Future' to 'Sci-Fi Prototyping Samples'. Confirmed all requirements: 1) Main section heading displays 'Sci-Fi Prototyping Samples' exactly as requested (line 73), 2) Loading text updated to 'Loading sci-fi prototyping samples...' (line 44), 3) All 3 magazine covers/portfolio items display correctly with proper images and styling, 4) Section layout and styling remain intact with proper padding and visual hierarchy, 5) Old heading completely removed from codebase. Screenshot captured showing the updated Portfolio section with the new heading prominently displayed above the magazine grid."
+  - agent: "testing"
+    message: "❌ FUTURE MAGAZINE CREATION SERVICE UPDATE VERIFICATION FAILED: The requested service content updates have NOT been implemented. Testing revealed that the 'Future Magazine Creation' service (first card in Services section) still contains the old content: Description shows 'We create literal magazines from 2035–2040...' instead of the new 'We craft literal magazines from the future — from 2035, 2040, even 2060...', Features section has only 4 bullet points instead of the requested 5 specific ones, and Timeframe shows '6–8 weeks' instead of '8-12 weeks'. The service data needs to be updated in /app/backend/seed_database.py lines 94-100. Layout and styling are working properly, but the content update is missing."
