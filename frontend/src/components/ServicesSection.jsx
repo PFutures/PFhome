@@ -152,11 +152,12 @@ const ServicesSection = () => {
                         key={featureIndex}
                         style={{
                           display: 'flex',
-                          alignItems: 'center',
+                          alignItems: 'flex-start',
                           gap: '12px',
-                          marginBottom: '12px',
+                          marginBottom: '16px',
                           color: 'var(--text-secondary)',
-                          fontSize: '16px'
+                          fontSize: '16px',
+                          lineHeight: '1.5'
                         }}
                       >
                         <div style={{
@@ -164,9 +165,12 @@ const ServicesSection = () => {
                           height: '6px',
                           background: 'var(--brand-primary)',
                           borderRadius: '50%',
-                          flexShrink: 0
+                          flexShrink: 0,
+                          marginTop: '8px'
                         }} />
-                        {feature}
+                        <span style={{ flex: 1 }}>
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
