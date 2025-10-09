@@ -299,7 +299,10 @@ const AboutSection = () => {
               textAlign: 'center', 
               marginBottom: '80px',
               color: 'var(--text-primary)',
-              fontWeight: '600',
+              fontWeight: '500',
+              fontSize: '28px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
               position: 'relative',
               zIndex: 2
             }}>
