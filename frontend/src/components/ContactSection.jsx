@@ -67,7 +67,7 @@ const ContactSection = () => {
           {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
-              Let's Write Your Future
+              Let's Prototype Your Futures
             </h2>
             
             <p className="body-large" style={{ 
