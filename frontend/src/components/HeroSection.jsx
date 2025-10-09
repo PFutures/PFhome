@@ -54,63 +54,179 @@ const HeroSection = () => {
             <div style={{ flex: 1, paddingRight: '40px' }}>
               <div style={{ marginBottom: '40px' }}>
               
-              {/* Opening Hook */}
-              <p className="body-large" style={{ 
-                marginBottom: '24px',
-                maxWidth: '650px',
-                color: 'var(--text-primary)',
-                fontSize: '1.25rem',
-                fontWeight: '500',
-                lineHeight: '1.4'
+              {/* Hero Hook - Large Impact Statement */}
+              <div style={{
+                marginBottom: '40px',
+                maxWidth: '700px'
               }}>
-                Imagine your company in 2035, 2040, or even 2060 — where your innovations are already transforming the world.
-              </p>
-              
-              {/* Main Content */}
-              <div style={{ 
-                marginBottom: '32px',
-                maxWidth: '650px'
+                <p style={{ 
+                  fontSize: 'clamp(28px, 4vw, 36px)',
+                  fontWeight: '300',
+                  lineHeight: '1.3',
+                  color: 'var(--text-primary)',
+                  marginBottom: '20px',
+                  letterSpacing: '-0.02em'
+                }}>
+                  Imagine your company in{' '}
+                  <span style={{
+                    background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    fontWeight: '600'
+                  }}>
+                    2035, 2040, or even 2060
+                  </span>
+                  {' '}— shaping the world with groundbreaking innovations!
+                </p>
+              </div>
+
+              {/* Value Proposition Grid */}
+              <div style={{
+                background: 'rgba(0, 255, 209, 0.03)',
+                border: '1px solid rgba(0, 255, 209, 0.15)',
+                borderRadius: '16px',
+                padding: '32px',
+                marginBottom: '40px',
+                maxWidth: '700px'
               }}>
-                <p className="body-large" style={{ 
-                  marginBottom: '20px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6'
-                }}>
-                  We help you explore that future and tell its story — through a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>printed magazine</span>, a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>short movie</span>, a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>workshop</span>, or even a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>one-to-one brainstorming session</span>.
-                </p>
                 
-                <p className="body-large" style={{ 
-                  marginBottom: '16px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6'
-                }}>
-                  The results we deliver are <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>sci-fi prototypes of the future</span> — tangible artifacts that bring vision to life.
-                </p>
-                
-                <p className="body-large" style={{ 
-                  marginBottom: '16px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6'
-                }}>
-                  Sometimes it's a beautifully crafted <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>magazine</span>, created as a single, collectible piece for presentations, exhibitions, leadership retreats, or visionary launches.
-                </p>
-                
-                <p className="body-large" style={{ 
-                  marginBottom: '20px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6'
-                }}>
-                  Other times, it takes the form of a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>short film</span>, an <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>immersive workshop</span>, or a <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>one-to-one brainstorming journey</span> — each designed to make the future feel real, here and now.
-                </p>
-                
-                <p className="body-medium" style={{ 
-                  color: 'var(--brand-primary)',
-                  fontWeight: '500',
-                  fontStyle: 'italic',
-                  lineHeight: '1.5'
-                }}>
-                  Powerful tools for strategy, marketing, and communication, giving your company a unique voice in shaping what's ahead.
-                </p>
+                {/* What We Do */}
+                <div style={{ marginBottom: '32px' }}>
+                  <h3 style={{
+                    fontSize: '20px',
+                    fontWeight: '600',
+                    color: 'var(--brand-primary)',
+                    marginBottom: '16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}>
+                    <span>🚀</span> What We Do
+                  </h3>
+                  <p style={{
+                    fontSize: '18px',
+                    lineHeight: '1.6',
+                    color: 'var(--text-primary)',
+                    marginBottom: '20px'
+                  }}>
+                    We help you explore that future and tell its story — through{' '}
+                    <span style={{ 
+                      background: 'rgba(0, 255, 209, 0.2)',
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                      fontWeight: '500'
+                    }}>magazines</span>,{' '}
+                    <span style={{ 
+                      background: 'rgba(0, 255, 209, 0.2)',
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                      fontWeight: '500'
+                    }}>workshops</span>, or{' '}
+                    <span style={{ 
+                      background: 'rgba(0, 255, 209, 0.2)',
+                      padding: '2px 6px',
+                      borderRadius: '4px',
+                      fontWeight: '500'
+                    }}>one-to-one sessions</span>.
+                  </p>
+                </div>
+
+                {/* How We Do It */}
+                <div style={{ marginBottom: '32px' }}>
+                  <h3 style={{
+                    fontSize: '20px',
+                    fontWeight: '600',
+                    color: 'var(--brand-primary)',
+                    marginBottom: '16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}>
+                    <span>🧬</span> How We Do It
+                  </h3>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+                    gap: '12px'
+                  }}>
+                    <div style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      textAlign: 'center',
+                      border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
+                      <span style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>
+                        Scientific Foresight
+                      </span>
+                    </div>
+                    <div style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      textAlign: 'center',
+                      border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
+                      <span style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>
+                        Polymathic Analysis
+                      </span>
+                    </div>
+                    <div style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      textAlign: 'center',
+                      border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
+                      <span style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>
+                        Creative Storytelling
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Impact */}
+                <div>
+                  <h3 style={{
+                    fontSize: '20px',
+                    fontWeight: '600',
+                    color: 'var(--brand-primary)',
+                    marginBottom: '16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}>
+                    <span>⚡</span> The Impact
+                  </h3>
+                  <p style={{
+                    fontSize: '18px',
+                    lineHeight: '1.6',
+                    color: 'var(--text-primary)',
+                    marginBottom: '16px'
+                  }}>
+                    We create narratives that <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>inspire</span>,{' '}
+                    <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>engage</span>, and{' '}
+                    <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>persuade</span>.
+                  </p>
+                  <div style={{
+                    background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.1) 0%, rgba(0, 255, 209, 0.05) 100%)',
+                    padding: '16px 20px',
+                    borderRadius: '8px',
+                    border: '1px solid rgba(0, 255, 209, 0.2)'
+                  }}>
+                    <p style={{
+                      fontSize: '16px',
+                      color: 'var(--brand-primary)',
+                      fontWeight: '500',
+                      margin: '0',
+                      textAlign: 'center'
+                    }}>
+                      Perfect for strategy • marketing • communication
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
             
