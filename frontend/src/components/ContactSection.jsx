@@ -61,7 +61,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="dark-container" style={{ padding: '160px 0' }}>
+    <section id="contact" className="dark-container" style={{ padding: '100px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Section Header */}
