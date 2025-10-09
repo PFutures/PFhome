@@ -968,6 +968,11 @@ body {
   .display-huge { font-size: 48px; }
 }
 
+/* Pulse connection animation */
+@keyframes pulseConnection {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
 /* Remove App-header styles to prevent conflicts */
 .App-header {
   display: none;
