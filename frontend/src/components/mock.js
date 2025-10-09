@@ -70,9 +70,15 @@ export const mockServices = [
   {
     id: 1,
     title: "Future Magazine Creation",
-    description: "We create literal magazines from 2035–2040, written as if your company's breakthroughs already happened",
-    features: ["Custom timeline development", "Industry cross-pollination", "Tangible future artifacts", "Strategic roadmapping"],
-    timeframe: "6–8 weeks",
+    description: "We craft literal magazines from the future — from 2035, 2040, even 2060 — written as if your company's breakthroughs have already happened.",
+    features: [
+      "10–20 sci-fi foresight articles turning your strategy into vivid stories of how your products, people, and impact evolve across the next decades",
+      "Cross-pollination ideas — surprising connections between your industry and others you've never imagined collaborating with",
+      "Possible & probable futures — scenarios grounded in foresight and science, not fantasy",
+      "\"Already Emerging\" section — reporting on current R&D, academic labs, and startups already shaping the seeds of your future",
+      "\"More to Explore\" sources list — curated state-of-the-art innovations and research directions for those who want to dive deeper"
+    ],
+    timeframe: "8-12 weeks",
     ideal_for: "Companies seeking breakthrough innovation directions"
   },
   {
