@@ -93,7 +93,7 @@ const TeamSection = () => {
               >
                 {/* Member Photo */}
                 <div style={{ 
-                  height: '300px',
+                  height: '400px',
                   position: 'relative',
                   overflow: 'hidden'
                 }}>
