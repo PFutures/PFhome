@@ -265,6 +265,17 @@ frontend:
       - working: true
         agent: "testing"
         comment: "✅ TEAM MEMBER IMAGES SUCCESSFULLY VERIFIED: All three team member photos have been updated correctly in the 'We are Polymaths' section. Confirmed: 1) Dr. Philipp Kozin (Scientific Foresight Director) - now displays the new male photo from WhatsApp Image (800x800px, URL contains 'WhatsApp%20Image') ✅ 2) Aksinya Staar (Polymathic Intelligence Director) - now displays the new photo with books (734x630px, URL contains 'two%20bookss.jpeg') ✅ 3) Katerina De Pauw (Business Development Director) - now displays the new Katya photo (788x933px, URL contains 'Katyaa.jfif') ✅ All images are loading correctly with proper dimensions, layout and formatting remain intact, names and roles are properly displayed, and the overall team section looks excellent with the updated photos. Screenshots captured showing all three new photos properly displayed in the team section."
+  - task: "Team section profile image height increase verification"
+    implemented: true
+    working: true
+    file: "TeamSection.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "✅ PROFILE IMAGE HEIGHT INCREASE SUCCESSFULLY VERIFIED: All requested profile image updates have been perfectly implemented in the 'We are Polymaths' team section: 1) Image height increased from 300px to 400px - All profile images now have exact 400px height with container dimensions of 425x400px ✅ 2) Dr. Philipp Kozin's new image confirmed - Displaying the new PK.jpeg photo (URL: https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/w8faf1j9_PK.jpeg) ✅ 3) Perfect image alignment - All three team members (Philipp, Aksinya, Katerina) have consistent 400px vertical dimensions with proper object positioning ✅ 4) Excellent overall layout balance - Team section shows improved visual impact with taller profile images, proper grid layout (40px gap), and uniform spacing ✅ 5) High image quality - All images load correctly with object-fit: cover maintaining excellent proportions ✅ The increased vertical space creates a much more impactful and professional presentation. Screenshots captured showing both overall team section and detailed verification of the 400px height implementation."
 
 agent_communication:
   - agent: "main"
