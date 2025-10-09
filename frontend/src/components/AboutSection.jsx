@@ -297,6 +297,7 @@ const AboutSection = () => {
             
             <h4 className="display-medium artistic-heading" style={{ 
               textAlign: 'center', 
+              marginTop: '60px',
               marginBottom: '80px',
               color: 'var(--text-primary)',
               fontWeight: '500',
