@@ -22,10 +22,9 @@ const Header = () => {
             height: '40px',
             width: 'auto',
             objectFit: 'contain',
-            filter: 'brightness(0) saturate(100%) invert(64%) sepia(99%) saturate(2572%) hue-rotate(169deg) brightness(101%) contrast(101%)',
-            transition: 'all 0.3s ease'
+            transition: 'transform 0.3s ease'
           }}
-          onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
+          onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
           onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
         />
         <span style={{ 
