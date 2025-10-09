@@ -58,20 +58,7 @@ const AboutSection = () => {
             }}>
               
               {/* Opening Statement */}
-              <div style={{
-                textAlign: 'center',
-                marginBottom: '60px'
-              }}>
-                <p className="body-large" style={{ 
-                  fontStyle: 'italic',
-                  color: 'var(--brand-primary)',
-                  fontSize: '24px',
-                  lineHeight: '1.4',
-                  fontWeight: '500'
-                }}>
-                  "Polymathic Futures works where disciplines entangle:"
-                </p>
-              </div>
+              {/* Opening statement removed as requested */}
 
               {/* Interactive Concept Grid */}
               <div style={{
