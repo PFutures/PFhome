@@ -83,11 +83,17 @@ export const mockServices = [
   },
   {
     id: 2,  
-    title: "Cross-Industry Innovation Mapping",
-    description: "Identify unexpected partnerships and product opportunities across sector boundaries",
-    features: ["Discipline convergence analysis", "Opportunity identification", "Partnership strategy", "Market creation insights"],
-    timeframe: "4–6 weeks", 
-    ideal_for: "Organizations looking beyond traditional industry limits"
+    title: "One-to-One Future Consulting",
+    description: "In a private session with our leading scientific futurists, you'll receive research-backed yet deeply imaginative insights into the future of your industry.",
+    features: [
+      "High-intelligence prototype of possibilities, crafted in real time",
+      "Live R&D lab for your strategy, where science meets storytelling",
+      "Ideas take shape before your eyes through interactive exploration",
+      "Foresight, creativity, and evidence blended for breakthrough insights",
+      "Personalized guidance on where your next breakthrough could emerge and how to make it real"
+    ],
+    timeframe: "2-4 hours", 
+    ideal_for: "Leaders seeking personalized strategic foresight and breakthrough opportunities"
   },
   {
     id: 3,
