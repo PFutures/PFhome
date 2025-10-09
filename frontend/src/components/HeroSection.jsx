@@ -77,7 +77,7 @@ const HeroSection = () => {
                   }}>
                     2035, 2040, or even 2060
                   </span>
-                  {' '}— shaping the world with groundbreaking innovations!
+                  {' '}— advancing innovation that truly matters.
                 </p>
               </div>
 
