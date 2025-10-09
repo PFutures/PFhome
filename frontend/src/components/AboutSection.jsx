@@ -216,7 +216,7 @@ const AboutSection = () => {
           </div>
 
           {/* WHY IT MATTERS - Ultra Creative Design */}
-          <div style={{ marginTop: '100px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ marginTop: '60px', position: 'relative', overflow: 'hidden' }}>
             
             {/* Floating Abstract Elements */}
             <div style={{
