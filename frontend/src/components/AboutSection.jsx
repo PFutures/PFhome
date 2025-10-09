@@ -170,7 +170,7 @@ const AboutSection = () => {
                   
                   <div style={{
                     height: '200px',
-                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/gkdm80sv_fc014d76-2212-4771-a18e-242054c61e00%20%283%29.jfif')`,
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/zqxq0uyn_7b7d766c-9adc-49ad-b02c-6302f3797be3-Picsart-AiImageEnhancer.png')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     position: 'relative'
@@ -238,7 +238,7 @@ const AboutSection = () => {
                   
                   <div style={{
                     height: '200px',
-                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/zqxq0uyn_7b7d766c-9adc-49ad-b02c-6302f3797be3-Picsart-AiImageEnhancer.png')`,
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/gkdm80sv_fc014d76-2212-4771-a18e-242054c61e00%20%283%29.jfif')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     position: 'relative'
