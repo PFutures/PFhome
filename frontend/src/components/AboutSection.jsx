@@ -464,12 +464,23 @@ const AboutSection = () => {
                   <h5 style={{
                     fontSize: '28px',
                     color: 'var(--text-primary)',
-                    marginBottom: '20px',
+                    marginBottom: '12px',
                     lineHeight: '1.3',
                     fontWeight: '600'
                   }}>
                     Your company's future, visualized today
                   </h5>
+                  
+                  <p style={{
+                    fontSize: '22px',
+                    color: 'var(--brand-primary)',
+                    marginBottom: '24px',
+                    fontWeight: '500',
+                    fontStyle: 'italic',
+                    letterSpacing: '-0.01em'
+                  }}>
+                    A magazine from tomorrow
+                  </p>
                   
                   <p style={{
                     fontSize: '18px',
