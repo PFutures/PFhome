@@ -519,16 +519,7 @@ const AboutSection = () => {
               
               {/* Creative Strategy vs Narrative section removed as requested */}
                 
-                <p className="body-large" style={{ 
-                  marginBottom: '30px',
-                  color: 'var(--text-secondary)',
-                  fontSize: '20px',
-                  lineHeight: '1.7',
-                  maxWidth: '800px',
-                  margin: '0 auto 30px auto'
-                }}>
-                  A magazine from tomorrow makes the abstract concrete — turning <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>foresight into alignment</span>, <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>imagination into innovation</span>, and <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>leadership into shared excitement</span>.
-                </p>
+                {/* Magazine description paragraph removed as requested */}
               </div>
 
               {/* Dramatic closing line removed as requested */}
