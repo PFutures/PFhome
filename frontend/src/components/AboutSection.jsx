@@ -80,24 +80,7 @@ const AboutSection = () => {
               How It Works
             </h3>
             
-            <h4 className="heading-2 artistic-heading" style={{ 
-              textAlign: 'center', 
-              marginBottom: '40px',
-              color: 'var(--text-primary)',
-              fontWeight: '600'
-            }}>
-              From Vision to Artifact
-            </h4>
-            
-            <p className="body-large" style={{ 
-              textAlign: 'center',
-              marginBottom: '60px',
-              maxWidth: '700px',
-              margin: '0 auto 60px auto',
-              color: 'var(--text-secondary)'
-            }}>
-              Here's how your magazine from tomorrow takes shape:
-            </p>
+            {/* Text removed as requested */}
             
             {/* Process Steps */}
             <div style={{ 
