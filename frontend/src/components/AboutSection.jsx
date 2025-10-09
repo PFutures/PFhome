@@ -869,7 +869,6 @@ const AboutSection = () => {
 
               {/* Buttons removed as requested */}
             </div>
-          </div>
           
           {/* Why Us section removed as requested */}
         </div>
