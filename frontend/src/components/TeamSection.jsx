@@ -63,13 +63,178 @@ const TeamSection = () => {
               Meet the Polymaths
             </h2>
             
-            <p className="body-large" style={{ 
-              maxWidth: '700px',
+            {/* Elegant Team Philosophy Design */}
+            <div style={{
+              maxWidth: '900px',
               margin: '0 auto',
-              color: 'var(--text-secondary)'
+              position: 'relative'
             }}>
-              Scholars, scientists, strategists, and storytellers — our team thrives at the intersections where ideas collide and new possibilities emerge. Together with a global network of more than 200 scientists, startups, visionaries, and experts, we generate breakthrough insights that cross disciplines, connect worlds, and turn complexity into opportunity.
-            </p>
+              
+              {/* Core Team Types - Interactive Grid */}
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+                gap: '20px',
+                marginBottom: '40px',
+                textAlign: 'center'
+              }}>
+                {[
+                  { title: 'Scholars', icon: '📚' },
+                  { title: 'Scientists', icon: '🔬' },
+                  { title: 'Strategists', icon: '🎯' },
+                  { title: 'Storytellers', icon: '✍️' }
+                ].map((role, index) => (
+                  <div 
+                    key={role.title}
+                    style={{
+                      background: 'rgba(0, 255, 209, 0.05)',
+                      border: '1px solid rgba(0, 255, 209, 0.15)',
+                      borderRadius: '8px',
+                      padding: '20px 16px',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.background = 'rgba(0, 255, 209, 0.1)';
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 255, 209, 0.15)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.background = 'rgba(0, 255, 209, 0.05)';
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }}
+                  >
+                    <div style={{
+                      fontSize: '24px',
+                      marginBottom: '8px',
+                      filter: 'grayscale(100%)',
+                      transition: 'filter 0.3s ease'
+                    }}>
+                      {role.icon}
+                    </div>
+                    <p style={{
+                      margin: 0,
+                      fontSize: '16px',
+                      fontWeight: '500',
+                      color: 'var(--brand-primary)'
+                    }}>
+                      {role.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Philosophy Statement */}
+              <div style={{
+                textAlign: 'center',
+                marginBottom: '40px',
+                padding: '30px',
+                background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.03) 0%, rgba(0, 255, 209, 0.01) 100%)',
+                borderRadius: '12px',
+                border: '1px solid rgba(0, 255, 209, 0.1)',
+                position: 'relative'
+              }}>
+                <p style={{
+                  fontSize: '20px',
+                  lineHeight: '1.6',
+                  color: 'var(--text-primary)',
+                  margin: '0 0 20px 0',
+                  fontStyle: 'italic'
+                }}>
+                  Our team thrives at the <span style={{ 
+                    background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    fontWeight: '600'
+                  }}>intersections</span> where ideas collide and new possibilities emerge.
+                </p>
+              </div>
+
+              {/* Network Stats */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: '40px',
+                marginBottom: '40px',
+                flexWrap: 'wrap'
+              }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{
+                    fontSize: '48px',
+                    fontWeight: '700',
+                    color: 'var(--brand-primary)',
+                    lineHeight: '1',
+                    marginBottom: '8px',
+                    background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent'
+                  }}>
+                    200+
+                  </div>
+                  <p style={{
+                    margin: 0,
+                    fontSize: '14px',
+                    color: 'var(--text-secondary)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px'
+                  }}>
+                    Global Network
+                  </p>
+                </div>
+                
+                <div style={{
+                  width: '1px',
+                  height: '60px',
+                  background: 'linear-gradient(180deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
+                  opacity: '0.5'
+                }} />
+
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(2, 1fr)',
+                  gap: '20px 30px',
+                  textAlign: 'center'
+                }}>
+                  {['Scientists', 'Startups', 'Visionaries', 'Experts'].map((type, index) => (
+                    <div key={type} style={{
+                      fontSize: '14px',
+                      color: 'var(--text-secondary)',
+                      fontWeight: '400'
+                    }}>
+                      {type}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mission Statement */}
+              <div style={{
+                textAlign: 'center',
+                padding: '25px',
+                background: 'rgba(255, 255, 255, 0.02)',
+                borderRadius: '8px',
+                border: '1px solid rgba(255, 255, 255, 0.1)'
+              }}>
+                <p style={{
+                  fontSize: '18px',
+                  lineHeight: '1.6',
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  maxWidth: '600px',
+                  margin: '0 auto'
+                }}>
+                  We generate breakthrough insights that{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>cross disciplines</span>,{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>connect worlds</span>, and{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>turn complexity into opportunity</span>.
+                </p>
+              </div>
+
+            </div>
           </div>
           
           {/* Team Grid */}
