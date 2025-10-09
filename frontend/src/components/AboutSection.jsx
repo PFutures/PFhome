@@ -167,7 +167,7 @@ const AboutSection = () => {
                   fontSize: '16px',
                   lineHeight: '1.6'
                 }}>
-                  Our team of polymaths, foresight researchers, and creative writers translate these insights into science-based sci-fi articles, concept visuals, and future narratives.
+                  Our team of polymaths, foresight researchers, and creatives translate these insights into science-based sci-fi articles, concept visuals, and future narratives.
                   Each story is designed to resonate — internally with teams, externally with partners and investors.
                 </p>
               </div>
