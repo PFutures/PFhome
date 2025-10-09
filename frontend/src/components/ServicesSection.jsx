@@ -78,14 +78,7 @@ const ServicesSection = () => {
               Our Services
             </h2>
             
-            <p className="body-large" style={{ 
-              maxWidth: '700px',
-              margin: '0 auto',
-              color: 'var(--text-secondary)'
-            }}>
-              From tangible future artifacts to breakthrough innovation strategies, 
-              we help you own your story in tomorrow's world.
-            </p>
+            {/* Description paragraph removed as requested */}
           </div>
           
           {/* Services Grid */}
