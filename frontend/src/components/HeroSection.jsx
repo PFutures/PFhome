@@ -92,68 +92,39 @@ const HeroSection = () => {
                 textAlign: 'center'
               }}>
                 
-                {/* Main Value Statement */}
-                <p style={{
-                  fontSize: '22px',
-                  lineHeight: '1.5',
-                  color: 'var(--text-primary)',
-                  marginBottom: '32px',
-                  fontWeight: '400'
-                }}>
-                  We help you explore the future of your company through{' '}
-                  <span style={{ 
-                    color: 'var(--brand-primary)',
-                    fontWeight: '600'
-                  }}>sci-fi prototyping</span> and{' '}
-                  <span style={{ 
-                    color: 'var(--brand-primary)',
-                    fontWeight: '600'
-                  }}>storytelling</span>.
-                </p>
-
-                {/* Methodology */}
+                {/* Streamlined Value Proposition */}
                 <div style={{
-                  background: 'rgba(255, 255, 255, 0.02)',
-                  padding: '24px',
+                  background: 'rgba(0, 255, 209, 0.03)',
+                  border: '1px solid rgba(0, 255, 209, 0.15)',
                   borderRadius: '12px',
+                  padding: '32px',
                   marginBottom: '32px',
-                  border: '1px solid rgba(255, 255, 255, 0.1)'
+                  textAlign: 'center'
                 }}>
                   <p style={{
-                    fontSize: '18px',
-                    lineHeight: '1.6',
-                    color: 'var(--text-secondary)',
-                    marginBottom: '20px'
-                  }}>
-                    By combining{' '}
-                    <span style={{ 
-                      color: 'var(--text-primary)',
-                      fontWeight: '500'
-                    }}>foresight</span> and{' '}
-                    <span style={{ 
-                      color: 'var(--text-primary)',
-                      fontWeight: '500'
-                    }}>polymathic analysis</span>
-                  </p>
-                  
-                  <div style={{
-                    height: '1px',
-                    background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                    margin: '20px 0',
-                    opacity: '0.5'
-                  }} />
-                  
-                  <p style={{
-                    fontSize: '20px',
+                    fontSize: '22px',
                     lineHeight: '1.5',
                     color: 'var(--text-primary)',
-                    margin: '0'
+                    margin: '0',
+                    fontWeight: '400'
                   }}>
                     We empower leaders in{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>strategy</span>,{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>marketing</span>, and{' '}
                     <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>communications</span>{' '}
-                    to <strong style={{ color: 'var(--brand-primary)' }}>inspire, lead, and change</strong>.
+                    to explore the future through{' '}
+                    <span style={{ 
+                      color: 'var(--brand-primary)',
+                      fontWeight: '600'
+                    }}>sci-fi prototyping</span> — powered by{' '}
+                    <span style={{ 
+                      color: 'var(--text-primary)',
+                      fontWeight: '500'
+                    }}>research-driven foresight</span> and{' '}
+                    <span style={{ 
+                      color: 'var(--text-primary)',
+                      fontWeight: '500'
+                    }}>multidimensional thinking</span>.
                   </p>
                 </div>
 
