@@ -370,22 +370,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* "Why It Matters" heading removed as requested */}
-            
-            <h4 className="display-medium artistic-heading" style={{ 
-              textAlign: 'center', 
-              marginTop: '60px',
-              marginBottom: '80px',
-              color: 'var(--text-primary)',
-              fontWeight: '500',
-              fontSize: '28px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              position: 'relative',
-              zIndex: 2
-            }}>
-              OUR FLAGSHIP PRODUCT
-            </h4>
+            {/* OUR FLAGSHIP PRODUCT section moved to separate component */}
 
             {/* Magazine Mockup on Left Side */}
             <div style={{
