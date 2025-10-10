@@ -9,6 +9,7 @@ import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
 import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
+import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 
 const Home = () => {
