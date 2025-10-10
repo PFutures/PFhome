@@ -92,57 +92,33 @@ const HeroSection = () => {
                 textAlign: 'center'
               }}>
                 
-                {/* Clean Left-Aligned Value Proposition */}
-                <div style={{
-                  width: '100%',
-                  marginBottom: '20px',
-                  position: 'relative'
-                }}>
-                  <div style={{
-                    textAlign: 'left',
-                    position: 'relative',
-                    paddingLeft: '0px'
-                  }}>
-                    <p style={{
-                      fontSize: 'clamp(16px, 2vw, 20px)',
-                      lineHeight: '1.5',
-                      color: 'var(--text-primary)',
-                      margin: '0',
-                      fontWeight: '400',
-                      letterSpacing: '0',
-                      maxWidth: '800px',
-                      margin: '0'
-                    }}>
-                      We enable leaders in strategy, marketing, and communications to explore the future through{' '}
-                      <span style={{ 
-                        background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        fontWeight: '600'
-                      }}>sci-fi prototyping</span> — powered by{' '}
-                      <span style={{ 
-                        color: 'var(--text-primary)',
-                        fontWeight: '400',
-                        fontStyle: 'italic'
-                      }}>research-driven foresight</span> and{' '}
-                      <span style={{ 
-                        color: 'var(--text-primary)',
-                        fontWeight: '400',
-                        fontStyle: 'italic'
-                      }}>multidimensional thinking</span>.
-                    </p>
-                    
-                    {/* Subtle Accent Line */}
-                    <div style={{
-                      width: '80px',
-                      height: '1px',
-                      background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                      margin: '15px 0 0 0',
-                      opacity: '0.6'
-                    }} />
-                  </div>
-                </div>
+              <p style={{
+                fontSize: 'clamp(16px, 2vw, 20px)',
+                lineHeight: '1.5',
+                color: 'var(--text-primary)',
+                marginBottom: '20px',
+                fontWeight: '400',
+                maxWidth: '800px'
+              }}>
+                We enable leaders in strategy, marketing, and communications to explore the future through{' '}
+                <span style={{ 
+                  background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  fontWeight: '600'
+                }}>sci-fi prototyping</span> — powered by{' '}
+                <span style={{ 
+                  color: 'var(--text-primary)',
+                  fontWeight: '400',
+                  fontStyle: 'italic'
+                }}>research-driven foresight</span> and{' '}
+                <span style={{ 
+                  color: 'var(--text-primary)',
+                  fontWeight: '400',
+                  fontStyle: 'italic'
+                }}>multidimensional thinking</span>.
+              </p>
 
               </div>
             </div>
