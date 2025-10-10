@@ -74,16 +74,6 @@ const FlagshipSection = () => {
               gap: '30px'
             }}>
               <div>
-                <h5 style={{
-                  fontSize: '28px',
-                  color: 'var(--text-primary)',
-                  marginBottom: '12px',
-                  lineHeight: '1.3',
-                  fontWeight: '600'
-                }}>
-                  Your company's future, visualized today
-                </h5>
-                
                 <p style={{
                   fontSize: '22px',
                   color: 'var(--brand-primary)',
@@ -92,7 +82,7 @@ const FlagshipSection = () => {
                   fontStyle: 'italic',
                   letterSpacing: '-0.01em'
                 }}>
-                  A magazine from tomorrow
+                  A magazine from tomorrow.
                 </p>
                 
                 <p style={{
@@ -101,34 +91,15 @@ const FlagshipSection = () => {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  A magazine carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>weight and wonder of a tangible artifact from your future</span>. 
-                  A conversation starter, a strategy tool, and a vision made real.
+                  A tangible artifact from your organization's future — carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>thrill of possibility</span> and the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>clarity of vision</span>. A conversation starter, a strategy tool, and a bold future made real.
                 </p>
                 
                 <p style={{
-                  fontSize: '16px',
+                  fontSize: '18px',
                   color: 'var(--text-secondary)',
                   lineHeight: '1.6'
                 }}>
-                  Imagine walking into a board meeting, investor pitch, or team retreat with this in your hands—
-                  your company's story told from 2035, 2040, or even 2060.
-                </p>
-              </div>
-
-              <div style={{
-                padding: '25px',
-                background: 'rgba(0, 255, 209, 0.05)',
-                border: '1px solid rgba(0, 255, 209, 0.2)',
-                borderRadius: '8px'
-              }}>
-                <p style={{
-                  fontSize: '16px',
-                  color: 'var(--brand-primary)',
-                  fontStyle: 'italic',
-                  margin: 0,
-                  fontWeight: '500'
-                }}>
-                  "The future isn't predicted—it's prototyped."
+                  Imagine walking into a board meeting, investor pitch, or team retreat with this magazine in your hands. Make people <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>see, feel, and believe your vision</span> — and watch how it shifts the way they think and act today.
                 </p>
               </div>
             </div>
