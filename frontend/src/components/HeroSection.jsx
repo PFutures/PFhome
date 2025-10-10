@@ -100,7 +100,7 @@ const HeroSection = () => {
                   position: 'relative'
                 }}>
                   <div style={{
-                    textAlign: 'center',
+                    textAlign: 'left',
                     position: 'relative',
                     padding: '0 20px'
                   }}>
