@@ -56,7 +56,7 @@ team_members_data = [
         "name": "Dr. Philipp Kozin",
         "role": "Scientific Foresight Director", 
         "background": "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
-        "expertise": ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation", "Global Business Development"],
+        "expertise": ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation"],
         "image": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/5o6z0uxx_WhatsApp%20Image%202025-10-09%20at%2018.44.38.jpeg",
         "linkedin": "https://www.linkedin.com/in/philipp-kozin/",
         "email": "philipp@polymathicfutures.com",
