@@ -139,7 +139,7 @@ const HeroSection = () => {
                       width: '80px',
                       height: '1px',
                       background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                      margin: '15px auto 0',
+                      margin: '15px 0 0 0',
                       opacity: '0.6'
                     }} />
                   </div>
