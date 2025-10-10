@@ -92,11 +92,11 @@ const HeroSection = () => {
                 textAlign: 'center'
               }}>
                 
-                {/* Elegant Full-Width Value Proposition */}
+                {/* Compact Value Proposition */}
                 <div style={{
                   width: '100%',
                   maxWidth: 'none',
-                  marginBottom: '40px',
+                  marginBottom: '20px',
                   position: 'relative'
                 }}>
                   <div style={{
@@ -105,13 +105,13 @@ const HeroSection = () => {
                     padding: '0 20px'
                   }}>
                     <p style={{
-                      fontSize: 'clamp(24px, 3.5vw, 32px)',
-                      lineHeight: '1.4',
+                      fontSize: 'clamp(16px, 2vw, 20px)',
+                      lineHeight: '1.5',
                       color: 'var(--text-primary)',
                       margin: '0',
-                      fontWeight: '300',
-                      letterSpacing: '-0.01em',
-                      maxWidth: '1000px',
+                      fontWeight: '400',
+                      letterSpacing: '0',
+                      maxWidth: '800px',
                       margin: '0 auto'
                     }}>
                       We enable leaders in strategy, marketing, and communications to explore the future through{' '}
@@ -136,10 +136,10 @@ const HeroSection = () => {
                     
                     {/* Subtle Accent Line */}
                     <div style={{
-                      width: '120px',
-                      height: '2px',
+                      width: '80px',
+                      height: '1px',
                       background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                      margin: '30px auto 0',
+                      margin: '15px auto 0',
                       opacity: '0.6'
                     }} />
                   </div>
