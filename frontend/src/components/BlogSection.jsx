@@ -75,7 +75,7 @@ const BlogSection = () => {
           {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
-              Future Insights
+              Multidimensional Futures
             </h2>
             <p className="body-large" style={{ 
               maxWidth: '600px',
