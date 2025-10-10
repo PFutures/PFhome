@@ -25,11 +25,20 @@ const Header = () => {
 
   return (
     <header className="dark-header">
-      <div className="dark-logo" style={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        gap: '12px' 
-      }}>
+      <Link 
+        to="/" 
+        className="dark-logo" 
+        style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          gap: '12px',
+          textDecoration: 'none',
+          cursor: 'pointer'
+        }}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
         <img 
           src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/aen2dtcr_logo%20PF.jpeg"
           alt="Polymathic Futures Logo"
@@ -49,7 +58,7 @@ const Header = () => {
         }}>
           Polymathic Futures
         </span>
-      </div>
+      </Link>
       
       <nav className="dark-nav">
         <a 
