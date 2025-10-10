@@ -6,20 +6,11 @@ const FlagshipSection = () => {
       <div className="dark-full-container">
         <div className="dark-content-container">
           
-          <h4 className="display-medium artistic-heading" style={{ 
-            textAlign: 'center', 
-            marginTop: '60px',
-            marginBottom: '80px',
-            color: 'var(--text-primary)',
-            fontWeight: '500',
-            fontSize: '28px',
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            position: 'relative',
-            zIndex: 2
-          }}>
-            OUR FLAGSHIP PRODUCT
-          </h4>
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
+              Our Flagship Product
+            </h2>
+          </div>
 
           {/* Magazine Mockup on Left Side */}
           <div style={{
