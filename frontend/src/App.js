@@ -19,8 +19,8 @@ const HomePage = () => (
     <FlagshipSection />
     <PortfolioSection />
     <AboutSection />
-    <ServicesSection />
     <TeamSection />
+    <ServicesSection />
     <ContactSection />
   </div>
 );
