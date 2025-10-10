@@ -92,17 +92,16 @@ const HeroSection = () => {
                 textAlign: 'center'
               }}>
                 
-                {/* Compact Value Proposition */}
+                {/* Clean Left-Aligned Value Proposition */}
                 <div style={{
                   width: '100%',
-                  maxWidth: 'none',
                   marginBottom: '20px',
                   position: 'relative'
                 }}>
                   <div style={{
                     textAlign: 'left',
                     position: 'relative',
-                    padding: '0 20px'
+                    paddingLeft: '0px'
                   }}>
                     <p style={{
                       fontSize: 'clamp(16px, 2vw, 20px)',
