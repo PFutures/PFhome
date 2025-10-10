@@ -125,7 +125,7 @@ const AboutSection = () => {
                       color: 'var(--text-secondary)',
                       lineHeight: '1.4'
                     }}>
-                      Where materials become medicine
+                      Where building materials heal
                     </p>
                   </div>
                 </div>
