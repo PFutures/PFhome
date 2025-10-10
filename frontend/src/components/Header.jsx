@@ -92,6 +92,12 @@ const Header = () => {
         >
           Team
         </a>
+        <Link 
+          to="/blog" 
+          className="dark-nav-link"
+        >
+          Blog
+        </Link>
         <a 
           href="#contact" 
           className="dark-nav-link"
