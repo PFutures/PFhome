@@ -92,40 +92,57 @@ const HeroSection = () => {
                 textAlign: 'center'
               }}>
                 
-                {/* Streamlined Value Proposition */}
+                {/* Elegant Full-Width Value Proposition */}
                 <div style={{
-                  background: 'rgba(0, 255, 209, 0.03)',
-                  border: '1px solid rgba(0, 255, 209, 0.15)',
-                  borderRadius: '12px',
-                  padding: '32px',
-                  marginBottom: '32px',
-                  textAlign: 'center'
+                  width: '100%',
+                  maxWidth: 'none',
+                  marginBottom: '40px',
+                  position: 'relative'
                 }}>
-                  <p style={{
-                    fontSize: '22px',
-                    lineHeight: '1.5',
-                    color: 'var(--text-primary)',
-                    margin: '0',
-                    fontWeight: '400'
+                  <div style={{
+                    textAlign: 'center',
+                    position: 'relative',
+                    padding: '0 20px'
                   }}>
-                    We enable leaders in{' '}
-                    <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>strategy</span>,{' '}
-                    <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>marketing</span>, and{' '}
-                    <span style={{ color: 'var(--brand-primary)', fontWeight: '600' }}>communications</span>{' '}
-                    to explore the future through{' '}
-                    <span style={{ 
-                      color: 'var(--brand-primary)',
-                      fontWeight: '600'
-                    }}>sci-fi prototyping</span> — powered by{' '}
-                    <span style={{ 
+                    <p style={{
+                      fontSize: 'clamp(24px, 3.5vw, 32px)',
+                      lineHeight: '1.4',
                       color: 'var(--text-primary)',
-                      fontWeight: '500'
-                    }}>research-driven foresight</span> and{' '}
-                    <span style={{ 
-                      color: 'var(--text-primary)',
-                      fontWeight: '500'
-                    }}>multidimensional thinking</span>.
-                  </p>
+                      margin: '0',
+                      fontWeight: '300',
+                      letterSpacing: '-0.01em',
+                      maxWidth: '1000px',
+                      margin: '0 auto'
+                    }}>
+                      We enable leaders in strategy, marketing, and communications to explore the future through{' '}
+                      <span style={{ 
+                        background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                        backgroundClip: 'text',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        fontWeight: '600'
+                      }}>sci-fi prototyping</span> — powered by{' '}
+                      <span style={{ 
+                        color: 'var(--text-primary)',
+                        fontWeight: '400',
+                        fontStyle: 'italic'
+                      }}>research-driven foresight</span> and{' '}
+                      <span style={{ 
+                        color: 'var(--text-primary)',
+                        fontWeight: '400',
+                        fontStyle: 'italic'
+                      }}>multidimensional thinking</span>.
+                    </p>
+                    
+                    {/* Subtle Accent Line */}
+                    <div style={{
+                      width: '120px',
+                      height: '2px',
+                      background: 'linear-gradient(90deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
+                      margin: '30px auto 0',
+                      opacity: '0.6'
+                    }} />
+                  </div>
                 </div>
 
               </div>
