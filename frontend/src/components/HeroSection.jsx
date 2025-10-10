@@ -81,24 +81,14 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              {/* Core Value Proposition */}
-              <div style={{
-                background: 'rgba(0, 255, 209, 0.03)',
-                border: '1px solid rgba(0, 255, 209, 0.15)',
-                borderRadius: '16px',
-                padding: '40px',
-                marginBottom: '40px',
-                maxWidth: '700px',
-                textAlign: 'center'
-              }}>
-                
               <p style={{
                 fontSize: 'clamp(16px, 2vw, 20px)',
                 lineHeight: '1.5',
                 color: 'var(--text-primary)',
-                marginBottom: '20px',
+                marginBottom: '40px',
                 fontWeight: '400',
-                maxWidth: '800px'
+                maxWidth: '800px',
+                textAlign: 'left'
               }}>
                 We enable leaders in strategy, marketing, and communications to explore the future through{' '}
                 <span style={{ 
@@ -119,8 +109,6 @@ const HeroSection = () => {
                   fontStyle: 'italic'
                 }}>multidimensional thinking</span>.
               </p>
-
-              </div>
             </div>
             
             {/* CTA Buttons */}
