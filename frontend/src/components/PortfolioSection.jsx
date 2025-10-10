@@ -70,7 +70,7 @@ const PortfolioSection = () => {
           {/* Section Header */}
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
-              Sci-Fi Prototyping Samples
+              Sci-Fi Articles Samples
             </h2>
             
             <p className="body-large" style={{ 
