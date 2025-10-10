@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import FlagshipSection from "./components/FlagshipSection";
 import AboutSection from "./components/AboutSection";
 import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
