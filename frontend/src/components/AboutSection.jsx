@@ -171,7 +171,7 @@ const AboutSection = () => {
                         fontWeight: '600',
                         color: 'var(--brand-primary)'
                       }}>
-                        Air as architecture.
+                        Diamond as diary.
                       </h5>
                     </div>
                   </div>
