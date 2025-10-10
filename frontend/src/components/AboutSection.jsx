@@ -130,7 +130,7 @@ const AboutSection = () => {
                   </div>
                 </div>
 
-                {/* Concept 2: Air as Architecture */}
+                {/* Concept 2: Diamond as Diary */}
                 <div style={{
                   position: 'relative',
                   background: 'rgba(0, 255, 209, 0.05)',
