@@ -103,7 +103,7 @@ const AboutSection = () => {
                         fontWeight: '600',
                         color: 'var(--brand-primary)'
                       }}>
-                        Porous micro-concrete designed to tune human health.
+                        Porous micro-concrete designed to tune human health
                       </h5>
                     </div>
                   </div>
