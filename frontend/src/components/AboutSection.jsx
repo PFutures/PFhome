@@ -151,7 +151,7 @@ const AboutSection = () => {
                   
                   <div style={{
                     height: '200px',
-                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/316iyye9_35c91ea9-e496-4b09-bfb5-8e5cf59872a1.jpg')`,
+                    backgroundImage: `url('https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/7qwn71nk_WhatsApp%20Image%202025-09-24%20at%2018.36.01.jpeg')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     position: 'relative'
