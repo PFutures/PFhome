@@ -31,14 +31,8 @@ const AboutSection = () => {
         <div className="dark-content-container">
           {/* Main About Content */}
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 className="display-large artistic-heading" style={{ 
-              marginBottom: '32px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              fontWeight: '500',
-              fontSize: '28px'
-            }}>
-              At the intersection of science and strategy
+            <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
+              At the Intersection of Science and Strategy
             </h2>
             
             <p className="body-large" style={{ 
