@@ -239,7 +239,7 @@ const AboutSection = () => {
                         fontWeight: '600',
                         color: 'var(--brand-primary)'
                       }}>
-                        Car tires that sense and respond like fingertips.
+                        Car tires that sense and respond like fingertips
                       </h5>
                     </div>
                   </div>
