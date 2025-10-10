@@ -16,6 +16,7 @@ const Home = () => {
     <div className="dark-container">
       <Header />
       <HeroSection />
+      <FlagshipSection />
       <AboutSection />
       <PortfolioSection />
       <ServicesSection />
