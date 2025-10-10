@@ -112,7 +112,7 @@ const HeroSection = () => {
                       fontWeight: '400',
                       letterSpacing: '0',
                       maxWidth: '800px',
-                      margin: '0 auto'
+                      margin: '0'
                     }}>
                       We enable leaders in strategy, marketing, and communications to explore the future through{' '}
                       <span style={{ 
