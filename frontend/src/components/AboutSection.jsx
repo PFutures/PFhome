@@ -193,7 +193,7 @@ const AboutSection = () => {
                       color: 'var(--text-secondary)',
                       lineHeight: '1.4'
                     }}>
-                      Where atmosphere becomes structure
+                      Where brilliance stores a century
                     </p>
                   </div>
                 </div>
