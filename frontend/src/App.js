@@ -12,31 +12,31 @@ import ContactSection from "./components/ContactSection";
 import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 
-const Home = () => {
-  return (
-    <div className="dark-container">
-      <Header />
-      <HeroSection />
-      <FlagshipSection />
-      <PortfolioSection />
-      <AboutSection />
-      <ServicesSection />
-      <TeamSection />
-      <ContactSection />
-      <Footer />
-    </div>
-  );
-};
+// Home page component
+const HomePage = () => (
+  <div>
+    <HeroSection />
+    <FlagshipSection />
+    <PortfolioSection />
+    <AboutSection />
+    <ServicesSection />
+    <TeamSection />
+    <ContactSection />
+  </div>
+);
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="dark-container">
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogSection />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
