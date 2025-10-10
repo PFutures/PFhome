@@ -153,6 +153,17 @@ async def get_inquiries():
         logger.error(f"Error fetching inquiries: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
+@api_router.get("/articles")
+async def get_articles():
+    """Get all blog articles"""
+    try:
+        articles = await db.articles.find().sort("date", -1).to_list(1000)
+        return articles
+    except Exception as e:
+        logger.error(f"Error fetching articles: {str(e)}")
+        # Return empty list if no articles collection exists yet
+        return []
+
 # Portfolio Management
 @api_router.get("/magazines", response_model=List[Magazine])
 async def get_magazines():
