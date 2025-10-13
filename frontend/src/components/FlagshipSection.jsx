@@ -82,7 +82,7 @@ const FlagshipSection = () => {
                   fontStyle: 'italic',
                   letterSpacing: '-0.01em'
                 }}>
-                  A magazine from tomorrow.
+                  A Sci-Fi magazine of your company's tomorrow
                 </p>
                 
                 <p style={{
