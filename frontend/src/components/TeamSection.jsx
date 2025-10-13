@@ -28,11 +28,11 @@ const TeamSection = () => {
 
   if (loading) {
     return (
-      <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
+      <section id="team" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
-              Loading our polymaths...
+              Loading our team...
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ const TeamSection = () => {
 
   if (error) {
     return (
-      <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
+      <section id="team" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: '#ff4444' }}>
@@ -53,108 +53,24 @@ const TeamSection = () => {
       </section>
     );
   }
+
   return (
-    <section id="team" className="dark-container" style={{ padding: '100px 0' }}>
+    <section id="team" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Section Header */}
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               Meet the Polymaths
             </h2>
             
-            {/* Elegant Team Philosophy Design */}
-            <div style={{
-              maxWidth: '900px',
+            <p className="body-large" style={{ 
+              maxWidth: '700px',
               margin: '0 auto',
-              position: 'relative'
+              color: 'var(--text-secondary)'
             }}>
-              
-              {/* Role cards and philosophy statement removed as requested */}
-
-              {/* Network Stats */}
-              <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: '40px',
-                marginBottom: '40px',
-                flexWrap: 'wrap'
-              }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{
-                    fontSize: '48px',
-                    fontWeight: '700',
-                    color: 'var(--brand-primary)',
-                    lineHeight: '1',
-                    marginBottom: '8px',
-                    background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
-                    backgroundClip: 'text',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent'
-                  }}>
-                    200+
-                  </div>
-                  <p style={{
-                    margin: 0,
-                    fontSize: '14px',
-                    color: 'var(--text-secondary)',
-                    textTransform: 'uppercase',
-                    letterSpacing: '1px'
-                  }}>
-                    Global Network
-                  </p>
-                </div>
-                
-                <div style={{
-                  width: '1px',
-                  height: '60px',
-                  background: 'linear-gradient(180deg, transparent 0%, var(--brand-primary) 50%, transparent 100%)',
-                  opacity: '0.5'
-                }} />
-
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(2, 1fr)',
-                  gap: '20px 30px',
-                  textAlign: 'center'
-                }}>
-                  {['Scientists', 'Startups', 'Visionaries', 'Experts'].map((type, index) => (
-                    <div key={type} style={{
-                      fontSize: '14px',
-                      color: 'var(--text-secondary)',
-                      fontWeight: '400'
-                    }}>
-                      {type}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Mission Statement */}
-              <div style={{
-                textAlign: 'center',
-                padding: '25px',
-                background: 'rgba(255, 255, 255, 0.02)',
-                borderRadius: '8px',
-                border: '1px solid rgba(255, 255, 255, 0.1)'
-              }}>
-                <p style={{
-                  fontSize: '18px',
-                  lineHeight: '1.6',
-                  color: 'var(--text-primary)',
-                  margin: 0,
-                  maxWidth: '600px',
-                  margin: '0 auto'
-                }}>
-                  We generate breakthrough insights that{' '}
-                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>cross disciplines</span>,{' '}
-                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>connect worlds</span>, and{' '}
-                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>turn complexity into opportunity</span>.
-                </p>
-              </div>
-
-            </div>
+              Scholars, scientists, strategists, and storytellers who bring diverse expertise to every project.
+            </p>
           </div>
           
           {/* Team Grid */}
@@ -162,7 +78,7 @@ const TeamSection = () => {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
             gap: '40px',
-            marginBottom: '80px'
+            marginBottom: '60px'
           }}>
             {teamMembers.map((member) => (
               <div
@@ -176,47 +92,55 @@ const TeamSection = () => {
                   transition: 'all 0.4s ease-in-out'
                 }}
               >
-                {/* Member Photo */}
+                {/* Profile Image */}
                 <div style={{ 
                   height: '400px',
                   position: 'relative',
-                  overflow: 'hidden'
+                  overflow: 'hidden',
+                  background: 'var(--bg-primary)'
                 }}>
-                  <img 
-                    src={member.image}
-                    alt={`${member.name} - ${member.role}`}
-                    style={{
+                  {member.photo_url ? (
+                    <img 
+                      src={member.photo_url}
+                      alt={member.name}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover'
+                      }}
+                      onError={(e) => {
+                        // Fallback to icon if image fails to load
+                        e.target.style.display = 'none';
+                      }}
+                    />
+                  ) : (
+                    <div style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: member.name === 'Aksinya Staar' ? 'center 25%' : 
-                                    member.name === 'Dr. Philipp Kozin' ? 'center 25%' :
-                                    'center 20%'
-                    }}
-                    onError={(e) => {
-                      e.target.style.backgroundColor = 'var(--bg-secondary)';
-                      e.target.style.display = 'none';
-                    }}
-                  />
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: 'var(--bg-primary)'
+                    }}>
+                      <User size={80} color="var(--brand-primary)" />
+                    </div>
+                  )}
+                  
+                  {/* Role Badge */}
                   <div style={{
                     position: 'absolute',
                     bottom: '0',
                     left: '0',
                     right: '0',
-                    background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                    background: 'linear-gradient(transparent, rgba(0,0,0,0.9))',
                     padding: '40px 24px 24px 24px'
                   }}>
-                    <h3 className="heading-2" style={{ 
-                      color: 'white',
-                      marginBottom: '8px'
-                    }}>
-                      {member.name}
-                    </h3>
-                    
-                    <p style={{ 
+                    <p className="body-small" style={{ 
                       color: 'var(--brand-primary)',
-                      fontSize: '16px',
-                      fontWeight: '500'
+                      fontWeight: '500',
+                      marginBottom: '4px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px'
                     }}>
                       {member.role}
                     </p>
@@ -225,89 +149,17 @@ const TeamSection = () => {
                 
                 {/* Member Info */}
                 <div style={{ padding: '32px' }}>
+                  <h3 className="heading-2" style={{ marginBottom: '8px' }}>
+                    {member.name}
+                  </h3>
+                  
                   <p className="body-medium" style={{ 
                     color: 'var(--text-secondary)',
-                    marginBottom: '12px',
-                    lineHeight: '1.4',
-                    fontSize: '14px'
+                    marginBottom: '24px',
+                    lineHeight: '1.6'
                   }}>
-                    {member.background}
+                    {member.bio}
                   </p>
-                  
-                  {/* Academic Background */}
-                  {member.academicBackground && (
-                    <div style={{ marginBottom: '12px' }}>
-                      <h5 style={{
-                        color: 'var(--brand-primary)',
-                        fontSize: '12px',
-                        fontWeight: '600',
-                        marginBottom: '6px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px'
-                      }}>
-                        Academic Background
-                      </h5>
-                      <p className="body-medium" style={{ 
-                        color: 'var(--text-secondary)',
-                        fontSize: '13px',
-                        fontStyle: 'italic'
-                      }}>
-                        {member.academicBackground}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Publications */}
-                  {member.publications && (
-                    <div style={{ marginBottom: '12px' }}>
-                      <h5 style={{
-                        color: 'var(--brand-primary)',
-                        fontSize: '12px',
-                        fontWeight: '600',
-                        marginBottom: '6px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '1px'
-                      }}>
-                        Publications
-                      </h5>
-                      <p className="body-medium" style={{ 
-                        color: 'var(--text-secondary)',
-                        fontSize: '13px',
-                        fontStyle: 'italic'
-                      }}>
-                        {member.publications}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Role at Polymathic Futures */}
-                  {member.description && (
-                    <div style={{
-                      background: 'rgba(0, 255, 209, 0.03)',
-                      border: '1px solid rgba(0, 255, 209, 0.1)',
-                      borderRadius: '8px',
-                      padding: '16px',
-                      marginBottom: '16px'
-                    }}>
-                      <h5 style={{
-                        color: 'var(--brand-primary)',
-                        fontSize: '12px',
-                        fontWeight: '600',
-                        marginBottom: '8px'
-                      }}>
-                        {member.name === 'Aksinya Staar' ? 'Role in Polymathic Futures' : 
-                         member.name === 'Dr. Philipp Kozin' ? 'Approach & Method' : 
-                         'At Polymathic Futures'}
-                      </h5>
-                      <p className="body-medium" style={{ 
-                        color: 'var(--text-secondary)',
-                        lineHeight: '1.4',
-                        fontSize: '14px'
-                      }}>
-                        {member.description}
-                      </p>
-                    </div>
-                  )}
                   
                   {/* Expertise Tags */}
                   <div style={{ marginBottom: '24px' }}>

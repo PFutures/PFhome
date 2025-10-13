@@ -2,11 +2,11 @@ import React from 'react';
 
 const FlagshipSection = () => {
   return (
-    <section id="flagship" className="dark-container" style={{ padding: '100px 0' }}>
+    <section id="flagship" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               Our Flagship Product
             </h2>
@@ -17,11 +17,11 @@ const FlagshipSection = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '80px',
-            marginBottom: '80px',
+            marginBottom: '60px',
             position: 'relative',
             zIndex: 2,
             maxWidth: '1200px',
-            margin: '0 auto 80px auto'
+            margin: '0 auto 60px auto'
           }}>
             
             {/* Left Side - Magazine Image */}

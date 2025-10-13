@@ -26,11 +26,11 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="dark-container" style={{ padding: '100px 0' }}>
+    <section id="about" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Main About Content */}
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               At the Intersection of Science and Strategy
             </h2>
@@ -59,7 +59,7 @@ const AboutSection = () => {
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
                 gap: '40px',
-                marginBottom: '40px'
+                marginBottom: '30px'
               }}>
 
                 {/* Concept 1: Porous Micro-Concrete */}
@@ -287,7 +287,7 @@ const AboutSection = () => {
           {/* How It Works section removed as requested */}
 
           {/* WHY IT MATTERS - Ultra Creative Design */}
-          <div style={{ marginTop: '60px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ marginTop: '50px', position: 'relative', overflow: 'hidden' }}>
             
             {/* Floating Abstract Elements */}
             <div style={{

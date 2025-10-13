@@ -61,11 +61,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="dark-container" style={{ padding: '100px 0' }}>
+    <section id="contact" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Section Header */}
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               Let's Prototype Your Futures
             </h2>

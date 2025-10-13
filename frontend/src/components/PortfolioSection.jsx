@@ -37,7 +37,7 @@ const PortfolioSection = () => {
 
   if (loading) {
     return (
-      <section id="portfolio" className="dark-container" style={{ padding: '60px 0 100px 0' }}>
+      <section id="portfolio" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: 'var(--text-secondary)' }}>
@@ -51,7 +51,7 @@ const PortfolioSection = () => {
 
   if (error) {
     return (
-      <section id="portfolio" className="dark-container" style={{ padding: '60px 0 100px 0' }}>
+      <section id="portfolio" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
         <div className="dark-full-container">
           <div className="dark-content-container" style={{ textAlign: 'center' }}>
             <p className="body-large" style={{ color: '#ff4444' }}>
@@ -64,11 +64,11 @@ const PortfolioSection = () => {
   }
 
   return (
-    <section id="portfolio" className="dark-container" style={{ padding: '60px 0 100px 0' }}>
+    <section id="portfolio" className="dark-container" style={{ padding: '60px 0 80px 0' }}>
       <div className="dark-full-container">
         <div className="dark-content-container">
           {/* Section Header */}
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
             <h2 className="display-large artistic-heading" style={{ marginBottom: '24px' }}>
               Sci-Fi Articles Samples
             </h2>
@@ -88,7 +88,7 @@ const PortfolioSection = () => {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
             gap: '40px',
-            marginBottom: '80px'
+            marginBottom: '60px'
           }}>
             {magazines.map((magazine) => (
               <div

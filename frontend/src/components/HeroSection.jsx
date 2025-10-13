@@ -18,10 +18,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="dark-container" style={{ paddingTop: '80px', minHeight: '100vh' }}>
+    <section className="dark-container" style={{ paddingTop: '80px', minHeight: '90vh' }}>
       <div className="dark-full-container">
         <div style={{ 
-          minHeight: 'calc(100vh - 80px)',
+          minHeight: 'calc(90vh - 80px)',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center'
