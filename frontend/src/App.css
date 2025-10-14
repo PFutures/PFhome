@@ -967,12 +967,10 @@ body {
   
   .dark-content-container {
     padding: 0 15px;
-    text-align: center;
   }
   
   .display-huge { 
     font-size: 48px;
-    text-align: center;
   }
   
   /* Center all mobile content */
@@ -995,53 +993,61 @@ body {
   
   .flagship-content {
     width: 100% !important;
-    text-align: center !important;
   }
   
-  /* Hero Section Mobile */
-  section[style*="paddingTop"] > div > div {
-    text-align: center !important;
-  }
-  
-  /* All headings centered on mobile */
+  /* All TEXT should be LEFT-aligned on mobile */
   h1, h2, h3, h4, h5, h6,
+  p, span, div,
   .display-huge, .display-large, .display-medium,
   .heading-1, .heading-2, .heading-3,
+  .body-large, .body-medium, .body-small,
   .artistic-heading, .artistic-display {
+    text-align: left !important;
+  }
+  
+  /* Section headers centered */
+  section > div > div > div:first-child {
     text-align: center !important;
   }
   
-  /* All paragraphs and body text centered on mobile */
-  p, .body-large, .body-medium, .body-small {
+  section > div > div > div:first-child h2,
+  section > div > div > div:first-child p {
     text-align: center !important;
   }
   
-  /* Buttons centered on mobile */
-  button, .btn-primary, .btn-secondary {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  /* Contact form centered */
-  form {
-    text-align: center !important;
-  }
-  
-  form input, form select, form textarea {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  /* Grid layouts single column on mobile */
+  /* Grid layouts - cards centered, text inside left-aligned */
   div[style*="display: grid"] {
     grid-template-columns: 1fr !important;
     justify-items: center !important;
   }
   
-  /* Flex layouts centered on mobile */
-  div[style*="display: flex"] {
-    justify-content: center !important;
-    text-align: center !important;
+  /* Cards/boxes centered */
+  div[style*="display: grid"] > div {
+    max-width: 400px !important;
+    width: 100% !important;
+  }
+  
+  /* Flex layouts for cards centered */
+  div[style*="gridTemplateColumns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  /* Contact form centered */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form h3, form label, form p {
+    text-align: left !important;
+  }
+  
+  /* Buttons centered */
+  button, .btn-primary, .btn-secondary {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
