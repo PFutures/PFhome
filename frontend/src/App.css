@@ -965,20 +965,12 @@ body {
     padding: 0 5%;
   }
   
-  .dark-content-container {
-    padding: 0 15px;
-  }
-  
-  .display-huge { 
-    font-size: 48px;
-  }
-  
-  /* Center all mobile content */
-  body {
-    overflow-x: hidden;
-  }
-  
-  /* Flagship Section Mobile Responsiveness */
+  .display-huge { font-size: 48px; }
+}
+
+/* Mobile Alignment Rules */
+@media (max-width: 767px) {
+  /* Flagship Section Mobile */
   .flagship-container {
     flex-direction: column !important;
     gap: 40px !important;
@@ -995,9 +987,8 @@ body {
     width: 100% !important;
   }
   
-  /* All TEXT should be LEFT-aligned on mobile */
-  h1, h2, h3, h4, h5, h6,
-  p, span, div,
+  /* ALL text LEFT-aligned */
+  h1, h2, h3, h4, h5, h6, p, span, li,
   .display-huge, .display-large, .display-medium,
   .heading-1, .heading-2, .heading-3,
   .body-large, .body-medium, .body-small,
@@ -1005,42 +996,47 @@ body {
     text-align: left !important;
   }
   
-  /* Section headers centered */
-  section > div > div > div:first-child {
+  /* Section headers stay centered */
+  section > div > div > div[style*="textAlign: 'center'"] h2,
+  section > div > div > div[style*="textAlign: 'center'"] p,
+  section > div > div > div[style*="text-align: center"] h2,
+  section > div > div > div[style*="text-align: center"] p {
     text-align: center !important;
   }
   
-  section > div > div > div:first-child h2,
-  section > div > div > div:first-child p {
-    text-align: center !important;
-  }
-  
-  /* Grid layouts - cards centered, text inside left-aligned */
-  div[style*="display: grid"] {
-    grid-template-columns: 1fr !important;
-    justify-items: center !important;
-  }
-  
-  /* Cards/boxes centered */
-  div[style*="display: grid"] > div {
-    max-width: 400px !important;
-    width: 100% !important;
-  }
-  
-  /* Flex layouts for cards centered */
+  /* Grid containers - center the cards */
+  div[style*="display: grid"],
   div[style*="gridTemplateColumns"] {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    gap: 40px !important;
   }
   
-  /* Contact form centered */
+  /* Individual cards/boxes - centered as containers, text inside left-aligned */
+  div[style*="display: grid"] > div,
+  div[style*="gridTemplateColumns"] > div {
+    max-width: 400px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Text inside cards stays left-aligned */
+  div[style*="display: grid"] > div h3,
+  div[style*="display: grid"] > div p,
+  div[style*="gridTemplateColumns"] > div h3,
+  div[style*="gridTemplateColumns"] > div p {
+    text-align: left !important;
+  }
+  
+  /* Contact form centered as container */
   form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   
-  form h3, form label, form p {
+  /* Text inside form left-aligned */
+  form h3, form label, form p, form input, form select, form textarea {
     text-align: left !important;
   }
   
@@ -1048,6 +1044,7 @@ body {
   button, .btn-primary, .btn-secondary {
     margin-left: auto !important;
     margin-right: auto !important;
+    display: block !important;
   }
 }
 
