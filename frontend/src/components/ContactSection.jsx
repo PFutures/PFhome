@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { consultationTypes } from './mock';
-import { Send, Calendar, Users, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Send, Calendar, Users, Mail, MapPin, ArrowRight } from 'lucide-react';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
