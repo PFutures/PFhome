@@ -21,13 +21,17 @@ const FlagshipSection = () => {
             position: 'relative',
             zIndex: 2,
             maxWidth: '1200px',
-            margin: '0 auto 60px auto'
+            margin: '0 auto 60px auto',
+            flexDirection: window.innerWidth <= 768 ? 'column' : 'row'
           }}>
             
             {/* Left Side - Magazine Image */}
             <div style={{
-              flex: '0 0 400px',
-              position: 'relative'
+              flex: window.innerWidth <= 768 ? '1 1 auto' : '0 0 400px',
+              position: 'relative',
+              width: window.innerWidth <= 768 ? '100%' : 'auto',
+              maxWidth: window.innerWidth <= 768 ? '400px' : 'none',
+              margin: window.innerWidth <= 768 ? '0 auto' : '0'
             }}>
               <div style={{
                 position: 'relative',
