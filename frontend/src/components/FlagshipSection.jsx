@@ -75,12 +75,12 @@ const FlagshipSection = () => {
             }}>
               <div>
                 <p style={{
-                  fontSize: '22px',
+                  fontSize: 'clamp(28px, 4vw, 36px)',
+                  fontWeight: '300',
+                  lineHeight: '1.3',
                   color: 'var(--brand-primary)',
                   marginBottom: '24px',
-                  fontWeight: '500',
-                  fontStyle: 'italic',
-                  letterSpacing: '-0.01em'
+                  letterSpacing: '-0.02em'
                 }}>
                   A Sci-Fi magazine of your company's tomorrow
                 </p>
