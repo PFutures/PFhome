@@ -131,7 +131,7 @@ export const mockTestimonials = [
 
 // Mock consultation booking data
 export const consultationTypes = [
-  { id: 1, type: "Future Mapping Session", duration: "2 hours", description: "Explore your company's potential future scenarios" },
-  { id: 2, type: "Innovation Strategy Consultation", duration: "4 hours", description: "Deep-dive into cross-industry opportunities" }, 
-  { id: 3, type: "Full Future Magazine Project", duration: "6-8 weeks", description: "Complete future publication creation" }
+  { id: 1, type: "Future Magazine Creation", duration: "8-12 weeks", description: "Craft a literal magazine from your company's future" },
+  { id: 2, type: "Futurist Mastermind", duration: "2-4 hours", description: "One-to-one deep dive with scientific futurists" }, 
+  { id: 3, type: "Sci-Fi Prototyping Workshop", duration: "2-3 days", description: "Interactive team session designing products that don't exist yet" }
 ];
