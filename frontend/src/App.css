@@ -966,6 +966,23 @@ body {
   }
   
   .display-huge { font-size: 48px; }
+  
+  /* Flagship Section Mobile Responsiveness */
+  .flagship-container {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  
+  .flagship-image {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  
+  .flagship-content {
+    width: 100% !important;
+  }
 }
 
 /* Pulse connection animation */
