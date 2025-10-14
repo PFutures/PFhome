@@ -965,6 +965,10 @@ body {
     padding: 0 5%;
   }
   
+  .dark-content-container {
+    padding: 0 15px;
+  }
+  
   .display-huge { font-size: 48px; }
   
   /* Flagship Section Mobile Responsiveness */
@@ -982,6 +986,17 @@ body {
   
   .flagship-content {
     width: 100% !important;
+    text-align: center !important;
+  }
+  
+  /* Center all mobile content */
+  body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
