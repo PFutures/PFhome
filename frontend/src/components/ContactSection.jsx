@@ -377,19 +377,7 @@ const ContactSection = () => {
                   }}>
                     <Mail size={20} color="var(--brand-primary)" />
                     <span className="body-medium" style={{ color: 'var(--text-secondary)' }}>
-                      hello@polymathicfutures.com
-                    </span>
-                  </div>
-                  
-                  <div style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '12px',
-                    marginBottom: '16px'
-                  }}>
-                    <Phone size={20} color="var(--brand-primary)" />
-                    <span className="body-medium" style={{ color: 'var(--text-secondary)' }}>
-                      +1 (555) 123-4567
+                      contact@polymathicfutures.com
                     </span>
                   </div>
                   
