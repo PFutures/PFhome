@@ -67,7 +67,7 @@ const FlagshipSection = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div style={{
+            <div className="flagship-content" style={{
               flex: 1,
               display: 'flex',
               flexDirection: 'column',
