@@ -13,7 +13,7 @@ const FlagshipSection = () => {
           </div>
 
           {/* Magazine Mockup on Left Side */}
-          <div style={{
+          <div className="flagship-container" style={{
             display: 'flex',
             alignItems: 'center',
             gap: '80px',
@@ -21,17 +21,13 @@ const FlagshipSection = () => {
             position: 'relative',
             zIndex: 2,
             maxWidth: '1200px',
-            margin: '0 auto 60px auto',
-            flexDirection: window.innerWidth <= 768 ? 'column' : 'row'
+            margin: '0 auto 60px auto'
           }}>
             
             {/* Left Side - Magazine Image */}
-            <div style={{
-              flex: window.innerWidth <= 768 ? '1 1 auto' : '0 0 400px',
-              position: 'relative',
-              width: window.innerWidth <= 768 ? '100%' : 'auto',
-              maxWidth: window.innerWidth <= 768 ? '400px' : 'none',
-              margin: window.innerWidth <= 768 ? '0 auto' : '0'
+            <div className="flagship-image" style={{
+              flex: '0 0 400px',
+              position: 'relative'
             }}>
               <div style={{
                 position: 'relative',
