@@ -68,6 +68,7 @@ class Magazine(BaseModel):
     cover_image: str
     industries: List[str]
     preview: str
+    pdf_url: Optional[str] = None
 
 class TeamMember(BaseModel):
     id: str
