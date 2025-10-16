@@ -28,7 +28,13 @@ const PortfolioSection = () => {
   };
 
   const openPreview = (magazine) => {
-    setSelectedMagazine(magazine);
+    // If magazine has a PDF, open it in a new tab
+    if (magazine.pdf_url) {
+      window.open(magazine.pdf_url, '_blank');
+    } else {
+      // Otherwise show the preview modal
+      setSelectedMagazine(magazine);
+    }
   };
 
   const closePreview = () => {
