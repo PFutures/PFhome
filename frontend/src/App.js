@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import FlagshipSection from "./components/FlagshipSection";
 import AboutSection from "./components/AboutSection";
-import PortfolioSection from "./components/PortfolioSection";
+import ArticleSamplesSection from "./components/ArticleSamplesSection";
 import ServicesSection from "./components/ServicesSection";
 import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
@@ -17,7 +17,7 @@ const HomePage = () => (
   <div>
     <HeroSection />
     <FlagshipSection />
-    <PortfolioSection />
+    <ArticleSamplesSection />
     <AboutSection />
     <TeamSection />
     <ServicesSection />
