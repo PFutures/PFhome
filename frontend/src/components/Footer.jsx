@@ -229,7 +229,7 @@ const Footer = () => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <Mail size={16} color="var(--brand-primary)" />
                   <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    hello@polymathicfutures.com
+                    contact@polymathicfutures.com
                   </span>
                 </div>
                 
