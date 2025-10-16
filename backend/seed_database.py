@@ -36,31 +36,13 @@ magazines_data = [
         "title": "The LEGOfication of the World",
         "year": "2035",
         "description": "How modular design principles are reshaping manufacturing, architecture, and innovation",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
+        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/mjch8sxn_ca4f8bf6-4ee0-44ee-940e-0d401645c0e2.png",
         "industries": ["Manufacturing", "Design", "Innovation"],
         "preview": "Discover how LEGO's modular approach is transforming industries from construction to biotechnology...",
         "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/04p3dqxr_The-LEGOfication-of-the-World%20article.pdf"
     },
     {
         "id": "3",
-        "title": "TechFlow Quarterly - 2040 Edition",
-        "year": "2040",
-        "description": "How your company's AI-driven manufacturing revolution reshaped global supply chains",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
-        "industries": ["Manufacturing", "AI", "Supply Chain"],
-        "preview": "In this timeline, your breakthrough in quantum-enhanced AI transformed manufacturing from reactive to predictive, creating $2.3B in new revenue streams..."
-    },
-    {
-        "id": "4",
-        "title": "BioFutures Medical - 2035 Edition", 
-        "year": "2035",
-        "description": "Your chocolate-based personalized medicine platform revolutionizes healthcare delivery",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/mjch8sxn_ca4f8bf6-4ee0-44ee-940e-0d401645c0e2.png",
-        "industries": ["Healthcare", "Food Tech", "Personalized Medicine"],
-        "preview": "By 2035, your molecular gastronomy breakthrough enabled precise drug delivery through everyday foods, reaching 50M patients globally..."
-    },
-    {
-        "id": "5",
         "title": "Urban Tomorrow - 2038 Edition",
         "year": "2038", 
         "description": "Self-healing infrastructure materials from your company now rebuilding cities worldwide",
