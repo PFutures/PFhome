@@ -214,7 +214,7 @@ const PortfolioSection = () => {
                     fontSize: '14px',
                     fontWeight: '500'
                   }}>
-                    <span>Read Preview</span>
+                    <span>{magazine.pdf_url ? 'Read' : 'Read Preview'}</span>
                     <ArrowRight size={14} />
                   </div>
                 </div>
