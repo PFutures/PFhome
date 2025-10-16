@@ -234,13 +234,6 @@ const Footer = () => {
                 </div>
                 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <Phone size={16} color="var(--brand-primary)" />
-                  <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
-                    +1 (555) 123-4567
-                  </span>
-                </div>
-                
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <MapPin size={16} color="var(--brand-primary)" />
                   <span className="body-small" style={{ color: 'var(--text-secondary)' }}>
                     Global • Remote–First
