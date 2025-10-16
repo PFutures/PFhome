@@ -368,6 +368,7 @@ const ContactSection = () => {
                   Direct Contact
                 </h3>
                 
+                {/* Updated contact information */}
                 <div style={{ marginBottom: '20px' }}>
                   <div style={{ 
                     display: 'flex', 
