@@ -92,7 +92,7 @@ const Footer = () => {
                 </a>
                 
                 <a
-                  href="mailto:hello@polymathicfutures.com"
+                  href="mailto:contact@polymathicfutures.com"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
