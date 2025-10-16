@@ -33,6 +33,16 @@ magazines_data = [
     },
     {
         "id": "2",
+        "title": "The LEGOfication of the World",
+        "year": "2035",
+        "description": "How modular design principles are reshaping manufacturing, architecture, and innovation",
+        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
+        "industries": ["Manufacturing", "Design", "Innovation"],
+        "preview": "Discover how LEGO's modular approach is transforming industries from construction to biotechnology...",
+        "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/04p3dqxr_The-LEGOfication-of-the-World%20article.pdf"
+    },
+    {
+        "id": "3",
         "title": "TechFlow Quarterly - 2040 Edition",
         "year": "2040",
         "description": "How your company's AI-driven manufacturing revolution reshaped global supply chains",
@@ -41,7 +51,7 @@ magazines_data = [
         "preview": "In this timeline, your breakthrough in quantum-enhanced AI transformed manufacturing from reactive to predictive, creating $2.3B in new revenue streams..."
     },
     {
-        "id": "3",
+        "id": "4",
         "title": "BioFutures Medical - 2035 Edition", 
         "year": "2035",
         "description": "Your chocolate-based personalized medicine platform revolutionizes healthcare delivery",
@@ -50,7 +60,7 @@ magazines_data = [
         "preview": "By 2035, your molecular gastronomy breakthrough enabled precise drug delivery through everyday foods, reaching 50M patients globally..."
     },
     {
-        "id": "4",
+        "id": "5",
         "title": "Urban Tomorrow - 2038 Edition",
         "year": "2038", 
         "description": "Self-healing infrastructure materials from your company now rebuilding cities worldwide",
