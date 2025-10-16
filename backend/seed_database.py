@@ -23,6 +23,16 @@ db = client[os.environ['DB_NAME']]
 magazines_data = [
     {
         "id": "1",
+        "title": "Singapore 2040",
+        "year": "2040",
+        "description": "A vision of Singapore's future through science and innovation",
+        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
+        "industries": ["Urban Planning", "Technology", "Innovation"],
+        "preview": "Explore Singapore's transformation into a leading hub of innovation and sustainability by 2040...",
+        "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ukw8obt1_Singapore%202040%20article.pdf"
+    },
+    {
+        "id": "2",
         "title": "TechFlow Quarterly - 2040 Edition",
         "year": "2040",
         "description": "How your company's AI-driven manufacturing revolution reshaped global supply chains",
@@ -31,7 +41,7 @@ magazines_data = [
         "preview": "In this timeline, your breakthrough in quantum-enhanced AI transformed manufacturing from reactive to predictive, creating $2.3B in new revenue streams..."
     },
     {
-        "id": "2",
+        "id": "3",
         "title": "BioFutures Medical - 2035 Edition", 
         "year": "2035",
         "description": "Your chocolate-based personalized medicine platform revolutionizes healthcare delivery",
@@ -40,7 +50,7 @@ magazines_data = [
         "preview": "By 2035, your molecular gastronomy breakthrough enabled precise drug delivery through everyday foods, reaching 50M patients globally..."
     },
     {
-        "id": "3",
+        "id": "4",
         "title": "Urban Tomorrow - 2038 Edition",
         "year": "2038", 
         "description": "Self-healing infrastructure materials from your company now rebuilding cities worldwide",
