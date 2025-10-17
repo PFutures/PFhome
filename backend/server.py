@@ -76,7 +76,7 @@ class TeamMember(BaseModel):
     role: str
     background: str
     expertise: List[str]
-    image: str
+    photo_url: str
     linkedin: Optional[str] = None
     email: Optional[str] = None
 
