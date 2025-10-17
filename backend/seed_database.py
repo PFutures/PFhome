@@ -58,37 +58,34 @@ team_members_data = [
         "id": "1",
         "name": "Dr. Philipp Kozin",
         "role": "Scientific Foresight Director", 
+        "bio": "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
         "background": "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
         "expertise": ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/5o6z0uxx_WhatsApp%20Image%202025-10-09%20at%2018.44.38.jpeg",
         "linkedin": "https://www.linkedin.com/in/philipp-kozin/",
-        "email": "philipp@polymathicfutures.com",
-        "description": "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
-        "academic_background": "PhD Chemistry • MBA Strategic Management"
+        "email": "philipp@polymathicfutures.com"
     },
     {
         "id": "2",
         "name": "Aksinya Staar",
         "role": "Polymathic Intelligence Director",
+        "bio": "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
         "background": "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, innovative models of education, governance, and economics, she contributes with Risk Intelligence anticipating ripple effects across industries and societies.",
         "expertise": ["Futures & Foresight", "Linguistics", "Talent & Culture", "Education", "Philosophy", "World and Art History", "Asian Studies", "Psychology", "Web 3 Data Space"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/f5sau3vs_two%20bookss.jpeg",
         "linkedin": "https://www.linkedin.com/in/aksinya/",
-        "email": "aksinya@polymathicfutures.com",
-        "description": "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
-        "academic_background": "Linguistics • Pedagogy • Psychology • Talent Strategy",
-        "publications": "Author of Why Polymaths?, Future of Work: From Industrial to Polymath Mindset, and the forthcoming Forgotten History and Untold Future of Education"
+        "email": "aksinya@polymathicfutures.com"
     },
     {
         "id": "3",
         "name": "Katerina De Pauw",
         "role": "Business Development Director",
+        "bio": "As Business Development Director, Katerina brings the magazine's imagination into the world of business — shaping dialogues, opening partnerships, and translating futures thinking into commercial reality. Her cross-domain path embodies the polymathic spirit: moving between education, trade, and well-being, she connects vision with value and ensures innovation finds its audience.",
         "background": "Katerina De Pauw is a sales talent who builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
         "expertise": ["Sales & Business Development", "Marketing Strategy", "Client Partnerships", "Education Management", "International Trade", "Science of Well-Being", "Coaching"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/6mottjaq_Katyaa.jfif",
         "linkedin": "https://www.linkedin.com/in/katerina-de-pauw-8178436/",
-        "email": "katerina@polymathicfutures.com",
-        "description": "As Business Development Director, Katerina brings the magazine's imagination into the world of business — shaping dialogues, opening partnerships, and translating futures thinking into commercial reality. Her cross-domain path embodies the polymathic spirit: moving between education, trade, and well-being, she connects vision with value and ensures innovation finds its audience."
+        "email": "katerina@polymathicfutures.com"
     }
 ]
 
