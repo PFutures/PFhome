@@ -74,6 +74,7 @@ class TeamMember(BaseModel):
     id: str
     name: str
     role: str
+    bio: str
     background: str
     expertise: List[str]
     photo_url: str
