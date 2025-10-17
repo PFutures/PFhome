@@ -26,7 +26,7 @@ magazines_data = [
         "title": "Singapore 2040",
         "year": "2040",
         "description": "A vision of Singapore's future through science and innovation",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/shrinfn0_9699c082-7b0a-408d-9849-2648ee928919.webp",
+        "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg",
         "industries": ["Urban Planning", "Technology", "Innovation"],
         "preview": "Explore Singapore's transformation into a leading hub of innovation and sustainability by 2040...",
         "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ukw8obt1_Singapore%202040%20article.pdf"
@@ -36,7 +36,7 @@ magazines_data = [
         "title": "The LEGOfication of the World",
         "year": "2035",
         "description": "How modular design principles are reshaping manufacturing, architecture, and innovation",
-        "cover_image": "https://customer-assets.emergentagent.com/job_crossindustry-hub/artifacts/mjch8sxn_ca4f8bf6-4ee0-44ee-940e-0d401645c0e2.png",
+        "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/thhjm9pd_81c9965e-7ca8-4e86-bc8c-221f22e77e02.jfif",
         "industries": ["Manufacturing", "Design", "Innovation"],
         "preview": "Discover how LEGO's modular approach is transforming industries from construction to biotechnology...",
         "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/04p3dqxr_The-LEGOfication-of-the-World%20article.pdf"
@@ -46,7 +46,7 @@ magazines_data = [
         "title": "Petabytes of Love",
         "year": "2024", 
         "description": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
-        "cover_image": "https://customer-assets.emergentagent.com/job_future-vision-6/artifacts/v4ds5j7a_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
+        "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
         "industries": ["Technology", "Jewelry", "Data Storage"],
         "preview": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
         "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/u67ft7dc_Petabytes-of-Love%20article.pdf"
