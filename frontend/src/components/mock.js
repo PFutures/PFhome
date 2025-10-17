@@ -60,7 +60,7 @@ export const mockTeamMembers = [
     role: "Business Development Director",
     background: "Katerina De Pauw is a sales talent who builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
     expertise: ["Sales & Business Development", "Marketing Strategy", "Client Partnerships", "Education Management", "International Trade", "Science of Well-Being", "Coaching"],
-    image: "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/6mottjaq_Katyaa.jfif",
+    photo_url: "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/6mottjaq_Katyaa.jfif",
     linkedin: "https://www.linkedin.com/in/katerina-de-pauw-8178436/",
     description: "As Business Development Director, Katerina brings the magazine's imagination into the world of business — shaping dialogues, opening partnerships, and translating futures thinking into commercial reality. Her cross-domain path embodies the polymathic spirit: moving between education, trade, and well-being, she connects vision with value and ensures innovation finds its audience."
   }
