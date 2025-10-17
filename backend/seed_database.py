@@ -48,7 +48,8 @@ magazines_data = [
         "description": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
         "cover_image": "https://customer-assets.emergentagent.com/job_future-vision-6/artifacts/v4ds5j7a_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
         "industries": ["Technology", "Jewelry", "Data Storage"],
-        "preview": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light."
+        "preview": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
+        "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/u67ft7dc_Petabytes-of-Love%20article.pdf"
     }
 ]
 
