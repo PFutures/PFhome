@@ -40,7 +40,7 @@ const Header = () => {
         }}
       >
         <img 
-          src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/aen2dtcr_logo%20PF.jpeg"
+          src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/a12kivud_LOGO%20simple%20big.jpg"
           alt="Polymathic Futures Logo"
           style={{
             height: '60px',
