@@ -16,11 +16,17 @@ import Footer from "./components/Footer";
 const HomePage = () => (
   <div>
     <HeroSection />
+    <div className="section-separator"></div>
     <FlagshipSection />
+    <div className="section-separator"></div>
     <ArticleSamplesSection />
+    <div className="section-separator"></div>
     <AboutSection />
+    <div className="section-separator"></div>
     <TeamSection />
+    <div className="section-separator"></div>
     <ServicesSection />
+    <div className="section-separator"></div>
     <ContactSection />
   </div>
 );
