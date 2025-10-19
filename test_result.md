@@ -277,7 +277,38 @@ frontend:
         agent: "testing"
         comment: "✅ PROFILE IMAGE HEIGHT INCREASE SUCCESSFULLY VERIFIED: All requested profile image updates have been perfectly implemented in the 'We are Polymaths' team section: 1) Image height increased from 300px to 400px - All profile images now have exact 400px height with container dimensions of 425x400px ✅ 2) Dr. Philipp Kozin's new image confirmed - Displaying the new PK.jpeg photo (URL: https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/w8faf1j9_PK.jpeg) ✅ 3) Perfect image alignment - All three team members (Philipp, Aksinya, Katerina) have consistent 400px vertical dimensions with proper object positioning ✅ 4) Excellent overall layout balance - Team section shows improved visual impact with taller profile images, proper grid layout (40px gap), and uniform spacing ✅ 5) High image quality - All images load correctly with object-fit: cover maintaining excellent proportions ✅ The increased vertical space creates a much more impactful and professional presentation. Screenshots captured showing both overall team section and detailed verification of the 400px height implementation."
 
+backend:
+  - task: "Fix article image swap for Singapore 2040 and Petabytes of Love"
+    implemented: true
+    working: true
+    file: "seed_database.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "user"
+        comment: "User reported that images for Singapore 2040 and Petabytes of Love articles are swapped again"
+      - working: true
+        agent: "main"
+        comment: "✅ FIXED: Swapped cover_image URLs in seed_database.py. Singapore 2040 now has vuvy5uso_WhatsApp image (glowing orbs), Petabytes of Love now has kf61ma5v_7cabefac image (green Singapore architecture). Database reseeded successfully. Screenshot verification confirms articles are displaying with correct images."
+
+frontend:
+  - task: "FlagshipSection magazine covers rearrangement"
+    implemented: true
+    working: true
+    file: "FlagshipSection.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "✅ VERIFIED: Magazine covers (IKEA, Philip Morris, LEGOfication) are already correctly positioned under '2. Order Your company's Sci-Fi Futures edition' section. The rearrangement from the previous edit is complete and working as expected."
+
 agent_communication:
+  - agent: "main"
+    message: "✅ IMAGE SWAP FIXED & FLAGSHIP VERIFIED: Successfully swapped cover images for Singapore 2040 and Petabytes of Love articles in seed_database.py and reseeded the database. Verified FlagshipSection already has magazine covers correctly positioned under section 2. Screenshots confirm both fixes are working correctly. Ready for production build."
   - agent: "main"
     message: "✅ HERO TITLE STYLING IMPROVED: Successfully addressed user feedback about hero title being too large and poorly centered. Reduced font size, changed from center to left alignment, adjusted margins and spacing. Title now has better visual hierarchy and integration with the rest of the hero section content. Screenshot confirms the improvement looks much more balanced and professional."
   - agent: "testing"
