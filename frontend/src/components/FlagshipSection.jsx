@@ -59,16 +59,6 @@ const FlagshipSection = () => {
 
           {/* Two Ways to Experience */}
           <div style={{ marginTop: '80px' }}>
-            <h3 style={{
-              fontSize: '32px',
-              fontWeight: '600',
-              color: 'var(--text-primary)',
-              textAlign: 'center',
-              marginBottom: '60px'
-            }}>
-              Two ways to experience Polymathic Futures:
-            </h3>
-
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))',
