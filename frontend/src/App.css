@@ -288,15 +288,20 @@ body {
 }
 
 .dark-nav-link {
-  color: var(--text-muted);
+  background: linear-gradient(135deg, var(--brand-primary), #00b4d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 400;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .dark-nav-link:hover {
-  color: var(--text-primary);
+  filter: brightness(1.2);
+  transform: translateY(-1px);
 }
 
 .dark-nav-link.active {
