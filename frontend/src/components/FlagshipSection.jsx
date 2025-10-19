@@ -116,39 +116,6 @@ const FlagshipSection = () => {
                   Discover how different sectors — from biotech to design, from mobility to luxury — imagine their next horizon.
                 </p>
 
-                {/* Sample magazine covers - CLICKABLE */}
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
-                  gap: '15px',
-                  marginBottom: '30px'
-                }}>
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/6rpy95cz_WhatsApp%20Image%202025-10-15%20at%2018.05.09.jpeg" 
-                    style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Sample 1"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/6rpy95cz_WhatsApp%20Image%202025-10-15%20at%2018.05.09.jpeg")}
-                    onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
-                    onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-                  />
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ec3wxi7l_WhatsApp%20Image%202025-10-15%20at%2017.24.14.jpeg" 
-                    style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Sample 2"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ec3wxi7l_WhatsApp%20Image%202025-10-15%20at%2017.24.14.jpeg")}
-                    onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
-                    onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-                  />
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/h9fnuppi_967dafba-95e4-472f-9693-486759a91125.jfif" 
-                    style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Sample 3"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/h9fnuppi_967dafba-95e4-472f-9693-486759a91125.jfif")}
-                    onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
-                    onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-                  />
-                </div>
-
                 <button
                   className="btn-primary dark-button-animate"
                   style={{ width: '100%' }}
