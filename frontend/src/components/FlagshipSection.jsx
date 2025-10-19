@@ -146,7 +146,7 @@ const FlagshipSection = () => {
                   2. Order Your company's Sci-Fi Futures edition
                 </h4>
 
-                {/* Article covers grid - MOVED HERE, CLICKABLE */}
+                {/* Sample magazine covers moved here - CLICKABLE */}
                 <div style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(3, 1fr)',
@@ -154,26 +154,26 @@ const FlagshipSection = () => {
                   marginBottom: '30px'
                 }}>
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp" 
+                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/6rpy95cz_WhatsApp%20Image%202025-10-15%20at%2018.05.09.jpeg" 
                     style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Cover 1"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp")}
+                    alt="IKEA"
+                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/6rpy95cz_WhatsApp%20Image%202025-10-15%20at%2018.05.09.jpeg")}
                     onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                     onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                   />
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/thhjm9pd_81c9965e-7ca8-4e86-bc8c-221f22e77e02.jfif" 
+                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ec3wxi7l_WhatsApp%20Image%202025-10-15%20at%2017.24.14.jpeg" 
                     style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Cover 2"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/thhjm9pd_81c9965e-7ca8-4e86-bc8c-221f22e77e02.jfif")}
+                    alt="Philip Morris"
+                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ec3wxi7l_WhatsApp%20Image%202025-10-15%20at%2017.24.14.jpeg")}
                     onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                     onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                   />
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg" 
+                    src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/h9fnuppi_967dafba-95e4-472f-9693-486759a91125.jfif" 
                     style={{ width: '100%', height: 'auto', borderRadius: '4px', cursor: 'pointer', transition: 'transform 0.3s ease' }} 
-                    alt="Cover 3"
-                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg")}
+                    alt="LEGOfication"
+                    onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-magazine/artifacts/h9fnuppi_967dafba-95e4-472f-9693-486759a91125.jfif")}
                     onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
                     onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                   />
