@@ -34,7 +34,7 @@ const HeroSection = () => {
             paddingLeft: '0px'
           }}>
             <h1 className="display-huge artistic-display" style={{ 
-              marginBottom: '24px',
+              marginBottom: '16px',
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
               lineHeight: '1.2',
               letterSpacing: '-0.01em',
@@ -42,6 +42,17 @@ const HeroSection = () => {
             }}>
               Scientific Foresight for Cross-Industry Breakthroughs
             </h1>
+            
+            {/* Tagline under main heading */}
+            <p className="body-small" style={{ 
+              color: 'var(--brand-primary)',
+              fontWeight: '500',
+              letterSpacing: '2px',
+              textTransform: 'uppercase',
+              marginTop: '16px'
+            }}>
+              WHERE DISCIPLINES CONVERGE • INNOVATION IS BORN
+            </p>
           </div>
 
           {/* Two-column content below title */}
