@@ -146,17 +146,6 @@ const HeroSection = () => {
                 Partnership Inquiry
               </button>
             </div>
-            
-            {/* Tagline */}
-            <div style={{ marginTop: '60px' }}>
-              <p className="body-small" style={{ 
-                color: 'var(--brand-primary)',
-                fontWeight: '500',
-                letterSpacing: '0.5px'
-              }}>
-                WHERE DISCIPLINES CONVERGE • INNOVATION IS BORN
-              </p>
-            </div>
           </div>
           
           {/* Right side - Original 3D Spline Animation */}
