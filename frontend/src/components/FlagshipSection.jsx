@@ -22,103 +22,39 @@ const FlagshipSection = () => {
             </h2>
           </div>
 
-          {/* Magazine Mockup on Left Side */}
+          {/* Content - Centered */}
           <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '80px',
-            marginBottom: '60px',
-            position: 'relative',
-            zIndex: 2,
-            maxWidth: '1200px',
-            margin: '0 auto 60px auto'
+            maxWidth: '900px',
+            margin: '0 auto 60px auto',
+            textAlign: 'center'
           }}>
+            <p style={{
+              fontSize: '22px',
+              color: 'var(--brand-primary)',
+              marginBottom: '24px',
+              fontWeight: '500',
+              fontStyle: 'italic',
+              letterSpacing: '-0.01em'
+            }}>
+              A Sci-Fi magazine of your company's tomorrow
+            </p>
             
-            {/* Left Side - Magazine Image - CLICKABLE */}
-            <div style={{
-              flex: '0 0 400px',
-              position: 'relative'
+            <p style={{
+              fontSize: '18px',
+              color: 'var(--text-secondary)',
+              lineHeight: '1.6',
+              marginBottom: '20px'
             }}>
-              <div 
-                style={{
-                  position: 'relative',
-                  transform: 'perspective(1000px) rotateY(-10deg) rotateX(2deg)',
-                  animation: 'magazineFloat 6s ease-in-out infinite',
-                  cursor: 'pointer'
-                }}
-                onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/07jqqyb2_upscaled%20COVER.jpeg")}
-              >
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/07jqqyb2_upscaled%20COVER.jpeg"
-                  alt="Polymathic Futures Magazine Cover"
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    maxHeight: '500px',
-                    objectFit: 'cover',
-                    borderRadius: '8px',
-                    boxShadow: `
-                      0 25px 50px rgba(0, 0, 0, 0.5),
-                      0 0 30px rgba(0, 255, 209, 0.2),
-                      inset 0 1px 0 rgba(255, 255, 255, 0.1)
-                    `,
-                    border: '2px solid rgba(0, 255, 209, 0.3)',
-                    transition: 'transform 0.3s ease'
-                  }}
-                  onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
-                  onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
-                />
-                <div style={{
-                  position: 'absolute',
-                  top: '-5px',
-                  left: '-5px',
-                  right: '-5px',
-                  bottom: '-5px',
-                  background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.1), transparent)',
-                  borderRadius: '12px',
-                  zIndex: -1,
-                  filter: 'blur(10px)'
-                }} />
-              </div>
-            </div>
-
-            {/* Right Side - Content */}
-            <div style={{
-              flex: 1,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '30px'
+              A tangible artifact from your organization's future — carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>thrill of possibility</span> and the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>clarity of vision</span>. A conversation starter, a strategy tool, and a bold future made real.
+            </p>
+            
+            <p style={{
+              fontSize: '18px',
+              color: 'var(--text-secondary)',
+              lineHeight: '1.6'
             }}>
-              <div>
-                <p style={{
-                  fontSize: '22px',
-                  color: 'var(--brand-primary)',
-                  marginBottom: '24px',
-                  fontWeight: '500',
-                  fontStyle: 'italic',
-                  letterSpacing: '-0.01em'
-                }}>
-                  A Sci-Fi magazine of your company's tomorrow
-                </p>
-                
-                <p style={{
-                  fontSize: '18px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6',
-                  marginBottom: '20px'
-                }}>
-                  A tangible artifact from your organization's future — carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>thrill of possibility</span> and the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>clarity of vision</span>. A conversation starter, a strategy tool, and a bold future made real.
-                </p>
-                
-                <p style={{
-                  fontSize: '18px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: '1.6'
-                }}>
-                  Imagine walking into a board meeting, investor pitch, or team retreat with this magazine in your hands. Make people <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>see, feel, and believe your vision</span> — and watch how it shifts the way they think and act today.
-                </p>
-              </div>
-            </div>
+              Imagine walking into a board meeting, investor pitch, or team retreat with this magazine in your hands. Make people <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>see, feel, and believe your vision</span> — and watch how it shifts the way they think and act today.
+            </p>
           </div>
 
           {/* Two Ways to Experience */}
