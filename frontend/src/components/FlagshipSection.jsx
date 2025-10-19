@@ -105,6 +105,161 @@ const FlagshipSection = () => {
             </div>
           </div>
 
+          {/* Two Ways to Experience */}
+          <div style={{ marginTop: '80px' }}>
+            <h3 style={{
+              fontSize: '32px',
+              fontWeight: '600',
+              color: 'var(--text-primary)',
+              textAlign: 'center',
+              marginBottom: '60px'
+            }}>
+              Two ways to experience Polymathic Futures:
+            </h3>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))',
+              gap: '60px',
+              maxWidth: '1200px',
+              margin: '0 auto'
+            }}>
+              
+              {/* Column 1: Sample Edition */}
+              <div style={{
+                background: 'var(--bg-secondary)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: '12px',
+                padding: '40px',
+                display: 'flex',
+                flexDirection: 'column'
+              }}>
+                <h4 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '30px'
+                }}>
+                  1. Explore our Sample Edition
+                </h4>
+
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/07jqqyb2_upscaled%20COVER.jpeg"
+                  alt="Sample Magazine Cover"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    maxHeight: '400px',
+                    objectFit: 'contain',
+                    marginBottom: '30px',
+                    borderRadius: '8px',
+                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+                  }}
+                />
+
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6',
+                  marginBottom: '30px',
+                  flexGrow: 1
+                }}>
+                  A collectible magazine from the future — featuring grounded in science sci-fi prototypes and foresight stories inspired by real breakthroughs across industries.
+                  <br/><br/>
+                  Discover how different sectors — from biotech to design, from mobility to luxury — imagine their next horizon.
+                </p>
+
+                {/* Sample magazine covers */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: '15px',
+                  marginBottom: '30px'
+                }}>
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/6rpy95cz_WhatsApp%20Image%202025-10-15%20at%2018.05.09.jpeg" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Sample 1" />
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ec3wxi7l_WhatsApp%20Image%202025-10-15%20at%2017.24.14.jpeg" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Sample 2" />
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/h9fnuppi_967dafba-95e4-472f-9693-486759a91125.jfif" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Sample 3" />
+                </div>
+
+                <button
+                  className="btn-primary dark-button-animate"
+                  style={{ width: '100%' }}
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  🔹 Order Sample Magazine
+                </button>
+              </div>
+
+              {/* Column 2: Custom Edition */}
+              <div style={{
+                background: 'var(--bg-secondary)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: '12px',
+                padding: '40px',
+                display: 'flex',
+                flexDirection: 'column'
+              }}>
+                <h4 style={{
+                  fontSize: '24px',
+                  fontWeight: '600',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '30px'
+                }}>
+                  2. Commission Your Own Future Edition
+                </h4>
+
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6',
+                  marginBottom: '30px',
+                  flexGrow: 1
+                }}>
+                  An entire magazine dedicated to your company's possible futures: visionary product prototypes, new market constellations, and bold scenarios brought to life through story and design.
+                  <br/><br/>
+                  Developed through a consultation with our team of futurists, scientists, and polymathic thinkers.
+                </p>
+
+                <p style={{
+                  fontSize: '14px',
+                  color: 'var(--text-primary)',
+                  fontStyle: 'italic',
+                  marginBottom: '20px',
+                  textAlign: 'center'
+                }}>
+                  Check the covers of magazines we've already created — and imagine yours among them.
+                </p>
+
+                {/* Article covers grid */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: '15px',
+                  marginBottom: '30px'
+                }}>
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Cover 1" />
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/thhjm9pd_81c9965e-7ca8-4e86-bc8c-221f22e77e02.jfif" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Cover 2" />
+                  <img src="https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} alt="Cover 3" />
+                </div>
+
+                <button
+                  className="btn-primary dark-button-animate"
+                  style={{ width: '100%' }}
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) element.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  🔸 Order Your Future Edition
+                </button>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
