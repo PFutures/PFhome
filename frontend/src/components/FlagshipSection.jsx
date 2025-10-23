@@ -22,39 +22,136 @@ const FlagshipSection = () => {
             </h2>
           </div>
 
-          {/* Content - Centered */}
+          {/* Content - Elegant Layout */}
           <div style={{
-            maxWidth: '900px',
-            margin: '0 auto 60px auto',
+            maxWidth: '1000px',
+            margin: '0 auto 80px auto',
             textAlign: 'center'
           }}>
-            <p style={{
-              fontSize: '22px',
-              color: 'var(--brand-primary)',
-              marginBottom: '24px',
-              fontWeight: '500',
-              fontStyle: 'italic',
-              letterSpacing: '-0.01em'
+            {/* Main Tagline */}
+            <div style={{
+              marginBottom: '48px',
+              padding: '0 40px'
             }}>
-              A Sci-Fi magazine of your company's tomorrow
-            </p>
-            
-            <p style={{
-              fontSize: '18px',
-              color: 'var(--text-secondary)',
-              lineHeight: '1.6',
-              marginBottom: '20px'
+              <p style={{
+                fontSize: '28px',
+                fontWeight: '300',
+                color: 'var(--text-primary)',
+                letterSpacing: '0.02em',
+                lineHeight: '1.4'
+              }}>
+                A Sci-Fi magazine of your company's{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg, var(--brand-primary), #00b4d8)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  fontWeight: '500'
+                }}>
+                  tomorrow
+                </span>
+              </p>
+            </div>
+
+            {/* Divider Line */}
+            <div style={{
+              width: '60px',
+              height: '2px',
+              background: 'linear-gradient(90deg, transparent, var(--brand-primary), transparent)',
+              margin: '0 auto 48px auto'
+            }}></div>
+
+            {/* Three Key Points */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '32px',
+              marginBottom: '48px',
+              padding: '0 20px'
             }}>
-              A tangible artifact from your organization's future — carrying the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>thrill of possibility</span> and the <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>clarity of vision</span>. A conversation starter, a strategy tool, and a bold future made real.
-            </p>
-            
-            <p style={{
-              fontSize: '18px',
-              color: 'var(--text-secondary)',
-              lineHeight: '1.6'
+              <div style={{
+                padding: '24px',
+                background: 'rgba(0, 255, 209, 0.03)',
+                border: '1px solid rgba(0, 255, 209, 0.1)',
+                borderRadius: '8px'
+              }}>
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  A tangible artifact carrying the{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>
+                    thrill of possibility
+                  </span>
+                </p>
+              </div>
+              
+              <div style={{
+                padding: '24px',
+                background: 'rgba(0, 255, 209, 0.03)',
+                border: '1px solid rgba(0, 255, 209, 0.1)',
+                borderRadius: '8px'
+              }}>
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  A strategy tool with the{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>
+                    clarity of vision
+                  </span>
+                </p>
+              </div>
+              
+              <div style={{
+                padding: '24px',
+                background: 'rgba(0, 255, 209, 0.03)',
+                border: '1px solid rgba(0, 255, 209, 0.1)',
+                borderRadius: '8px'
+              }}>
+                <p style={{
+                  fontSize: '16px',
+                  color: 'var(--text-secondary)',
+                  lineHeight: '1.6'
+                }}>
+                  A conversation starter that makes the{' '}
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>
+                    future real
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            {/* Impact Statement */}
+            <div style={{
+              maxWidth: '800px',
+              margin: '0 auto',
+              padding: '32px',
+              background: 'linear-gradient(135deg, rgba(0, 255, 209, 0.05), rgba(0, 180, 216, 0.05))',
+              border: '1px solid rgba(0, 255, 209, 0.15)',
+              borderRadius: '12px'
             }}>
-              Imagine walking into a board meeting, investor pitch, or team retreat with this magazine in your hands. Make people <span style={{ color: 'var(--brand-primary)', fontWeight: '500' }}>see, feel, and believe your vision</span> — and watch how it shifts the way they think and act today.
-            </p>
+              <p style={{
+                fontSize: '18px',
+                color: 'var(--text-primary)',
+                lineHeight: '1.7',
+                fontWeight: '300',
+                fontStyle: 'italic'
+              }}>
+                "Imagine walking into a board meeting with this magazine in your hands. 
+                Watch how it makes people{' '}
+                <span style={{ 
+                  color: 'var(--brand-primary)', 
+                  fontWeight: '500',
+                  fontStyle: 'normal'
+                }}>
+                  see, feel, and believe
+                </span>
+                {' '}your vision — and shifts the way they think today."
+              </p>
+            </div>
           </div>
 
           {/* Two Ways to Experience */}
