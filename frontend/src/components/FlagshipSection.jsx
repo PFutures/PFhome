@@ -183,7 +183,7 @@ const FlagshipSection = () => {
                 </h4>
 
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/07jqqyb2_upscaled%20COVER.jpeg"
+                  src="https://customer-assets.emergentagent.com/job_cache-buster-tool/artifacts/czw6jse2_COVER%20PF%20magazine%20JEPG1.jpg"
                   alt="Sample Magazine Cover"
                   style={{
                     width: '100%',
@@ -196,7 +196,7 @@ const FlagshipSection = () => {
                     cursor: 'pointer',
                     transition: 'transform 0.3s ease'
                   }}
-                  onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/07jqqyb2_upscaled%20COVER.jpeg")}
+                  onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_cache-buster-tool/artifacts/czw6jse2_COVER%20PF%20magazine%20JEPG1.jpg")}
                   onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
                   onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
                 />
