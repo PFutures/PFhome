@@ -23,16 +23,6 @@ db = client[os.environ['DB_NAME']]
 magazines_data = [
     {
         "id": "1",
-        "title": "Singapore 2040",
-        "year": "2040",
-        "description": "A vision of Singapore's future through science and innovation",
-        "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg",
-        "industries": ["Urban Planning", "Technology", "Innovation"],
-        "preview": "Explore Singapore's transformation into a leading hub of innovation and sustainability by 2040...",
-        "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ukw8obt1_Singapore%202040%20article.pdf"
-    },
-    {
-        "id": "2",
         "title": "The LEGOfication of the World",
         "year": "2035",
         "description": "How modular design principles are reshaping manufacturing, architecture, and innovation",
@@ -40,6 +30,16 @@ magazines_data = [
         "industries": ["Manufacturing", "Design", "Innovation"],
         "preview": "Discover how LEGO's modular approach is transforming industries from construction to biotechnology...",
         "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/04p3dqxr_The-LEGOfication-of-the-World%20article.pdf"
+    },
+    {
+        "id": "2",
+        "title": "Singapore 2040",
+        "year": "2040",
+        "description": "A vision of Singapore's future through science and innovation",
+        "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg",
+        "industries": ["Urban Planning", "Technology", "Innovation"],
+        "preview": "Explore Singapore's transformation into a leading hub of innovation and sustainability by 2040...",
+        "pdf_url": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/ukw8obt1_Singapore%202040%20article.pdf"
     },
     {
         "id": "3",
@@ -58,7 +58,7 @@ team_members_data = [
         "id": "1",
         "name": "Dr. Philipp Kozin",
         "role": "Scientific Foresight Director", 
-        "bio": "His method: blending the precision of a PhD chemist with the strategic lens of an MBA, he pattern-matches signals across natural sciences, economy and geopolitics, cultures and beyond. Powered by a six-country career and a storyteller's eye, he prototypes futures, translates them for executives, and seeds cross-sector alliances that keep companies ahead of the curve.",
+        "bio": "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
         "background": "Philipp Kozin is a scientific foresight visionary who transforms the meeting of breakthrough science and real-world business into new directions for industries to evolve. From horizon-scanning to framing 10- to 15-year technology bets, he curates global partnerships that pull tomorrow's deep-tech disruptions into today's product road-maps. What makes Philipp rare among scientists is his gift of imagination. Rooted in chemistry, he moves fluidly across domains, applying a multidimensional mind beyond convention.",
         "expertise": ["Scientific Foresight", "Chemistry & Materials Science", "Technology Strategy", "Cross-Sector Partnerships", "Deep-Tech Innovation"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/5o6z0uxx_WhatsApp%20Image%202025-10-09%20at%2018.44.38.jpeg",
@@ -69,7 +69,7 @@ team_members_data = [
         "id": "2",
         "name": "Aksinya Staar",
         "role": "Polymathic Intelligence Director",
-        "bio": "Aksinya serves as the conceptual architect and narrative lead. She sets the intellectual compass of the magazine, blending historical depth with foresight, and ensuring that every story is not only a spark of imagination but also a bridge to scientific grounding and business application. Her method is polymathic in essence: reading across centuries, sensing shifts before they surface, and weaving insights from diverse fields into future scenarios that are provocative, plausible, and actionable.",
+        "bio": "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, Futures & Foresight, innovative models of education, governance, and economics, she contributes with Risk Intelligence anticipating ripple effects across industries and societies.",
         "background": "Aksinya Staar is the mind behind the polymathic principle that defines Polymathic Futures. She maps how ideas move through people — and how people shift entire systems — transforming complexity into visions that are both imaginative and actionable. With a career spanning Talent & Culture, innovative models of education, governance, and economics, she contributes with Risk Intelligence anticipating ripple effects across industries and societies.",
         "expertise": ["Futures & Foresight", "Linguistics", "Talent & Culture", "Education", "Philosophy", "World and Art History", "Asian Studies", "Psychology", "Web 3 Data Space"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/f5sau3vs_two%20bookss.jpeg",
@@ -80,7 +80,7 @@ team_members_data = [
         "id": "3",
         "name": "Katerina De Pauw",
         "role": "Business Development Director",
-        "bio": "As Business Development Director, Katerina brings the magazine's imagination into the world of business — shaping dialogues, opening partnerships, and translating futures thinking into commercial reality. Her cross-domain path embodies the polymathic spirit: moving between education, trade, and well-being, she connects vision with value and ensures innovation finds its audience.",
+        "bio": "Katerina De Pauw is a sales talent who builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
         "background": "Katerina De Pauw is a sales talent who builds pathways where markets meet people. With experience in education, trade, and coaching, she reads both the human and commercial dimensions of opportunity — and turns them into lasting relationships and tangible results. Her communication style is her signature: charismatic yet gentle, magnetic yet warm. She creates trust by listening deeply and making others feel seen.",
         "expertise": ["Sales & Business Development", "Marketing Strategy", "Client Partnerships", "Education Management", "International Trade", "Science of Well-Being", "Coaching"],
         "photo_url": "https://customer-assets.emergentagent.com/job_future-landing-4/artifacts/6mottjaq_Katyaa.jfif",
@@ -94,20 +94,20 @@ services_data = [
         "id": "1",
         "title": "Future Magazine Creation",
         "description": "We craft literal magazines from the future — from 2035, 2040, even 2060 — written as if your company's breakthroughs have already happened.",
-        "features": [
-            "10–20 sci-fi foresight articles turning your strategy into vivid stories of how your products, people, and impact evolve across the next decades",
-            "Cross-pollination ideas — surprising connections between your industry and others you've never imagined collaborating with",
-            "Possible & probable futures — scenarios grounded in foresight and science, not fantasy",
-            "\"Already Emerging\" section — reporting on current R&D, academic labs, and startups already shaping the seeds of your future",
-            "\"More to Explore\" sources list — curated state-of-the-art innovations and research directions for those who want to dive deeper"
-        ],
+       "features": [
+    "10+ sci-fi foresight articles turning your strategy into vivid stories of how your products, people, and impact evolve across the next decades",
+    "Cross-pollination ideas — surprising connections between your industry and others you've never imagined collaborating with",
+    "Possible & probable futures — scenarios grounded in foresight and science, not fantasy",
+    "\"Already Emerging\" section — reporting on current R&D, academic labs, and startups already shaping the seeds of your future",
+    "\"More to Explore\" sources list — curated state-of-the-art innovations and research directions for those who want to dive deeper"
+],
         "timeframe": "8-12 weeks",
         "ideal_for": "Companies seeking breakthrough innovation directions"
     },
     {
         "id": "2",  
         "title": "One-to-One Future Consulting",
-        "description": "In a private session with our leading scientific futurists, you'll receive research-backed yet deeply imaginative insights into the future of your industry.",
+        "description": "A unique, high-intelligence session where your team joins a living laboratory of minds. Together with a curated group of polymathic futurists, we explore the possible, probable, and preferable futures of your organization — turning foresight into strategy and imagination into action.",
         "features": [
             "High-intelligence prototype of possibilities, crafted in real time",
             "Live R&D lab for your strategy, where science meets storytelling",
