@@ -36,7 +36,7 @@ const HeroSection = () => {
             style={{
               width: "100%",
               textAlign: "left",
-              marginBottom: "40px",
+              marginBottom: "0",
               paddingLeft: "0px",
             }}
           >

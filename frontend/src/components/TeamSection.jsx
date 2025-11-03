@@ -75,7 +75,7 @@ const TeamSection = () => {
     <section
       id="team"
       className="dark-container"
-      style={{ padding: "60px 0 80px 0" }}
+      style={{ padding: "120px 0" }}
     >
       <div className="dark-full-container">
         <div className="dark-content-container">
@@ -186,7 +186,50 @@ const TeamSection = () => {
             </div>
           </div>
 
-          {/* Team Grid */}
+          <p
+            className="body-large"
+            style={{
+              marginBottom: "40px",
+              maxWidth: "800px",
+              margin: "0 auto ",
+              color: "var(--text-secondary)",
+              textAlign: "center",
+            }}
+          >
+            <span
+              style={{
+                color: "var(--brand-primary)",
+              }}
+            >
+              Polymathic Futures&nbsp;
+            </span>
+            is a collaborative network of{" "}
+            <span
+              style={{
+                color: "var(--brand-primary)",
+              }}
+            >
+              200+ Scholars, scientists, strategists, polymaths and storytellers
+            </span>{" "}
+            shaping future-focused solutions across industries and continents.
+            We bring together rigorous data and deep human insight to translate
+            <span
+              style={{
+                color: "var(--brand-primary)",
+              }}
+            >
+              &nbsp;science into strategy
+            </span>
+            , and{" "}
+            <span
+              style={{
+                color: "var(--brand-primary)",
+              }}
+            >
+              imagination into impact.
+            </span>
+          </p>
+          {/* Team Grid 
           <div
             style={{
               display: "grid",
@@ -207,7 +250,7 @@ const TeamSection = () => {
                   transition: "all 0.4s ease-in-out",
                 }}
               >
-                {/* Profile Image */}
+
                 <div
                   style={{
                     height: "400px",
@@ -226,7 +269,6 @@ const TeamSection = () => {
                         objectFit: "cover",
                       }}
                       onError={(e) => {
-                        // Fallback to icon if image fails to load
                         e.target.style.display = "none";
                       }}
                     />
@@ -245,7 +287,6 @@ const TeamSection = () => {
                     </div>
                   )}
 
-                  {/* Role Badge */}
                   <div
                     style={{
                       position: "absolute",
@@ -272,7 +313,6 @@ const TeamSection = () => {
                   </div>
                 </div>
 
-                {/* Member Info */}
                 <div style={{ padding: "32px" }}>
                   <h3 className="heading-2" style={{ marginBottom: "8px" }}>
                     {member.name}
@@ -289,7 +329,6 @@ const TeamSection = () => {
                     {member.bio}
                   </p>
 
-                  {/* Expertise Tags */}
                   <div style={{ marginBottom: "24px" }}>
                     <h4
                       className="body-large"
@@ -328,7 +367,7 @@ const TeamSection = () => {
                     </div>
                   </div>
 
-                  {/* Contact Actions */}
+                 
                   <div
                     style={{
                       display: "flex",
@@ -394,7 +433,7 @@ const TeamSection = () => {
             ))}
           </div>
 
-          {/* Join Our Network section removed as requested */}
+        */}
         </div>
       </div>
     </section>

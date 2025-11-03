@@ -73,89 +73,6 @@ const Footer = () => {
                 magazines from the future so you can own your story in
                 tomorrow's world.
               </p>
-
-              <div style={{ display: "flex", gap: "16px" }}>
-                <a
-                  href="#"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "40px",
-                    height: "40px",
-                    background: "rgba(255, 255, 255, 0.1)",
-                    border: "1px solid var(--border-subtle)",
-                    borderRadius: "0px",
-                    color: "var(--text-secondary)",
-                    textDecoration: "none",
-                    transition: "all 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.background = "var(--brand-primary)";
-                    e.target.style.color = "#000000";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.background = "rgba(255, 255, 255, 0.1)";
-                    e.target.style.color = "var(--text-secondary)";
-                  }}
-                >
-                  <Linkedin size={20} />
-                </a>
-
-                <a
-                  href="#"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "40px",
-                    height: "40px",
-                    background: "rgba(255, 255, 255, 0.1)",
-                    border: "1px solid var(--border-subtle)",
-                    borderRadius: "0px",
-                    color: "var(--text-secondary)",
-                    textDecoration: "none",
-                    transition: "all 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.background = "var(--brand-primary)";
-                    e.target.style.color = "#000000";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.background = "rgba(255, 255, 255, 0.1)";
-                    e.target.style.color = "var(--text-secondary)";
-                  }}
-                >
-                  <Twitter size={20} />
-                </a>
-
-                <a
-                  href="mailto:contact@polymathicfutures.com"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "40px",
-                    height: "40px",
-                    background: "rgba(255, 255, 255, 0.1)",
-                    border: "1px solid var(--border-subtle)",
-                    borderRadius: "0px",
-                    color: "var(--text-secondary)",
-                    textDecoration: "none",
-                    transition: "all 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.background = "var(--brand-primary)";
-                    e.target.style.color = "#000000";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.target.style.background = "rgba(255, 255, 255, 0.1)";
-                    e.target.style.color = "var(--text-secondary)";
-                  }}
-                >
-                  <Mail size={20} />
-                </a>
-              </div>
             </div>
 
             {/* Quick Links */}
@@ -329,6 +246,18 @@ const Footer = () => {
                     Global • Remote–First
                   </span>
                 </div>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "12px" }}
+                >
+                  <Linkedin size={16} color="var(--brand-primary)" />
+                  <a
+                    href="#"
+                    className="body-small"
+                    style={{ color: "var(--text-secondary)" }}
+                  >
+                    linkedin.link//
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -348,44 +277,6 @@ const Footer = () => {
             <p className="body-small" style={{ color: "var(--text-muted)" }}>
               © {currentYear} Polymathic Futures. All rights reserved.
             </p>
-
-            <div style={{ display: "flex", gap: "24px" }}>
-              <a
-                href="#"
-                style={{
-                  color: "var(--text-muted)",
-                  textDecoration: "none",
-                  fontSize: "14px",
-                  transition: "color 0.3s ease",
-                }}
-                onMouseEnter={(e) =>
-                  (e.target.style.color = "var(--text-secondary)")
-                }
-                onMouseLeave={(e) =>
-                  (e.target.style.color = "var(--text-muted)")
-                }
-              >
-                Privacy Policy
-              </a>
-
-              <a
-                href="#"
-                style={{
-                  color: "var(--text-muted)",
-                  textDecoration: "none",
-                  fontSize: "14px",
-                  transition: "color 0.3s ease",
-                }}
-                onMouseEnter={(e) =>
-                  (e.target.style.color = "var(--text-secondary)")
-                }
-                onMouseLeave={(e) =>
-                  (e.target.style.color = "var(--text-muted)")
-                }
-              >
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -95,7 +95,7 @@ services_data = [
         "title": "Future Magazine Creation",
         "description": "We craft literal magazines from the future — from 2035, 2040, even 2060 — written as if your company's breakthroughs have already happened.",
        "features": [
-    "10+ sci-fi foresight articles turning your strategy into vivid stories of how your products, people, and impact evolve across the next decades",
+    "Up to 10 sci-fi foresight articles turning your strategy into vivid stories of how your products, people, and impact evolve across the next decades",
     "Cross-pollination ideas — surprising connections between your industry and others you've never imagined collaborating with",
     "Possible & probable futures — scenarios grounded in foresight and science, not fantasy",
     "\"Already Emerging\" section — reporting on current R&D, academic labs, and startups already shaping the seeds of your future",
