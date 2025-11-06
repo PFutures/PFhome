@@ -146,52 +146,6 @@ const ServicesSection = () => {
                   </ul>
                 </div>
 
-                {/* Service Meta Info */}
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "24px",
-                    padding: "16px",
-                    background: "rgba(255, 255, 255, 0.05)",
-                    border: "1px solid var(--border-subtle)",
-                    borderRadius: "0px",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <Clock size={16} color="var(--brand-primary)" />
-                    <span
-                      className="body-small"
-                      style={{ color: "var(--text-secondary)" }}
-                    >
-                      {service.timeframe}
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <Target size={16} color="var(--brand-primary)" />
-                    <span
-                      className="body-small"
-                      style={{ color: "var(--text-secondary)" }}
-                    >
-                      {service.ideal_for.split(" ").slice(0, 3).join(" ")}...
-                    </span>
-                  </div>
-                </div>
-
                 {/* CTA Button */}
                 <button
                   className="btn-primary dark-button-animate"
