@@ -42,6 +42,7 @@ jobs:
           yarn build
         env:
           CI: false
+          REACT_APP_EDITOR_PASSWORD: ${{ secrets.REACT_APP_EDITOR_PASSWORD }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

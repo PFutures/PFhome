@@ -11,6 +11,7 @@ import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
 import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
+import ProtectedEditor from "./components/ProtectedEditor";
 
 // Home page component
 const HomePage = () => (
@@ -34,14 +35,29 @@ const HomePage = () => (
 function App() {
   return (
     <HashRouter>
-      <div className="dark-container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogSection />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="dark-container">
+              <Header />
+              <HomePage />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <div className="dark-container">
+              <Header />
+              <BlogSection />
+              <Footer />
+            </div>
+          }
+        />
+        <Route path="/editor" element={<ProtectedEditor />} />
+      </Routes>
     </HashRouter>
   );
 }
