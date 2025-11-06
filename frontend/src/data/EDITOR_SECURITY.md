@@ -87,4 +87,3 @@ The workflow will automatically use this password during the build. This way, th
 2. Enter the password
 3. Click "Login"
 4. You'll stay logged in for 24 hours
-
