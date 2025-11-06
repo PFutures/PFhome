@@ -85,11 +85,11 @@ const Header = () => {
           About
         </a>
         <a 
-          href="#portfolio" 
+          href="#articles" 
           className="dark-nav-link"
           onClick={(e) => {
             e.preventDefault();
-            scrollToSection('portfolio');
+            scrollToSection('articles');
           }}
         >
           Portfolio

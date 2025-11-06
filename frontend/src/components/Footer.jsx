@@ -113,7 +113,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="#portfolio"
+                  href="#articles"
                   style={{
                     color: "var(--text-secondary)",
                     textDecoration: "none",
@@ -129,7 +129,7 @@ const Footer = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById("portfolio")
+                      .getElementById("articles")
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
