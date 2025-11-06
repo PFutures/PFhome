@@ -251,11 +251,11 @@ const Footer = () => {
                 >
                   <Linkedin size={16} color="var(--brand-primary)" />
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/polymathic-futures/"
                     className="body-small"
                     style={{ color: "var(--text-secondary)" }}
                   >
-                    linkedin.link//
+                    linkedin.com/company/polymathic-futures/
                   </a>
                 </div>
               </div>

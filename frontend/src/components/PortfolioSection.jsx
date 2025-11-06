@@ -9,7 +9,12 @@ const PortfolioSection = () => {
   const openPreview = (magazine) => {
     // If magazine has a PDF, open it in a new tab
     if (magazine.pdf_url) {
-      window.open(magazine.pdf_url, "_blank");
+      // If it's a relative path (starts with /), prepend PUBLIC_URL
+      // If it's already an absolute URL (http/https), use as-is
+      const pdfUrl = magazine.pdf_url.startsWith('http') 
+        ? magazine.pdf_url 
+        : `${process.env.PUBLIC_URL}${magazine.pdf_url}`;
+      window.open(pdfUrl, "_blank");
     } else {
       // Otherwise show the preview modal
       setSelectedMagazine(magazine);

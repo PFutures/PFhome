@@ -7,7 +7,12 @@ const ArticleSamplesSection = () => {
 
   const handleArticleClick = (article) => {
     if (article.pdf_url) {
-      window.open(article.pdf_url, "_blank");
+      // If it's a relative path (starts with /), prepend PUBLIC_URL
+      // If it's already an absolute URL (http/https), use as-is
+      const pdfUrl = article.pdf_url.startsWith('http') 
+        ? article.pdf_url 
+        : `${process.env.PUBLIC_URL}${article.pdf_url}`;
+      window.open(pdfUrl, "_blank");
     }
   };
 
