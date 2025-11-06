@@ -39,56 +39,39 @@ This guide will help you deploy the Polymathic Futures website to GitHub Pages.
    git push origin main
    ```
 
-### Option 2: Use GitHub Actions (Automated)
+### Option 2: Use GitHub Actions (Automated) ✅ RECOMMENDED
 
-1. **Create `.github/workflows/deploy.yml`:**
+The GitHub Actions workflow is already set up in `.github/workflows/deploy.yml`.
 
-   ```yaml
-   name: Deploy to GitHub Pages
+1. **Enable GitHub Pages:**
 
-   on:
-     push:
-       branches: [main]
+   - Go to your repository on GitHub
+   - Click on **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+   - The workflow will automatically deploy when you push to `main`
 
-   jobs:
-     build-and-deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v3
-
-         - name: Setup Node.js
-           uses: actions/setup-node@v3
-           with:
-             node-version: "18"
-             cache: "yarn"
-             cache-dependency-path: frontend/yarn.lock
-
-         - name: Install dependencies
-           run: |
-             cd frontend
-             yarn install --frozen-lockfile
-
-         - name: Build
-           run: |
-             cd frontend
-             yarn build
-
-         - name: Deploy to GitHub Pages
-           uses: peaceiris/actions-gh-pages@v3
-           with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_dir: ./frontend/build
-   ```
-
-2. **Enable GitHub Actions:**
+2. **Enable GitHub Actions permissions:**
 
    - Go to repository **Settings** → **Actions** → **General**
-   - Enable "Workflow permissions" → "Read and write permissions"
-   - Enable "Allow GitHub Actions to create and approve pull requests"
+   - Under "Workflow permissions", select **Read and write permissions**
+   - Check "Allow GitHub Actions to create and approve pull requests"
+   - Click **Save**
 
-3. **Configure Pages:**
-   - Go to **Settings** → **Pages**
-   - Select **Source**: "GitHub Actions"
+3. **Push your code:**
+
+   ```bash
+   git add .
+   git commit -m "Add GitHub Actions deployment"
+   git push origin main
+   ```
+
+4. **Monitor deployment:**
+
+   - Go to **Actions** tab in your repository
+   - You'll see the workflow running
+   - Once complete, your site will be live at: `https://pfutures.github.io/PFhome/`
+
+**Note:** The workflow is configured for the repository path `/PFhome`. The `package.json` has `"homepage": "/PFhome"` which ensures all asset paths are correct.
 
 ### Option 3: Deploy from root directory
 
