@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { consultationTypes } from "./mock";
-import { Send, Calendar, Users, Mail, MapPin, ArrowRight } from "lucide-react";
+import {
+  Send,
+  Calendar,
+  Users,
+  Mail,
+  MapPin,
+  ArrowRight,
+  Linkedin,
+} from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -140,6 +148,7 @@ const ContactSection = () => {
                       display: "flex",
                       alignItems: "center",
                       gap: "12px",
+                      marginBottom: "16px",
                     }}
                   >
                     <MapPin size={20} color="var(--brand-primary)" />
@@ -149,6 +158,22 @@ const ContactSection = () => {
                     >
                       Global • Remote-First
                     </span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
+                    }}
+                  >
+                    <Linkedin size={20} color="var(--brand-primary)" />
+                    <a
+                      href="https://www.linkedin.com/company/polymathic-futures/"
+                      className="body-medium"
+                      style={{ color: "var(--text-secondary)" }}
+                    >
+                      linkedin.com/company/polymathic-futures/
+                    </a>
                   </div>
                 </div>
               </div>
