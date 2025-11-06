@@ -1,85 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import contentData from "../data/content.json";
 
 const BlogSection = () => {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Fetch blog articles from backend
-    const fetchArticles = async () => {
-      try {
-        const backendUrl =
-          import.meta.env.REACT_APP_BACKEND_URL ||
-          process.env.REACT_APP_BACKEND_URL;
-        const response = await fetch(`${backendUrl}/api/articles`);
-        if (response.ok) {
-          const data = await response.json();
-          setArticles(data);
-        }
-      } catch (error) {
-        console.log("Using mock articles data");
-        // Mock articles for now
-        setArticles([
-          {
-            id: "1",
-            title: "The Futures of Deathcare",
-            excerpt:
-              "Exploring how we might reimagine death, memory, and legacy in the coming decades — from digital afterlives to new rituals of physical deathcare and remembrance.",
-            date: "2025-01-08",
-            readTime: "8 min read",
-            category: "Urban Futures",
-            image:
-              "https://customer-assets.emergentagent.com/job_polymathic-futures/artifacts/ds0qdo26_c57a247f-8edd-48ed-904c-e504ac284ed8.png",
-          },
-          {
-            id: "2",
-            title: "The Futures of Entrepreneurship",
-            excerpt:
-              "How the nature of starting, building, and scaling ventures will transform as technology, society, and human values evolve (or not).",
-            date: "2025-01-05",
-            readTime: "10 min read",
-            category: "Healthcare Innovation",
-            image:
-              "https://customer-assets.emergentagent.com/job_polymathic-futures/artifacts/rdjahfk1_1710260430391.jpg",
-          },
-          {
-            id: "3",
-            title: "The Futures of History",
-            excerpt:
-              "We used to think of history as a sequence of events. But what if it is an ecosystem — one that metabolizes its own past? And who will be the historians — humans, machines, or hybrid intelligences that experience time differently?",
-            date: "2025-01-02",
-            readTime: "12 min read",
-            category: "Space Economics",
-            image:
-              "https://customer-assets.emergentagent.com/job_polymathic-futures/artifacts/6eeog62i_454712213_10234137831286286_8818064517673223800_n.jpg",
-          },
-        ]);
-      }
-      setLoading(false);
-    };
-
-    fetchArticles();
-  }, []);
-
-  if (loading) {
-    return (
-      <section
-        id="blog"
-        className="dark-container"
-        style={{ padding: "60px 0 80px 0" }}
-      >
-        <div className="dark-full-container">
-          <div className="dark-content-container">
-            <div style={{ textAlign: "center" }}>
-              <p style={{ color: "var(--text-secondary)" }}>
-                Loading articles...
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const articles = contentData.articles;
 
   return (
     <section

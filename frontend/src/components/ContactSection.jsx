@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { consultationTypes } from "./mock";
 import { Send, Calendar, Users, Mail, MapPin, ArrowRight } from "lucide-react";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -34,32 +30,35 @@ const ContactSection = () => {
     setSubmitMessage("");
     setSubmitError("");
 
-    try {
-      const response = await axios.post(`${API}/inquiries`, formData);
-
-      if (response.status === 201) {
-        setSubmitMessage(response.data.message);
-        setFormData({
-          name: "",
-          email: "",
-          company: "",
-          inquiry_type: "consultation",
-          consultation_type: "",
-          message: "",
-        });
-      }
-    } catch (error) {
-      console.error("Error submitting inquiry:", error);
-      if (error.response?.data?.detail) {
-        setSubmitError(error.response.data.detail);
-      } else {
+    // Simulate form submission (mock - no backend call)
+    setTimeout(() => {
+      // Validate consultation type if inquiry type is consultation
+      if (
+        formData.inquiry_type === "consultation" &&
+        !formData.consultation_type
+      ) {
         setSubmitError(
-          "Something went wrong. Please try again or contact us directly."
+          "Consultation type is required for consultation inquiries"
         );
+        setIsSubmitting(false);
+        return;
       }
-    } finally {
+
+      // Success response
+      setSubmitMessage("Thank you! We'll be in touch within 24 hours.");
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        inquiry_type: "consultation",
+        consultation_type: "",
+        message: "",
+      });
       setIsSubmitting(false);
-    }
+
+      // Log the submission (in a real app, you might want to send this to a service)
+      console.log("Form submission:", formData);
+    }, 500);
   };
 
   return (

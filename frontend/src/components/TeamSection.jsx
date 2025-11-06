@@ -1,75 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Linkedin, Mail, User } from "lucide-react";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+import { mockTeamMembers } from "./mock";
 
 const TeamSection = () => {
-  const [teamMembers, setTeamMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    fetchTeamMembers();
-  }, []);
-
-  const fetchTeamMembers = async () => {
-    try {
-      const response = await axios.get(`${API}/team`);
-      setTeamMembers(response.data);
-    } catch (error) {
-      console.error("Error fetching team members:", error);
-      setError("Failed to load team members");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  if (loading) {
-    return (
-      <section
-        id="team"
-        className="dark-container"
-        style={{ padding: "60px 0 80px 0" }}
-      >
-        <div className="dark-full-container">
-          <div
-            className="dark-content-container"
-            style={{ textAlign: "center" }}
-          >
-            <p
-              className="body-large"
-              style={{ color: "var(--text-secondary)" }}
-            >
-              Loading our team...
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section
-        id="team"
-        className="dark-container"
-        style={{ padding: "60px 0 80px 0" }}
-      >
-        <div className="dark-full-container">
-          <div
-            className="dark-content-container"
-            style={{ textAlign: "center" }}
-          >
-            <p className="body-large" style={{ color: "#ff4444" }}>
-              {error}
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const teamMembers = mockTeamMembers;
 
   return (
     <section

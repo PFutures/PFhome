@@ -6,9 +6,22 @@ const Header = () => {
   const isHomePage = location.pathname === '/';
 
   const scrollToSection = (sectionId) => {
+    // With HashRouter, we need to navigate to home first if not there
     if (!isHomePage) {
-      // Navigate to home page first, then scroll
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home page first
+      window.location.hash = '#/';
+      // Wait for navigation, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const headerHeight = 80;
+          const offsetTop = element.offsetTop - headerHeight;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }, 200);
       return;
     }
     
