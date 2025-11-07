@@ -1,8 +1,42 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const scrollToSection = (sectionId) => {
+    // With HashRouter, we need to navigate to home first if not there
+    if (!isHomePage) {
+      // Navigate to home page first
+      window.location.hash = '#/';
+      // Wait for navigation, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const headerHeight = 80;
+          const offsetTop = element.offsetTop - headerHeight;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }, 200);
+      return;
+    }
+    
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 80; // Approximate header height
+      const offsetTop = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
     <footer
@@ -89,7 +123,7 @@ const Footer = () => {
                 }}
               >
                 <a
-                  href="#about"
+                  href="#"
                   style={{
                     color: "var(--text-secondary)",
                     textDecoration: "none",
@@ -104,12 +138,17 @@ const Footer = () => {
                   }
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("about")
-                      ?.scrollIntoView({ behavior: "smooth" });
+                    if (!isHomePage) {
+                      window.location.hash = '#/';
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }, 200);
+                    } else {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
                   }}
                 >
-                  About Us
+                  About
                 </a>
 
                 <a
@@ -128,9 +167,7 @@ const Footer = () => {
                   }
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("articles")
-                      ?.scrollIntoView({ behavior: "smooth" });
+                    scrollToSection('articles');
                   }}
                 >
                   Portfolio
@@ -152,9 +189,7 @@ const Footer = () => {
                   }
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("services")
-                      ?.scrollIntoView({ behavior: "smooth" });
+                    scrollToSection('services');
                   }}
                 >
                   Services
@@ -176,13 +211,34 @@ const Footer = () => {
                   }
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("team")
-                      ?.scrollIntoView({ behavior: "smooth" });
+                    scrollToSection('team');
                   }}
                 >
                   Team
                 </a>
+
+                <Link
+                  to="/blog"
+                  style={{
+                    color: "var(--text-secondary)",
+                    textDecoration: "none",
+                    fontSize: "16px",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.color = "var(--brand-primary)")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.color = "var(--text-secondary)")
+                  }
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
+                  Blog
+                </Link>
 
                 <a
                   href="#contact"
@@ -200,9 +256,7 @@ const Footer = () => {
                   }
                   onClick={(e) => {
                     e.preventDefault();
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" });
+                    scrollToSection('contact');
                   }}
                 >
                   Contact

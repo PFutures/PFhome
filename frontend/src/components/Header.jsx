@@ -75,11 +75,18 @@ const Header = () => {
       
       <nav className="dark-nav">
         <a 
-          href="#about" 
+          href="#" 
           className="dark-nav-link"
           onClick={(e) => {
             e.preventDefault();
-            scrollToSection('about');
+            if (!isHomePage) {
+              window.location.hash = '#/';
+              setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }, 200);
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
           }}
         >
           About
@@ -117,6 +124,11 @@ const Header = () => {
         <Link 
           to="/blog" 
           className="dark-nav-link"
+          onClick={() => {
+            setTimeout(() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+          }}
         >
           Blog
         </Link>

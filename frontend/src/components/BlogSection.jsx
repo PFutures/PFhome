@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import contentData from "../data/content.json";
 
 const BlogSection = () => {
   const articles = contentData.articles;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <section
       id="blog"
       className="dark-container"
-      style={{ padding: "60px 0 80px 0" }}
+      style={{ padding: "120px 0 80px 0" }}
     >
       <div className="dark-full-container">
         <div className="dark-content-container">
