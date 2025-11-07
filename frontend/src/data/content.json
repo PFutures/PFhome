@@ -6,11 +6,7 @@
       "year": "2035",
       "description": "How modular design principles are reshaping manufacturing, architecture, and innovation",
       "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/thhjm9pd_81c9965e-7ca8-4e86-bc8c-221f22e77e02.jfif",
-      "industries": [
-        "Manufacturing",
-        "Design",
-        "Innovation"
-      ],
+      "industries": ["Manufacturing", "Design", "Innovation"],
       "preview": "Discover how LEGO's modular approach is transforming industries from construction to biotechnology...",
       "pdf_url": "/legofication-of-the-world.pdf"
     },
@@ -19,12 +15,8 @@
       "title": "Singapore 2040",
       "year": "2040",
       "description": "A vision of Singapore's future through science and innovation",
-      "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg",
-      "industries": [
-        "Urban Planning",
-        "Technology",
-        "Innovation"
-      ],
+      "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
+      "industries": ["Urban Planning", "Technology", "Innovation"],
       "preview": "Explore Singapore's transformation into a leading hub of innovation and sustainability by 2040...",
       "pdf_url": "/singapore-2040.pdf"
     },
@@ -33,12 +25,8 @@
       "title": "Petabytes of Love",
       "year": "2024",
       "description": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
-      "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/kf61ma5v_7cabefac-c0dc-4c06-8ba9-893b718bc34e.webp",
-      "industries": [
-        "Technology",
-        "Jewelry",
-        "Data Storage"
-      ],
+      "cover_image": "https://customer-assets.emergentagent.com/job_future-magazine/artifacts/vuvy5uso_WhatsApp%20Image%202025-10-11%20at%2021.17.42.jpeg",
+      "industries": ["Technology", "Jewelry", "Data Storage"],
       "preview": "The fascinating future of jewelry — where jewels become living archives, crystalline companions that listen, remember, and preserve generations of human love in light.",
       "pdf_url": "/petabytes-of-love.pdf"
     }
